@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A2AAA8216A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A2AAA7E16A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp */; };
+		2A2AAA8316A5E059002C17B2 /* testPartHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */; };
 		2A4D274615CF10F7007CAFAC /* testBackwardCompatibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272815CF10F7007CAFAC /* testBackwardCompatibility.cpp */; };
 		2A4D274715CF10F7007CAFAC /* testCompositeDeepScanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272A15CF10F7007CAFAC /* testCompositeDeepScanLine.cpp */; };
 		2A4D274815CF10F7007CAFAC /* testCopyDeepScanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272C15CF10F7007CAFAC /* testCopyDeepScanLine.cpp */; };
@@ -147,6 +149,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A2AAA7E16A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testDeepScanLineMultipleRead.cpp; sourceTree = "<group>"; };
+		2A2AAA7F16A5E059002C17B2 /* testDeepScanLineMultipleRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testDeepScanLineMultipleRead.h; sourceTree = "<group>"; };
+		2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testPartHelper.cpp; sourceTree = "<group>"; };
+		2A2AAA8116A5E059002C17B2 /* testPartHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testPartHelper.h; sourceTree = "<group>"; };
 		2A4D272815CF10F7007CAFAC /* testBackwardCompatibility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testBackwardCompatibility.cpp; sourceTree = "<group>"; };
 		2A4D272915CF10F7007CAFAC /* testBackwardCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testBackwardCompatibility.h; sourceTree = "<group>"; };
 		2A4D272A15CF10F7007CAFAC /* testCompositeDeepScanLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testCompositeDeepScanLine.cpp; sourceTree = "<group>"; };
@@ -325,6 +331,10 @@
 		2A6D513E15CED363006BADE7 /* IlmImfTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A2AAA7E16A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp */,
+				2A2AAA7F16A5E059002C17B2 /* testDeepScanLineMultipleRead.h */,
+				2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */,
+				2A2AAA8116A5E059002C17B2 /* testPartHelper.h */,
 				2A4D272815CF10F7007CAFAC /* testBackwardCompatibility.cpp */,
 				2A4D272915CF10F7007CAFAC /* testBackwardCompatibility.h */,
 				2A4D272A15CF10F7007CAFAC /* testCompositeDeepScanLine.cpp */,
@@ -633,6 +643,8 @@
 				2A4D275215CF10F7007CAFAC /* testMultiPartThreading.cpp in Sources */,
 				2A4D275315CF10F7007CAFAC /* testMultiScanlinePartThreading.cpp in Sources */,
 				2A4D275415CF10F7007CAFAC /* testMultiTiledPartThreading.cpp in Sources */,
+				2A2AAA8216A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp in Sources */,
+				2A2AAA8316A5E059002C17B2 /* testPartHelper.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
