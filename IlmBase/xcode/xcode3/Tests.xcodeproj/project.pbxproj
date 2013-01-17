@@ -16,9 +16,6 @@
 		2A6D505D15CECE16006BADE7 /* testArithmetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4FEE15CECDBE006BADE7 /* testArithmetic.cpp */; };
 		2A6D505E15CECE17006BADE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4FEC15CECDBE006BADE7 /* main.cpp */; };
 		2A6D507C15CECEC2006BADE7 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D507715CECEBD006BADE7 /* libIlmBase.a */; };
-		2A6D50A315CECF72006BADE7 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D507715CECEBD006BADE7 /* libIlmBase.a */; };
-		2A6D50AA15CECFB5006BADE7 /* IexMathFpu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4FFF15CECDBE006BADE7 /* IexMathFpu.cpp */; };
-		2A6D50AB15CECFB6006BADE7 /* IexMathFloatExc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4FFD15CECDBE006BADE7 /* IexMathFloatExc.cpp */; };
 		2A6D50B915CECFF1006BADE7 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D507715CECEBD006BADE7 /* libIlmBase.a */; };
 		2A6D50C015CED027006BADE7 /* testBaseExc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D500715CECDBE006BADE7 /* testBaseExc.cpp */; };
 		2A6D50C115CED028006BADE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D500515CECDBE006BADE7 /* main.cpp */; };
@@ -77,13 +74,6 @@
 			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
 		};
-		2A6D509815CECF72006BADE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A6D507015CECEBD006BADE7 /* IlmBase.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
-			remoteInfo = IlmBase;
-		};
 		2A6D50B415CECFF1006BADE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A6D507015CECEBD006BADE7 /* IlmBase.xcodeproj */;
@@ -116,11 +106,6 @@
 		2A6D4FF915CECDBE006BADE7 /* testLimits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testLimits.h; sourceTree = "<group>"; };
 		2A6D4FFA15CECDBE006BADE7 /* testSize.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testSize.cpp; sourceTree = "<group>"; };
 		2A6D4FFB15CECDBE006BADE7 /* testSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testSize.h; sourceTree = "<group>"; };
-		2A6D4FFD15CECDBE006BADE7 /* IexMathFloatExc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IexMathFloatExc.cpp; sourceTree = "<group>"; };
-		2A6D4FFE15CECDBE006BADE7 /* IexMathFloatExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexMathFloatExc.h; sourceTree = "<group>"; };
-		2A6D4FFF15CECDBE006BADE7 /* IexMathFpu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IexMathFpu.cpp; sourceTree = "<group>"; };
-		2A6D500015CECDBE006BADE7 /* IexMathFpu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexMathFpu.h; sourceTree = "<group>"; };
-		2A6D500115CECDBE006BADE7 /* IexMathIeeeExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IexMathIeeeExc.h; sourceTree = "<group>"; };
 		2A6D500515CECDBE006BADE7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2A6D500715CECDBE006BADE7 /* testBaseExc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testBaseExc.cpp; sourceTree = "<group>"; };
 		2A6D500815CECDBE006BADE7 /* testBaseExc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testBaseExc.h; sourceTree = "<group>"; };
@@ -171,21 +156,12 @@
 		2A6D503815CECDBF006BADE7 /* testVec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testVec.h; sourceTree = "<group>"; };
 		2A6D507015CECEBD006BADE7 /* IlmBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = IlmBase.xcodeproj; sourceTree = "<group>"; };
 		2A6D508815CECF25006BADE7 /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IlmBaseConfig.h; sourceTree = "<group>"; };
-		2A6D50A815CECF72006BADE7 /* IexMath */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IexMath; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6D50BE15CECFF1006BADE7 /* IexTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IexTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6D50D515CED052006BADE7 /* ImathTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ImathTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD76F6C0486A84900D96B5E /* HalfTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HalfTest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2A6D50A215CECF72006BADE7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A6D50A315CECF72006BADE7 /* libIlmBase.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A6D50B815CECFF1006BADE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				2A6D4FEA15CECDBE006BADE7 /* HalfTest */,
-				2A6D4FFC15CECDBE006BADE7 /* IexMath */,
 				2A6D500315CECDBE006BADE7 /* IexTest */,
 				2A6D500915CECDBE006BADE7 /* ImathTest */,
 				2A6D508815CECF25006BADE7 /* IlmBaseConfig.h */,
@@ -231,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				8DD76F6C0486A84900D96B5E /* HalfTest */,
-				2A6D50A815CECF72006BADE7 /* IexMath */,
 				2A6D50BE15CECFF1006BADE7 /* IexTest */,
 				2A6D50D515CED052006BADE7 /* ImathTest */,
 			);
@@ -259,19 +233,6 @@
 			);
 			name = HalfTest;
 			path = ../../HalfTest;
-			sourceTree = SOURCE_ROOT;
-		};
-		2A6D4FFC15CECDBE006BADE7 /* IexMath */ = {
-			isa = PBXGroup;
-			children = (
-				2A6D4FFD15CECDBE006BADE7 /* IexMathFloatExc.cpp */,
-				2A6D4FFE15CECDBE006BADE7 /* IexMathFloatExc.h */,
-				2A6D4FFF15CECDBE006BADE7 /* IexMathFpu.cpp */,
-				2A6D500015CECDBE006BADE7 /* IexMathFpu.h */,
-				2A6D500115CECDBE006BADE7 /* IexMathIeeeExc.h */,
-			);
-			name = IexMath;
-			path = ../../IexMath;
 			sourceTree = SOURCE_ROOT;
 		};
 		2A6D500315CECDBE006BADE7 /* IexTest */ = {
@@ -351,24 +312,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2A6D509615CECF72006BADE7 /* IexMath */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2A6D50A515CECF72006BADE7 /* Build configuration list for PBXNativeTarget "IexMath" */;
-			buildPhases = (
-				2A6D509915CECF72006BADE7 /* Sources */,
-				2A6D50A215CECF72006BADE7 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2A6D509715CECF72006BADE7 /* PBXTargetDependency */,
-			);
-			name = IexMath;
-			productInstallPath = "$(HOME)/bin";
-			productName = Tests;
-			productReference = 2A6D50A815CECF72006BADE7 /* IexMath */;
-			productType = "com.apple.product-type.tool";
-		};
 		2A6D50B215CECFF1006BADE7 /* IexTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A6D50BB15CECFF1006BADE7 /* Build configuration list for PBXNativeTarget "IexTest" */;
@@ -449,7 +392,6 @@
 			projectRoot = "";
 			targets = (
 				8DD76F620486A84900D96B5E /* HalfTest */,
-				2A6D509615CECF72006BADE7 /* IexMath */,
 				2A6D50B215CECFF1006BADE7 /* IexTest */,
 				2A6D50C915CED052006BADE7 /* ImathTest */,
 			);
@@ -481,15 +423,6 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2A6D509915CECF72006BADE7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2A6D50AA15CECFB5006BADE7 /* IexMathFpu.cpp in Sources */,
-				2A6D50AB15CECFB6006BADE7 /* IexMathFloatExc.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2A6D50B515CECFF1006BADE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,11 +484,6 @@
 			isa = PBXTargetDependency;
 			name = IlmBase;
 			targetProxy = 2A6D507D15CECED1006BADE7 /* PBXContainerItemProxy */;
-		};
-		2A6D509715CECF72006BADE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IlmBase;
-			targetProxy = 2A6D509815CECF72006BADE7 /* PBXContainerItemProxy */;
 		};
 		2A6D50B315CECFF1006BADE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -633,29 +561,6 @@
 			};
 			name = Release;
 		};
-		2A6D50A615CECF72006BADE7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = IexMath;
-			};
-			name = Debug;
-		};
-		2A6D50A715CECF72006BADE7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				INSTALL_PATH = /usr/local/bin;
-				PRODUCT_NAME = IexMath;
-			};
-			name = Release;
-		};
 		2A6D50BC15CECFF1006BADE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -719,15 +624,6 @@
 			buildConfigurations = (
 				1DEB923608733DC60010E9CD /* Debug */,
 				1DEB923708733DC60010E9CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2A6D50A515CECF72006BADE7 /* Build configuration list for PBXNativeTarget "IexMath" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2A6D50A615CECF72006BADE7 /* Debug */,
-				2A6D50A715CECF72006BADE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
