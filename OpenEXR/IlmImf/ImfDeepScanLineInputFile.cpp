@@ -241,13 +241,15 @@ struct DeepScanLineInputFile::Data: public Mutex
                                                       // the sample count array
     int                         sampleCountXStride; // x stride of the sample count array
     int                         sampleCountYStride; // y stride of the sample count array
-    bool                        frameBufferValid;   // set by setFrameBuffer: excepts in readSampleCounts if false
+    bool                        frameBufferValid;   // set by setFrameBuffer: excepts if readPixelSampleCounts if false
 
     Array<char>                 sampleCountTableBuffer;
                                                     // the buffer for sample count table
 
     Compressor*                 sampleCountTableComp;
                                                     // the decompressor for sample count table
+
+    int                         combinedSampleSize; // total size of all channels combined: used to sanity check sample table size
 
     int                         maxSampleCountTableSize;
                                                     // the max size in bytes for a pixel
@@ -829,6 +831,15 @@ void DeepScanLineInputFile::initialize(const Header& header)
 {
     try
     {
+        if (header.type() != DEEPSCANLINE)
+            throw IEX_NAMESPACE::ArgExc("Can't build a DeepScanLineInputFile from "
+            "a type-mismatched part.");
+        
+        if(header.version()!=1)
+        {
+            THROW(IEX_NAMESPACE::ArgExc, "Version " << header.version() << " not supported for deepscanline images in this version of the library");
+        }
+        
         _data->header = header;
 
         _data->lineOrder = _data->header.lineOrder();
@@ -877,10 +888,28 @@ void DeepScanLineInputFile::initialize(const Header& header)
                                                     _data->header);
 
         _data->bytesPerLine.resize (_data->maxY - _data->minY + 1);
+        
+        const ChannelList & c=header.channels();
+        
+        _data->combinedSampleSize=0;
+        for(ChannelList::ConstIterator i=c.begin();i!=c.end();i++)
+        {
+            switch(i.channel().type)
+            {
+                case HALF  : _data->combinedSampleSize+=Xdr::size<half>();break;
+                case FLOAT : _data->combinedSampleSize+=Xdr::size<float>();break;
+                case UINT  : _data->combinedSampleSize+=Xdr::size<unsigned int>();break;
+                default :
+                    THROW(IEX_NAMESPACE::ArgExc, "Bad type for channel " << i.name() << " initializing deepscanline reader");
+                    
+            }
+        }
+        
     }
     catch (...)
     {
         delete _data;
+        _data=NULL;
         throw;
     }
 }
@@ -889,9 +918,6 @@ void DeepScanLineInputFile::initialize(const Header& header)
 DeepScanLineInputFile::DeepScanLineInputFile(InputPartData* part)
     
 {
-    if (part->header.type() != DEEPSCANLINE)
-        throw IEX_NAMESPACE::ArgExc("Can't build a DeepScanLineInputFile from "
-                          "a type-mismatched part.");
 
     _data = new Data(part->numThreads);
     _data->_deleteStream=false;
@@ -1765,12 +1791,20 @@ readSampleCountForLineBlock(InputStreamMutex* streamData,
     Int64 sampleCountTableDataSize;
     OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, sampleCountTableDataSize);
 
+    
+    
+    if(sampleCountTableDataSize>data->maxSampleCountTableSize)
+    {
+        THROW (IEX_NAMESPACE::ArgExc, "Bad sampleCountTableDataSize read from chunk "<< lineBlockId << ": expected " << data->maxSampleCountTableSize << " or less, got "<< sampleCountTableDataSize);
+    }
+    
     Int64 packedDataSize;
     Int64 unpackedDataSize;
     OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, packedDataSize);
     OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, unpackedDataSize);
 
-    streamData->is->read(data->sampleCountTableBuffer, sampleCountTableDataSize);
+    
+    
     //
     // We make a check on the data size requirements here.
     // Whilst we wish to store 64bit sizes on disk, not all the compressors
@@ -1784,22 +1818,21 @@ readSampleCountForLineBlock(InputStreamMutex* streamData,
     int compressorMaxDataSize = std::numeric_limits<int>::max();
     if (sampleCountTableDataSize > Int64(compressorMaxDataSize))
     {
-        THROW (IEX_NAMESPACE::ArgExc, "This version of the library does not"
+        THROW (IEX_NAMESPACE::ArgExc, "This version of the library does not "
               << "support the allocation of data with size  > "
               << compressorMaxDataSize
               << " file table size    :" << sampleCountTableDataSize << ".\n");
     }
-
+    streamData->is->read(data->sampleCountTableBuffer, sampleCountTableDataSize);
+    
     const char* readPtr;
 
     //
     // If the sample count table is compressed, we'll uncompress it.
     //
 
-    Int64 rawSampleCountTableSize = (maxY - minY + 1) * (data->maxX - data->minX + 1) *
-                                  Xdr::size <unsigned int> ();
 
-    if (sampleCountTableDataSize < rawSampleCountTableSize)
+    if (sampleCountTableDataSize < data->maxSampleCountTableSize)
     {
         if(!data->sampleCountTableComp)
         {
@@ -1816,6 +1849,11 @@ readSampleCountForLineBlock(InputStreamMutex* streamData,
     int xStride = data->sampleCountXStride;
     int yStride = data->sampleCountYStride;
 
+    // total number of samples in block: used to check samplecount table doesn't
+    // reference more data than exists
+    
+    size_t cumulative_total_samples=0;
+    
     for (int y = minY; y <= maxY; y++)
     {
         int yInDataWindow = y - data->minY;
@@ -1831,12 +1869,20 @@ readSampleCountForLineBlock(InputStreamMutex* streamData,
             //
 
             Xdr::read <CharPtrIO> (readPtr, accumulatedCount);
+            
             if (x == data->minX)
                 count = accumulatedCount;
             else
                 count = accumulatedCount - lastAccumulatedCount;
             lastAccumulatedCount = accumulatedCount;
-
+            
+            // sample count table should always contain monotonically
+            // increasing values since count>=0. In the case of corruption, this may
+            // not be the case
+            if(count<0)
+            {
+                THROW(IEX_NAMESPACE::ArgExc,"Deep scanline sampleCount data corrupt at chunk " << lineBlockId << " (negative sample count detected)");
+            }
             //
             // Store the data in both internal and external data structure.
             //
@@ -1844,6 +1890,12 @@ readSampleCountForLineBlock(InputStreamMutex* streamData,
             data->sampleCount[yInDataWindow][x - data->minX] = count;
             data->lineSampleCount[yInDataWindow] += count;
             sampleCount(base, xStride, yStride, x, y) = count;
+        }
+        cumulative_total_samples+=data->lineSampleCount[yInDataWindow];
+        if(cumulative_total_samples*data->combinedSampleSize > unpackedDataSize)
+        {
+            THROW(IEX_NAMESPACE::ArgExc,"Deep scanline sampleCount data corrupt at chunk " << lineBlockId << ": pixel data only contains " << unpackedDataSize 
+            << " bytes of data but table references at least " << cumulative_total_samples*data->combinedSampleSize << " bytes of sample data" );            
         }
         data->gotSampleCount[y - data->minY] = true;
     }
