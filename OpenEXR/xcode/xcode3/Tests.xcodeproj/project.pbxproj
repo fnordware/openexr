@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A2AAA8216A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A2AAA7E16A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp */; };
 		2A2AAA8316A5E059002C17B2 /* testPartHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */; };
+		2A45834B16F91EB4005E07DE /* testFutureProofing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45834716F91EB4005E07DE /* testFutureProofing.cpp */; };
+		2A45834C16F91EB4005E07DE /* testOptimized.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45834916F91EB4005E07DE /* testOptimized.cpp */; };
+		2A45835716F91EED005E07DE /* testFuzzDeepScanLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45835316F91EED005E07DE /* testFuzzDeepScanLines.cpp */; };
+		2A45835816F91EED005E07DE /* testFuzzDeepTiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45835516F91EED005E07DE /* testFuzzDeepTiles.cpp */; };
 		2A4D274615CF10F7007CAFAC /* testBackwardCompatibility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272815CF10F7007CAFAC /* testBackwardCompatibility.cpp */; };
 		2A4D274715CF10F7007CAFAC /* testCompositeDeepScanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272A15CF10F7007CAFAC /* testCompositeDeepScanLine.cpp */; };
 		2A4D274815CF10F7007CAFAC /* testCopyDeepScanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D272C15CF10F7007CAFAC /* testCopyDeepScanLine.cpp */; };
@@ -153,6 +157,14 @@
 		2A2AAA7F16A5E059002C17B2 /* testDeepScanLineMultipleRead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testDeepScanLineMultipleRead.h; sourceTree = "<group>"; };
 		2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testPartHelper.cpp; sourceTree = "<group>"; };
 		2A2AAA8116A5E059002C17B2 /* testPartHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testPartHelper.h; sourceTree = "<group>"; };
+		2A45834716F91EB4005E07DE /* testFutureProofing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testFutureProofing.cpp; sourceTree = "<group>"; };
+		2A45834816F91EB4005E07DE /* testFutureProofing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testFutureProofing.h; sourceTree = "<group>"; };
+		2A45834916F91EB4005E07DE /* testOptimized.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testOptimized.cpp; sourceTree = "<group>"; };
+		2A45834A16F91EB4005E07DE /* testOptimized.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testOptimized.h; sourceTree = "<group>"; };
+		2A45835316F91EED005E07DE /* testFuzzDeepScanLines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testFuzzDeepScanLines.cpp; sourceTree = "<group>"; };
+		2A45835416F91EED005E07DE /* testFuzzDeepScanLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testFuzzDeepScanLines.h; sourceTree = "<group>"; };
+		2A45835516F91EED005E07DE /* testFuzzDeepTiles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testFuzzDeepTiles.cpp; sourceTree = "<group>"; };
+		2A45835616F91EED005E07DE /* testFuzzDeepTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testFuzzDeepTiles.h; sourceTree = "<group>"; };
 		2A4D272815CF10F7007CAFAC /* testBackwardCompatibility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testBackwardCompatibility.cpp; sourceTree = "<group>"; };
 		2A4D272915CF10F7007CAFAC /* testBackwardCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testBackwardCompatibility.h; sourceTree = "<group>"; };
 		2A4D272A15CF10F7007CAFAC /* testCompositeDeepScanLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testCompositeDeepScanLine.cpp; sourceTree = "<group>"; };
@@ -315,6 +327,10 @@
 		2A6D513415CED363006BADE7 /* IlmImfFuzzTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A45835316F91EED005E07DE /* testFuzzDeepScanLines.cpp */,
+				2A45835416F91EED005E07DE /* testFuzzDeepScanLines.h */,
+				2A45835516F91EED005E07DE /* testFuzzDeepTiles.cpp */,
+				2A45835616F91EED005E07DE /* testFuzzDeepTiles.h */,
 				2A6D513515CED363006BADE7 /* fuzzFile.cpp */,
 				2A6D513615CED363006BADE7 /* fuzzFile.h */,
 				2A6D513715CED363006BADE7 /* main.cpp */,
@@ -331,6 +347,10 @@
 		2A6D513E15CED363006BADE7 /* IlmImfTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A45834716F91EB4005E07DE /* testFutureProofing.cpp */,
+				2A45834816F91EB4005E07DE /* testFutureProofing.h */,
+				2A45834916F91EB4005E07DE /* testOptimized.cpp */,
+				2A45834A16F91EB4005E07DE /* testOptimized.h */,
 				2A2AAA7E16A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp */,
 				2A2AAA7F16A5E059002C17B2 /* testDeepScanLineMultipleRead.h */,
 				2A2AAA8016A5E059002C17B2 /* testPartHelper.cpp */,
@@ -589,6 +609,8 @@
 				2A6D523A15CED6BE006BADE7 /* testFuzzScanLines.cpp in Sources */,
 				2A6D523B15CED6BF006BADE7 /* main.cpp in Sources */,
 				2A6D523C15CED6C0006BADE7 /* fuzzFile.cpp in Sources */,
+				2A45835716F91EED005E07DE /* testFuzzDeepScanLines.cpp in Sources */,
+				2A45835816F91EED005E07DE /* testFuzzDeepTiles.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,6 +667,8 @@
 				2A4D275415CF10F7007CAFAC /* testMultiTiledPartThreading.cpp in Sources */,
 				2A2AAA8216A5E059002C17B2 /* testDeepScanLineMultipleRead.cpp in Sources */,
 				2A2AAA8316A5E059002C17B2 /* testPartHelper.cpp in Sources */,
+				2A45834B16F91EB4005E07DE /* testFutureProofing.cpp in Sources */,
+				2A45834C16F91EB4005E07DE /* testOptimized.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +749,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -745,7 +769,7 @@
 					../../../IlmBase/Imath,
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};

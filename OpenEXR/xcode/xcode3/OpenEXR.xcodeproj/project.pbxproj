@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A45852716F92168005E07DE /* ImfOptimizedPixelReading.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A45852516F92168005E07DE /* ImfOptimizedPixelReading.h */; };
+		2A45852816F92168005E07DE /* ImfPartHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A45852616F92168005E07DE /* ImfPartHelper.h */; };
+		2A45854616F9243F005E07DE /* ImfSystemSpecific.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A45854516F9243F005E07DE /* ImfSystemSpecific.h */; };
 		2A4D26E415CF108E007CAFAC /* ImfCompositeDeepScanLine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D26B515CF108E007CAFAC /* ImfCompositeDeepScanLine.cpp */; };
 		2A4D26E515CF108E007CAFAC /* ImfCompositeDeepScanLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4D26B615CF108E007CAFAC /* ImfCompositeDeepScanLine.h */; };
 		2A4D26E615CF108E007CAFAC /* ImfDeepCompositing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D26B715CF108E007CAFAC /* ImfDeepCompositing.cpp */; };
@@ -193,6 +196,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A45852516F92168005E07DE /* ImfOptimizedPixelReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfOptimizedPixelReading.h; sourceTree = "<group>"; };
+		2A45852616F92168005E07DE /* ImfPartHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPartHelper.h; sourceTree = "<group>"; };
+		2A45854516F9243F005E07DE /* ImfSystemSpecific.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImfSystemSpecific.h; path = ../../IlmImf/ImfSystemSpecific.h; sourceTree = SOURCE_ROOT; };
 		2A4D26B515CF108E007CAFAC /* ImfCompositeDeepScanLine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfCompositeDeepScanLine.cpp; sourceTree = "<group>"; };
 		2A4D26B615CF108E007CAFAC /* ImfCompositeDeepScanLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfCompositeDeepScanLine.h; sourceTree = "<group>"; };
 		2A4D26B715CF108E007CAFAC /* ImfDeepCompositing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfDeepCompositing.cpp; sourceTree = "<group>"; };
@@ -421,6 +427,8 @@
 		2A6D4B3115CDEAA7006BADE7 /* IlmImf */ = {
 			isa = PBXGroup;
 			children = (
+				2A45852516F92168005E07DE /* ImfOptimizedPixelReading.h */,
+				2A45852616F92168005E07DE /* ImfPartHelper.h */,
 				2A4D277115CF122E007CAFAC /* ImfTiledOutputPart.cpp */,
 				2A4D277215CF122E007CAFAC /* ImfTiledOutputPart.h */,
 				2A4D26B515CF108E007CAFAC /* ImfCompositeDeepScanLine.cpp */,
@@ -573,6 +581,7 @@
 				2A6D4B9715CDEAA7006BADE7 /* ImfStringAttribute.h */,
 				2A6D4B9815CDEAA7006BADE7 /* ImfStringVectorAttribute.cpp */,
 				2A6D4B9915CDEAA7006BADE7 /* ImfStringVectorAttribute.h */,
+				2A45854516F9243F005E07DE /* ImfSystemSpecific.h */,
 				2A6D4B9A15CDEAA7006BADE7 /* ImfTestFile.cpp */,
 				2A6D4B9B15CDEAA7006BADE7 /* ImfTestFile.h */,
 				2A6D4B9C15CDEAA7006BADE7 /* ImfThreading.cpp */,
@@ -716,6 +725,9 @@
 				2A4D271015CF108E007CAFAC /* ImfPartType.h in Headers */,
 				2A4D271215CF108E007CAFAC /* ImfTiledInputPart.h in Headers */,
 				2A4D277415CF122E007CAFAC /* ImfTiledOutputPart.h in Headers */,
+				2A45852716F92168005E07DE /* ImfOptimizedPixelReading.h in Headers */,
+				2A45852816F92168005E07DE /* ImfPartHelper.h in Headers */,
+				2A45854616F9243F005E07DE /* ImfSystemSpecific.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -874,7 +886,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -894,7 +906,7 @@
 					../../../IlmBase/Imath,
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Release;
 		};

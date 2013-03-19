@@ -19,6 +19,7 @@
 				2A6D4FC515CECC57006BADE7 /* PBXTargetDependency */,
 				2A6D4FC715CECC57006BADE7 /* PBXTargetDependency */,
 				2A6D4FC915CECC57006BADE7 /* PBXTargetDependency */,
+				2A45851B16F92102005E07DE /* PBXTargetDependency */,
 				2A6D4FCB15CECC57006BADE7 /* PBXTargetDependency */,
 				2A6D4FCD15CECC57006BADE7 /* PBXTargetDependency */,
 			);
@@ -28,6 +29,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		2A45850D16F92090005E07DE /* libOpenEXR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4E5A15CEC62E006BADE7 /* libOpenEXR.a */; };
+		2A45850E16F92090005E07DE /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4E6515CEC653006BADE7 /* libIlmBase.a */; };
+		2A45850F16F92090005E07DE /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4EBF15CEC879006BADE7 /* libzlib.a */; };
+		2A45851916F920DF005E07DE /* exrmultipart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A45851716F920DF005E07DE /* exrmultipart.cpp */; };
 		2A4D283115CF1A7E007CAFAC /* libOpenEXR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4E5A15CEC62E006BADE7 /* libOpenEXR.a */; };
 		2A4D283215CF1A7E007CAFAC /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4E6515CEC653006BADE7 /* libIlmBase.a */; };
 		2A4D283315CF1A7E007CAFAC /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D4EBF15CEC879006BADE7 /* libzlib.a */; };
@@ -74,6 +79,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A45850316F92090005E07DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D4E5515CEC62E006BADE7 /* OpenEXR.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6D4B1415CDE3DE006BADE7;
+			remoteInfo = OpenEXR;
+		};
+		2A45850516F92090005E07DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D4EBA15CEC879006BADE7 /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
+			remoteInfo = zlib;
+		};
+		2A45850716F92090005E07DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D4E5E15CEC653006BADE7 /* IlmBase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
+			remoteInfo = IlmBase;
+		};
+		2A45851A16F92102005E07DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A45850116F92090005E07DE /* exrmultipart */;
+			remoteInfo = exrmultipart;
+		};
 		2A4D282915CF1A7E007CAFAC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A6D4E5515CEC62E006BADE7 /* OpenEXR.xcodeproj */;
@@ -99,7 +132,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A4D282715CF1A7E007CAFAC /* exrbuild */;
+			remoteGlobalIDString = 2A4D282715CF1A7E007CAFAC;
 			remoteInfo = exrbuild;
 		};
 		2A6D4E5915CEC62E006BADE7 /* PBXContainerItemProxy */ = {
@@ -336,6 +369,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A45851316F92090005E07DE /* exrmultipart */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exrmultipart; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A45851716F920DF005E07DE /* exrmultipart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exrmultipart.cpp; sourceTree = "<group>"; };
 		2A4D282215CF1A0B007CAFAC /* OpenEXRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEXRConfig.h; sourceTree = "<group>"; };
 		2A4D282315CF1A18007CAFAC /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IlmBaseConfig.h; path = ../../../IlmBase/xcode/xcode3/IlmBaseConfig.h; sourceTree = SOURCE_ROOT; };
 		2A4D283715CF1A7E007CAFAC /* exrbuild */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exrbuild; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -382,6 +417,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A45850C16F92090005E07DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A45850D16F92090005E07DE /* libOpenEXR.a in Frameworks */,
+				2A45850E16F92090005E07DE /* libIlmBase.a in Frameworks */,
+				2A45850F16F92090005E07DE /* libzlib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A4D283015CF1A7E007CAFAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +519,7 @@
 				2A6D4E2215CEC54E006BADE7 /* exrheader */,
 				2A6D4E2615CEC54E006BADE7 /* exrmakepreview */,
 				2A6D4E2C15CEC54E006BADE7 /* exrmaketiled */,
+				2A45851516F920DF005E07DE /* exrmultipart */,
 				2A6D4E3415CEC54E006BADE7 /* exrmultiview */,
 				2A6D4E3B15CEC54E006BADE7 /* exrstdattr */,
 				2A4D282215CF1A0B007CAFAC /* OpenEXRConfig.h */,
@@ -497,9 +543,19 @@
 				2A6D4F9E15CECBB4006BADE7 /* exrmultiview */,
 				2A6D4FB815CECBEC006BADE7 /* exrstdattr */,
 				2A4D283715CF1A7E007CAFAC /* exrbuild */,
+				2A45851316F92090005E07DE /* exrmultipart */,
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		2A45851516F920DF005E07DE /* exrmultipart */ = {
+			isa = PBXGroup;
+			children = (
+				2A45851716F920DF005E07DE /* exrmultipart.cpp */,
+			);
+			name = exrmultipart;
+			path = ../../exrmultipart;
+			sourceTree = SOURCE_ROOT;
 		};
 		2A4D283915CF1A9F007CAFAC /* exrbuild */ = {
 			isa = PBXGroup;
@@ -624,6 +680,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2A45850116F92090005E07DE /* exrmultipart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A45851016F92090005E07DE /* Build configuration list for PBXNativeTarget "exrmultipart" */;
+			buildPhases = (
+				2A45850816F92090005E07DE /* Sources */,
+				2A45850C16F92090005E07DE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A45850216F92090005E07DE /* PBXTargetDependency */,
+				2A45850416F92090005E07DE /* PBXTargetDependency */,
+				2A45850616F92090005E07DE /* PBXTargetDependency */,
+			);
+			name = exrmultipart;
+			productInstallPath = "$(HOME)/bin";
+			productName = Apps;
+			productReference = 2A45851316F92090005E07DE /* exrmultipart */;
+			productType = "com.apple.product-type.tool";
+		};
 		2A4D282715CF1A7E007CAFAC /* exrbuild */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A4D283415CF1A7E007CAFAC /* Build configuration list for PBXNativeTarget "exrbuild" */;
@@ -824,6 +900,7 @@
 				2A6D4F3315CECABF006BADE7 /* exrheader */,
 				2A6D4F5A15CECB36006BADE7 /* exrmakepreview */,
 				2A6D4F7215CECB78006BADE7 /* exrmaketiled */,
+				2A45850116F92090005E07DE /* exrmultipart */,
 				2A6D4F8B15CECBB4006BADE7 /* exrmultiview */,
 				2A6D4FA515CECBEC006BADE7 /* exrstdattr */,
 			);
@@ -869,6 +946,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A45850816F92090005E07DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A45851916F920DF005E07DE /* exrmultipart.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A4D282E15CF1A7E007CAFAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -947,6 +1032,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2A45850216F92090005E07DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenEXR;
+			targetProxy = 2A45850316F92090005E07DE /* PBXContainerItemProxy */;
+		};
+		2A45850416F92090005E07DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib;
+			targetProxy = 2A45850516F92090005E07DE /* PBXContainerItemProxy */;
+		};
+		2A45850616F92090005E07DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IlmBase;
+			targetProxy = 2A45850716F92090005E07DE /* PBXContainerItemProxy */;
+		};
+		2A45851B16F92102005E07DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A45850116F92090005E07DE /* exrmultipart */;
+			targetProxy = 2A45851A16F92102005E07DE /* PBXContainerItemProxy */;
+		};
 		2A4D282815CF1A7E007CAFAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OpenEXR;
@@ -1151,7 +1256,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
 			};
 			name = Debug;
 		};
@@ -1171,7 +1276,30 @@
 					../../../IlmBase/Imath,
 				);
 				PREBINDING = NO;
-				SDKROOT = macosx10.5;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		2A45851116F92090005E07DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = exrmultipart;
+			};
+			name = Debug;
+		};
+		2A45851216F92090005E07DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = exrmultipart;
 			};
 			name = Release;
 		};
@@ -1374,6 +1502,15 @@
 			buildConfigurations = (
 				1DEB923608733DC60010E9CD /* Debug */,
 				1DEB923708733DC60010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A45851016F92090005E07DE /* Build configuration list for PBXNativeTarget "exrmultipart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A45851116F92090005E07DE /* Debug */,
+				2A45851216F92090005E07DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
