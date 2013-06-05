@@ -61,15 +61,15 @@
 		2A6D51B115CED364006BADE7 /* testYca.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D518A15CED364006BADE7 /* testYca.cpp */; };
 		2A6D51D415CED457006BADE7 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51CC15CED452006BADE7 /* libIlmBase.a */; };
 		2A6D51D515CED458006BADE7 /* libOpenEXR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51C715CED452006BADE7 /* libOpenEXR.a */; };
-		2A6D51D615CED459006BADE7 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51D315CED452006BADE7 /* libzlib.a */; };
 		2A6D522B15CED68F006BADE7 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51CC15CED452006BADE7 /* libIlmBase.a */; };
 		2A6D522C15CED68F006BADE7 /* libOpenEXR.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51C715CED452006BADE7 /* libOpenEXR.a */; };
-		2A6D522D15CED68F006BADE7 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6D51D315CED452006BADE7 /* libzlib.a */; };
 		2A6D523815CED6B2006BADE7 /* compareB44.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D514715CED364006BADE7 /* compareB44.cpp */; };
 		2A6D523915CED6BD006BADE7 /* testFuzzTiles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D513B15CED363006BADE7 /* testFuzzTiles.cpp */; };
 		2A6D523A15CED6BE006BADE7 /* testFuzzScanLines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D513915CED363006BADE7 /* testFuzzScanLines.cpp */; };
 		2A6D523B15CED6BF006BADE7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D513715CED363006BADE7 /* main.cpp */; };
 		2A6D523C15CED6C0006BADE7 /* fuzzFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D513515CED363006BADE7 /* fuzzFile.cpp */; };
+		2AD7C1D4175FAEB900875616 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD7C1D1175FAEB600875616 /* libzlib.a */; };
+		2AD7C1D5175FAEBC00875616 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD7C1D1175FAEB600875616 /* libzlib.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,26 +101,12 @@
 			remoteGlobalIDString = 2A6D4D3715CDF275006BADE7;
 			remoteInfo = toFloat;
 		};
-		2A6D51D215CED452006BADE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D;
-			remoteInfo = zlib;
-		};
 		2A6D51D715CED464006BADE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A6D51BF15CED452006BADE7 /* IlmBase.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
-		};
-		2A6D51D915CED464006BADE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = zlib;
 		};
 		2A6D51DB15CED464006BADE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -136,19 +122,33 @@
 			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
 		};
-		2A6D520615CED68F006BADE7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D;
-			remoteInfo = zlib;
-		};
 		2A6D520815CED68F006BADE7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A6D51BC15CED452006BADE7 /* OpenEXR.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 2A6D4B1415CDE3DE006BADE7;
 			remoteInfo = OpenEXR;
+		};
+		2AD7C1D0175FAEB600875616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC046055464E500DB518D /* libzlib.a */;
+			remoteInfo = zlib;
+		};
+		2AD7C1D6175FAEC200875616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D /* zlib */;
+			remoteInfo = zlib;
+		};
+		2AD7C1D8175FAEC900875616 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC045055464E500DB518D /* zlib */;
+			remoteInfo = zlib;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -269,7 +269,7 @@
 		2A6D518D15CED364006BADE7 /* tmpDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmpDir.h; sourceTree = "<group>"; };
 		2A6D51BC15CED452006BADE7 /* OpenEXR.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = OpenEXR.xcodeproj; sourceTree = "<group>"; };
 		2A6D51BF15CED452006BADE7 /* IlmBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IlmBase.xcodeproj; path = ../../../IlmBase/xcode/xcode3/IlmBase.xcodeproj; sourceTree = SOURCE_ROOT; };
-		2A6D51C215CED452006BADE7 /* zlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = zlib.xcodeproj; path = "../../../zlib-1.2.7/xcode/xcode3/zlib.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		2A6D51C215CED452006BADE7 /* zlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = zlib.xcodeproj; sourceTree = "<group>"; };
 		2A6D51EC15CED4D9006BADE7 /* OpenEXRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEXRConfig.h; sourceTree = "<group>"; };
 		2A6D51ED15CED4F5006BADE7 /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IlmBaseConfig.h; path = ../../../IlmBase/xcode/xcode3/IlmBaseConfig.h; sourceTree = SOURCE_ROOT; };
 		2A6D523215CED68F006BADE7 /* IlmImfFuzzTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = IlmImfFuzzTest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -283,7 +283,7 @@
 			files = (
 				2A6D522B15CED68F006BADE7 /* libIlmBase.a in Frameworks */,
 				2A6D522C15CED68F006BADE7 /* libOpenEXR.a in Frameworks */,
-				2A6D522D15CED68F006BADE7 /* libzlib.a in Frameworks */,
+				2AD7C1D5175FAEBC00875616 /* libzlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +293,7 @@
 			files = (
 				2A6D51D415CED457006BADE7 /* libIlmBase.a in Frameworks */,
 				2A6D51D515CED458006BADE7 /* libOpenEXR.a in Frameworks */,
-				2A6D51D615CED459006BADE7 /* libzlib.a in Frameworks */,
+				2AD7C1D4175FAEB900875616 /* libzlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,10 +472,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A6D51C315CED452006BADE7 /* Products */ = {
+		2AD7C1CD175FAEB600875616 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2A6D51D315CED452006BADE7 /* libzlib.a */,
+				2AD7C1D1175FAEB600875616 /* libzlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -494,8 +494,8 @@
 			);
 			dependencies = (
 				2A6D520315CED68F006BADE7 /* PBXTargetDependency */,
-				2A6D520515CED68F006BADE7 /* PBXTargetDependency */,
 				2A6D520715CED68F006BADE7 /* PBXTargetDependency */,
+				2AD7C1D7175FAEC200875616 /* PBXTargetDependency */,
 			);
 			name = IlmImfFuzzTest;
 			productInstallPath = "$(HOME)/bin";
@@ -514,8 +514,8 @@
 			);
 			dependencies = (
 				2A6D51D815CED464006BADE7 /* PBXTargetDependency */,
-				2A6D51DA15CED464006BADE7 /* PBXTargetDependency */,
 				2A6D51DC15CED464006BADE7 /* PBXTargetDependency */,
+				2AD7C1D9175FAEC900875616 /* PBXTargetDependency */,
 			);
 			name = IlmImfTest;
 			productInstallPath = "$(HOME)/bin";
@@ -550,7 +550,7 @@
 					ProjectRef = 2A6D51BC15CED452006BADE7 /* OpenEXR.xcodeproj */;
 				},
 				{
-					ProductGroup = 2A6D51C315CED452006BADE7 /* Products */;
+					ProductGroup = 2AD7C1CD175FAEB600875616 /* Products */;
 					ProjectRef = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
 				},
 			);
@@ -591,11 +591,11 @@
 			remoteRef = 2A6D51CF15CED452006BADE7 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		2A6D51D315CED452006BADE7 /* libzlib.a */ = {
+		2AD7C1D1175FAEB600875616 /* libzlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libzlib.a;
-			remoteRef = 2A6D51D215CED452006BADE7 /* PBXContainerItemProxy */;
+			remoteRef = 2AD7C1D0175FAEB600875616 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -680,11 +680,6 @@
 			name = IlmBase;
 			targetProxy = 2A6D51D715CED464006BADE7 /* PBXContainerItemProxy */;
 		};
-		2A6D51DA15CED464006BADE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = zlib;
-			targetProxy = 2A6D51D915CED464006BADE7 /* PBXContainerItemProxy */;
-		};
 		2A6D51DC15CED464006BADE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OpenEXR;
@@ -695,15 +690,20 @@
 			name = IlmBase;
 			targetProxy = 2A6D520415CED68F006BADE7 /* PBXContainerItemProxy */;
 		};
-		2A6D520515CED68F006BADE7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = zlib;
-			targetProxy = 2A6D520615CED68F006BADE7 /* PBXContainerItemProxy */;
-		};
 		2A6D520715CED68F006BADE7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = OpenEXR;
 			targetProxy = 2A6D520815CED68F006BADE7 /* PBXContainerItemProxy */;
+		};
+		2AD7C1D7175FAEC200875616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib;
+			targetProxy = 2AD7C1D6175FAEC200875616 /* PBXContainerItemProxy */;
+		};
+		2AD7C1D9175FAEC900875616 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = zlib;
+			targetProxy = 2AD7C1D8175FAEC900875616 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
