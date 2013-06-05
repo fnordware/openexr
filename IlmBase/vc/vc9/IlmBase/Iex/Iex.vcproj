@@ -23,7 +23,7 @@
 			Name="Debug|Win32"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -46,7 +46,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\..\Iex;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;WIN32;_DEBUG;_WINDOWS;_USRDLL;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -68,24 +68,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Iex.dll"
-				LinkIncremental="2"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/Iex.pdb"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Iex.lib"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -97,9 +83,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -108,7 +91,7 @@
 			Name="Debug|x64"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -132,7 +115,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\..\Iex;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;WIN64;_DEBUG;_WINDOWS;_USRDLL;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -154,24 +137,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Iex.dll"
-				LinkIncremental="2"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/Iex.pdb"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Iex.lib"
-				TargetMachine="17"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -183,9 +152,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -194,7 +160,7 @@
 			Name="Release|Win32"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -216,7 +182,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories="..\..\..\..\Iex;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;WIN32;NDEBUG;_WINDOWS;_USRDLL;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="2"
 				EnableEnhancedInstructionSet="2"
@@ -237,25 +203,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Iex.dll"
-				LinkIncremental="1"
-				GenerateDebugInformation="true"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				OptimizeReferences="1"
-				EnableCOMDATFolding="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Iex.lib"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -267,9 +218,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -278,7 +226,7 @@
 			Name="Release|x64"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -301,7 +249,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories="..\..\..\..\Iex;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;WIN64;NDEBUG;_WINDOWS;_USRDLL;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;IEX_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="2"
 				EnableEnhancedInstructionSet="2"
@@ -322,25 +270,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Iex.dll"
-				LinkIncremental="1"
-				GenerateDebugInformation="true"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				OptimizeReferences="1"
-				EnableCOMDATFolding="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Iex.lib"
-				TargetMachine="17"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -350,9 +283,6 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"

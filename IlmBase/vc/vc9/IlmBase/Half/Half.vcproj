@@ -23,7 +23,7 @@
 			Name="Debug|Win32"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -48,7 +48,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\..\Half;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;OPENEXR_DLL;WIN32;_DEBUG;_WINDOWS;_USRDLL;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -70,24 +70,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Half.dll"
-				LinkIncremental="2"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/Half.pdb"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Half.lib"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -99,9 +85,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -110,7 +93,7 @@
 			Name="Debug|x64"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -136,7 +119,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="..\..\..\..\Half;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;OPENEXR_DLL;WIN64;_DEBUG;_WINDOWS;_USRDLL;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
 				RuntimeLibrary="3"
@@ -158,24 +141,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Half.dll"
-				LinkIncremental="2"
-				GenerateDebugInformation="true"
-				ProgramDatabaseFile="$(OutDir)/Half.pdb"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Half.lib"
-				TargetMachine="17"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -187,9 +156,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -198,7 +164,7 @@
 			Name="Release|Win32"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -222,7 +188,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories="..\..\..\..\Half;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;OPENEXR_DLL;WIN32;NDEBUG;_WINDOWS;_USRDLL;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;HALF_EXPORTS;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableEnhancedInstructionSet="2"
 				ForceConformanceInForLoopScope="true"
@@ -242,25 +208,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Half.dll"
-				LinkIncremental="1"
-				GenerateDebugInformation="true"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				OptimizeReferences="1"
-				EnableCOMDATFolding="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Half.lib"
-				TargetMachine="1"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -272,9 +223,6 @@
 				Name="VCFxCopTool"
 			/>
 			<Tool
-				Name="VCAppVerifierTool"
-			/>
-			<Tool
 				Name="VCPostBuildEventTool"
 				CommandLine=""
 			/>
@@ -283,7 +231,7 @@
 			Name="Release|x64"
 			OutputDirectory="..\$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
-			ConfigurationType="2"
+			ConfigurationType="4"
 			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
 			>
@@ -308,7 +256,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				AdditionalIncludeDirectories="..\..\..\..\Half;..\..\..\..\config.windows"
-				PreprocessorDefinitions="PLATFORM_WINDOWS;OPENEXR_DLL;HALF_EXPORTS;WIN64;NDEBUG;_WINDOWS;_USRDLL;_CRT_SECURE_NO_WARNINGS"
+				PreprocessorDefinitions="PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;HALF_EXPORTS;WIN64;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS"
 				RuntimeLibrary="2"
 				EnableEnhancedInstructionSet="2"
 				ForceConformanceInForLoopScope="true"
@@ -328,25 +276,10 @@
 				Name="VCPreLinkEventTool"
 			/>
 			<Tool
-				Name="VCLinkerTool"
-				OutputFile="$(OutDir)/Half.dll"
-				LinkIncremental="1"
-				GenerateDebugInformation="true"
-				GenerateMapFile="true"
-				MapExports="true"
-				SubSystem="2"
-				OptimizeReferences="1"
-				EnableCOMDATFolding="2"
-				RandomizedBaseAddress="1"
-				DataExecutionPrevention="0"
-				ImportLibrary="$(OutDir)/Half.lib"
-				TargetMachine="17"
+				Name="VCLibrarianTool"
 			/>
 			<Tool
 				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCManifestTool"
 			/>
 			<Tool
 				Name="VCXDCMakeTool"
@@ -356,9 +289,6 @@
 			/>
 			<Tool
 				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCAppVerifierTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
