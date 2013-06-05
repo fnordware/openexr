@@ -79,7 +79,7 @@
 		08FB7794FE84155DC02AAC07 /* zlib */ = {
 			isa = PBXGroup;
 			children = (
-				2A6D4E7A15CEC7F6006BADE7 /* zlib-1.2.7 */,
+				2A6D4E7A15CEC7F6006BADE7 /* zlib */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
 			name = zlib;
@@ -93,7 +93,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2A6D4E7A15CEC7F6006BADE7 /* zlib-1.2.7 */ = {
+		2A6D4E7A15CEC7F6006BADE7 /* zlib */ = {
 			isa = PBXGroup;
 			children = (
 				2A6D4E7B15CEC839006BADE7 /* adler32.c */,
@@ -123,8 +123,8 @@
 				2A6D4E9315CEC839006BADE7 /* zutil.c */,
 				2A6D4E9415CEC839006BADE7 /* zutil.h */,
 			);
-			name = "zlib-1.2.7";
-			path = "../../../zlib-1.2.7";
+			name = zlib;
+			path = ../../../zlib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
