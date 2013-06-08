@@ -52,7 +52,23 @@ static bool GLOBAL_SYSTEM_LITTLE_ENDIAN =
 
 #ifdef IMF_HAVE_SSE2
 
-#ifdef __GNUC__
+#ifdef __APPLE__
+
+#define EXR_FORCEINLINE inline
+#define EXR_RESTRICT __restrict
+
+static void* EXRAllocAligned(size_t size, size_t alignment)
+{
+    return _mm_malloc(size, alignment);
+}
+
+
+static void EXRFreeAligned(void* ptr)
+{
+    _mm_free(ptr);
+}
+
+#elif defined __GNUC__
 // Causes issues on certain gcc versions
 //#define EXR_FORCEINLINE inline __attribute__((always_inline))
 #define EXR_FORCEINLINE inline
