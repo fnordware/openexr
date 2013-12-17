@@ -172,17 +172,17 @@ InputFile::Data::deleteCachedBuffer()
 
 	    switch (s.type)
 	    {
-	      case UINT:
+	      case OPENEXR_IMF_INTERNAL_NAMESPACE::UINT:
 
 		delete [] (((unsigned int *)s.base) + offset);
 		break;
 
-	      case HALF:
+	      case OPENEXR_IMF_INTERNAL_NAMESPACE::HALF:
 
 		delete [] ((half *)s.base + offset);
 		break;
 
-	      case FLOAT:
+	      case OPENEXR_IMF_INTERNAL_NAMESPACE::FLOAT:
 
 		delete [] (((float *)s.base) + offset);
 		break;
@@ -366,6 +366,17 @@ InputFile::InputFile (const char fileName[], int numThreads):
             _data->_streamData = new InputStreamMutex();
             _data->_streamData->is = is;
             _data->header.readFrom (*_data->_streamData->is, _data->version);
+            
+            // fix type attribute in single part regular image types
+            // (may be wrong if an old version of OpenEXR converts
+            // a tiled image to scanline or vice versa)
+            if(!isNonImage(_data->version)  && 
+               !isMultiPart(_data->version) && 
+               _data->header.hasType())
+            {
+                _data->header.setType(isTiled(_data->version) ? TILEDIMAGE : SCANLINEIMAGE);
+            }
+            
             _data->header.sanityCheck (isTiled (_data->version));
 
             initialize();
@@ -423,6 +434,17 @@ InputFile::InputFile (OPENEXR_IMF_INTERNAL_NAMESPACE::IStream &is, int numThread
             _data->_streamData = new InputStreamMutex();
             _data->_streamData->is = &is;
             _data->header.readFrom (*_data->_streamData->is, _data->version);
+            
+            // fix type attribute in single part regular image types
+            // (may be wrong if an old version of OpenEXR converts
+            // a tiled image to scanline or vice versa)
+            if(!isNonImage(_data->version)  && 
+               !isMultiPart(_data->version) &&  
+               _data->header.hasType())
+            {
+                _data->header.setType(isTiled(_data->version) ? TILEDIMAGE : SCANLINEIMAGE);
+            }
+            
             _data->header.sanityCheck (isTiled (_data->version));
 
             initialize();
@@ -492,7 +514,6 @@ InputFile::initialize ()
 {
     if (!_data->part)
     {
-        
         if(_data->header.hasType() && _data->header.type()==DEEPSCANLINE)
         {
             _data->isTiled=false;
@@ -669,7 +690,7 @@ InputFile::setFrameBuffer (const FrameBuffer &frameBuffer)
 
 		switch (s.type)
 		{
-		  case UINT:
+		  case OPENEXR_IMF_INTERNAL_NAMESPACE::UINT:
 
 		    _data->cachedBuffer->insert
 			(k.name(),
@@ -684,7 +705,7 @@ InputFile::setFrameBuffer (const FrameBuffer &frameBuffer)
 				false, true));
 		    break;
 
-		  case HALF:
+		  case OPENEXR_IMF_INTERNAL_NAMESPACE::HALF:
 
 		    _data->cachedBuffer->insert
 			(k.name(),
@@ -699,11 +720,11 @@ InputFile::setFrameBuffer (const FrameBuffer &frameBuffer)
 				false, true));
 		    break;
 
-		  case FLOAT:
+		  case OPENEXR_IMF_INTERNAL_NAMESPACE::FLOAT:
 
 		    _data->cachedBuffer->insert
 			(k.name(),
-			 Slice (FLOAT,
+			 Slice (OPENEXR_IMF_INTERNAL_NAMESPACE::FLOAT,
 				(char *)(new float[tileRowSize] - 
 					_data->offset),
 				sizeof(float),

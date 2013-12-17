@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
-AC_INIT(PyIlmBase, 2.0.0)
-AC_SUBST(PYILMBASE_VERSION, 2.0.0)
+AC_INIT(PyIlmBase, 2.1.0)
+AC_SUBST(PYILMBASE_VERSION, 2.1.0)
 AC_CANONICAL_HOST
 AC_CONFIG_SRCDIR(PyIex/iexmodule.cpp)
 AC_CONFIG_HEADER(config/PyIlmBaseConfig.h)
@@ -11,7 +11,7 @@ AC_DISABLE_STATIC
 
 
 LIBTOOL_CURRENT=2
-LIBTOOL_REVISION=0
+LIBTOOL_REVISION=1
 LIBTOOL_AGE=0
 LIBTOOL_VERSION=$LIBTOOL_CURRENT:$LIBTOOL_REVISION:$LIBTOOL_AGE
 AC_SUBST(LIBTOOL_VERSION)
@@ -63,6 +63,9 @@ AM_COMPILELINKRUN(
    ]],
    AC_MSG_RESULT([Compiled and ran IlmBase test program.]), 
    AC_MSG_ERROR([Could not compile IlmBase test program.]))
+
+LDFLAGS="$LDFLAGS $ILMBASE_LDFLAGS"
+
 
 dnl Checks for python and boost python
 AM_PATH_PYTHON
