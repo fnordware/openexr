@@ -193,6 +193,9 @@
 		2A6D4DC515CE04FD006BADE7 /* ImfAcesFile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4B3515CDEAA7006BADE7 /* ImfAcesFile.cpp */; };
 		2A6D4DE015CE0667006BADE7 /* IlmBaseConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6D4DDF15CE0667006BADE7 /* IlmBaseConfig.h */; };
 		2A6D4DE415CE068A006BADE7 /* OpenEXRConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6D4DE315CE068A006BADE7 /* OpenEXRConfig.h */; };
+		2AB1A00C1860208E001CD612 /* ImfDeepImageState.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB1A0091860208E001CD612 /* ImfDeepImageState.h */; };
+		2AB1A00D1860208E001CD612 /* ImfDeepImageStateAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2AB1A00A1860208E001CD612 /* ImfDeepImageStateAttribute.cpp */; };
+		2AB1A00E1860208E001CD612 /* ImfDeepImageStateAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB1A00B1860208E001CD612 /* ImfDeepImageStateAttribute.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -384,6 +387,9 @@
 		2A6D4BB715CDEAA7006BADE7 /* ImfZipCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfZipCompressor.h; sourceTree = "<group>"; };
 		2A6D4DDF15CE0667006BADE7 /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IlmBaseConfig.h; path = ../../../IlmBase/xcode/xcode3/IlmBaseConfig.h; sourceTree = SOURCE_ROOT; };
 		2A6D4DE315CE068A006BADE7 /* OpenEXRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEXRConfig.h; sourceTree = "<group>"; };
+		2AB1A0091860208E001CD612 /* ImfDeepImageState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfDeepImageState.h; sourceTree = "<group>"; };
+		2AB1A00A1860208E001CD612 /* ImfDeepImageStateAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfDeepImageStateAttribute.cpp; sourceTree = "<group>"; };
+		2AB1A00B1860208E001CD612 /* ImfDeepImageStateAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfDeepImageStateAttribute.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -427,6 +433,9 @@
 		2A6D4B3115CDEAA7006BADE7 /* IlmImf */ = {
 			isa = PBXGroup;
 			children = (
+				2AB1A0091860208E001CD612 /* ImfDeepImageState.h */,
+				2AB1A00A1860208E001CD612 /* ImfDeepImageStateAttribute.cpp */,
+				2AB1A00B1860208E001CD612 /* ImfDeepImageStateAttribute.h */,
 				2A45852516F92168005E07DE /* ImfOptimizedPixelReading.h */,
 				2A45852616F92168005E07DE /* ImfPartHelper.h */,
 				2A4D277115CF122E007CAFAC /* ImfTiledOutputPart.cpp */,
@@ -728,6 +737,8 @@
 				2A45852716F92168005E07DE /* ImfOptimizedPixelReading.h in Headers */,
 				2A45852816F92168005E07DE /* ImfPartHelper.h in Headers */,
 				2A45854616F9243F005E07DE /* ImfSystemSpecific.h in Headers */,
+				2AB1A00C1860208E001CD612 /* ImfDeepImageState.h in Headers */,
+				2AB1A00E1860208E001CD612 /* ImfDeepImageStateAttribute.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -863,6 +874,7 @@
 				2A4D270F15CF108E007CAFAC /* ImfPartType.cpp in Sources */,
 				2A4D271115CF108E007CAFAC /* ImfTiledInputPart.cpp in Sources */,
 				2A4D277315CF122E007CAFAC /* ImfTiledOutputPart.cpp in Sources */,
+				2AB1A00D1860208E001CD612 /* ImfDeepImageStateAttribute.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
