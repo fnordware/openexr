@@ -368,6 +368,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDeepImageStateAttribute.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfDeepScanLineInputFile.cpp"
 				>
 			</File>
@@ -707,6 +711,14 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfDeepFrameBuffer.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDeepImageState.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDeepImageStateAttribute.h"
 				>
 			</File>
 			<File
