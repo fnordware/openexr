@@ -30,7 +30,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd Debug"
+				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName)\$(ConfigurationName)"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -101,7 +101,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd Debug"
+				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName) $(ConfigurationName)"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -173,7 +173,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd"
+				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName) $(ConfigurationName)"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -243,7 +243,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd"
+				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName) $(ConfigurationName)"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -311,6 +311,10 @@
 			Filter="cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx"
 			UniqueIdentifier="{4FC737F1-C7A5-4376-A066-2A32D752A2FF}"
 			>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfAcesFile.cpp"
+				>
+			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfAttribute.cpp"
 				>
@@ -408,6 +412,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDwaCompressor.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfEnvmap.cpp"
 				>
 			</File>
@@ -416,7 +424,15 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfFastHuf.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfFloatAttribute.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfFloatVectorAttribute.cpp"
 				>
 			</File>
 			<File
@@ -552,6 +568,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfRle.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfRleCompressor.cpp"
 				>
 			</File>
@@ -573,6 +593,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfStringVectorAttribute.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfSystemSpecific.cpp"
 				>
 			</File>
 			<File
@@ -636,6 +660,10 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfZip.cpp"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfZipCompressor.cpp"
 				>
 			</File>
@@ -645,6 +673,10 @@
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfAcesFile.h"
+				>
+			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfArray.h"
 				>
@@ -671,6 +703,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfChannelListAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfCheckedArithmetic.h"
 				>
 			</File>
 			<File
@@ -758,6 +794,14 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDwaCompressor.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfDwaCompressorSimd.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfEnvmap.h"
 				>
 			</File>
@@ -766,7 +810,23 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfExport.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfFastHuf.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfFloatAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfFloatVectorAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfForward.h"
 				>
 			</File>
 			<File
@@ -803,6 +863,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfInputPartData.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfInputStreamMutex.h"
 				>
 			</File>
 			<File
@@ -862,7 +926,15 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfNamespace.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfOpaqueAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfOptimizedPixelReading.h"
 				>
 			</File>
 			<File
@@ -875,6 +947,14 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfOutputPartData.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfOutputStreamMutex.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfPartHelper.h"
 				>
 			</File>
 			<File
@@ -922,11 +1002,19 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\..\..\IlmImf\ImfRle.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\..\..\IlmImf\ImfRleCompressor.h"
 				>
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfScanLineInputFile.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfSimd.h"
 				>
 			</File>
 			<File
@@ -943,6 +1031,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfStringVectorAttribute.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfSystemSpecific.h"
 				>
 			</File>
 			<File
@@ -1011,6 +1103,10 @@
 			</File>
 			<File
 				RelativePath="..\..\..\..\IlmImf\ImfXdr.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\..\..\IlmImf\ImfZip.h"
 				>
 			</File>
 			<File
