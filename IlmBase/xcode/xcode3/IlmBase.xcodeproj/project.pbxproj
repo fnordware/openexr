@@ -529,7 +529,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "$TARGET_BUILD_DIR/toFloat > $SRCROOT/../../Half/toFloat.h\n$TARGET_BUILD_DIR/eLut > $SRCROOT/../../Half/eLut.h\n";
+			shellScript = "if [ ! -e $SRCROOT/../../Half/toFloat.h ]\nthen\n\t$TARGET_BUILD_DIR/toFloat > $SRCROOT/../../Half/toFloat.h\nfi\n\nif [ ! -e $SRCROOT/../../Half/eLut.h ]\nthen\n\t$TARGET_BUILD_DIR/eLut > $SRCROOT/../../Half/eLut.h\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 

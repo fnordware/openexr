@@ -28,6 +28,9 @@
 		2A4D275215CF10F7007CAFAC /* testMultiPartThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D274015CF10F7007CAFAC /* testMultiPartThreading.cpp */; };
 		2A4D275315CF10F7007CAFAC /* testMultiScanlinePartThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D274215CF10F7007CAFAC /* testMultiScanlinePartThreading.cpp */; };
 		2A4D275415CF10F7007CAFAC /* testMultiTiledPartThreading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D274415CF10F7007CAFAC /* testMultiTiledPartThreading.cpp */; };
+		2A588CCC197879C0000D94D0 /* compareDwa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588CC6197879C0000D94D0 /* compareDwa.cpp */; };
+		2A588CCD197879C0000D94D0 /* testDwaCompressorSimd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588CC8197879C0000D94D0 /* testDwaCompressorSimd.cpp */; };
+		2A588CCE197879C0000D94D0 /* testRle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588CCA197879C0000D94D0 /* testRle.cpp */; };
 		2A6A51361707DCDA001DC5E6 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6A512F1707DCBC001DC5E6 /* libzlib.a */; };
 		2A6A51371707DCE2001DC5E6 /* libzlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6A512F1707DCBC001DC5E6 /* libzlib.a */; };
 		2A6D519315CED364006BADE7 /* compareFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D514915CED364006BADE7 /* compareFloat.cpp */; };
@@ -75,6 +78,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A588CB919787998000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D51BC15CED452006BADE7 /* OpenEXR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A588C1A19787559000D94D0 /* b44ExpLogTable */;
+			remoteInfo = b44ExpLogTable;
+		};
+		2A588CBB19787998000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A6D51BC15CED452006BADE7 /* OpenEXR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A588C3C197875C2000D94D0 /* dwaLookups */;
+			remoteInfo = dwaLookups;
+		};
 		2A6A512E1707DCBC001DC5E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A6D51C215CED452006BADE7 /* zlib.xcodeproj */;
@@ -197,6 +214,12 @@
 		2A4D274315CF10F7007CAFAC /* testMultiScanlinePartThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testMultiScanlinePartThreading.h; sourceTree = "<group>"; };
 		2A4D274415CF10F7007CAFAC /* testMultiTiledPartThreading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testMultiTiledPartThreading.cpp; sourceTree = "<group>"; };
 		2A4D274515CF10F7007CAFAC /* testMultiTiledPartThreading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testMultiTiledPartThreading.h; sourceTree = "<group>"; };
+		2A588CC6197879C0000D94D0 /* compareDwa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = compareDwa.cpp; sourceTree = "<group>"; };
+		2A588CC7197879C0000D94D0 /* compareDwa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compareDwa.h; sourceTree = "<group>"; };
+		2A588CC8197879C0000D94D0 /* testDwaCompressorSimd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testDwaCompressorSimd.cpp; sourceTree = "<group>"; };
+		2A588CC9197879C0000D94D0 /* testDwaCompressorSimd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testDwaCompressorSimd.h; sourceTree = "<group>"; };
+		2A588CCA197879C0000D94D0 /* testRle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testRle.cpp; sourceTree = "<group>"; };
+		2A588CCB197879C0000D94D0 /* testRle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testRle.h; sourceTree = "<group>"; };
 		2A6D513515CED363006BADE7 /* fuzzFile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fuzzFile.cpp; sourceTree = "<group>"; };
 		2A6D513615CED363006BADE7 /* fuzzFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fuzzFile.h; sourceTree = "<group>"; };
 		2A6D513715CED363006BADE7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -361,6 +384,12 @@
 		2A6D513E15CED363006BADE7 /* IlmImfTest */ = {
 			isa = PBXGroup;
 			children = (
+				2A588CC6197879C0000D94D0 /* compareDwa.cpp */,
+				2A588CC7197879C0000D94D0 /* compareDwa.h */,
+				2A588CC8197879C0000D94D0 /* testDwaCompressorSimd.cpp */,
+				2A588CC9197879C0000D94D0 /* testDwaCompressorSimd.h */,
+				2A588CCA197879C0000D94D0 /* testRle.cpp */,
+				2A588CCB197879C0000D94D0 /* testRle.h */,
 				2AB1A07818602360001CD612 /* testBadTypeAttributes.cpp */,
 				2AB1A07918602360001CD612 /* testBadTypeAttributes.h */,
 				2AB1A07A18602360001CD612 /* testOptimizedInterleavePatterns.cpp */,
@@ -476,6 +505,8 @@
 			isa = PBXGroup;
 			children = (
 				2A6D51C715CED452006BADE7 /* libOpenEXR.a */,
+				2A588CBA19787998000D94D0 /* b44ExpLogTable */,
+				2A588CBC19787998000D94D0 /* dwaLookups */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -573,6 +604,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2A588CBA19787998000D94D0 /* b44ExpLogTable */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = b44ExpLogTable;
+			remoteRef = 2A588CB919787998000D94D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A588CBC19787998000D94D0 /* dwaLookups */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwaLookups;
+			remoteRef = 2A588CBB19787998000D94D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		2A6A512F1707DCBC001DC5E6 /* libzlib.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -681,6 +726,9 @@
 				2A45834C16F91EB4005E07DE /* testOptimized.cpp in Sources */,
 				2AB1A07C18602360001CD612 /* testBadTypeAttributes.cpp in Sources */,
 				2AB1A07D18602360001CD612 /* testOptimizedInterleavePatterns.cpp in Sources */,
+				2A588CCC197879C0000D94D0 /* compareDwa.cpp in Sources */,
+				2A588CCD197879C0000D94D0 /* testDwaCompressorSimd.cpp in Sources */,
+				2A588CCE197879C0000D94D0 /* testRle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

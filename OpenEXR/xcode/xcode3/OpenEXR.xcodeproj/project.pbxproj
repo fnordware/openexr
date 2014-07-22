@@ -59,6 +59,24 @@
 		2A4D271215CF108E007CAFAC /* ImfTiledInputPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4D26E315CF108E007CAFAC /* ImfTiledInputPart.h */; };
 		2A4D277315CF122E007CAFAC /* ImfTiledOutputPart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D277115CF122E007CAFAC /* ImfTiledOutputPart.cpp */; };
 		2A4D277415CF122E007CAFAC /* ImfTiledOutputPart.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4D277215CF122E007CAFAC /* ImfTiledOutputPart.h */; };
+		2A588C0B19787530000D94D0 /* ImfDwaCompressor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588BFE19787530000D94D0 /* ImfDwaCompressor.cpp */; };
+		2A588C0C19787530000D94D0 /* ImfDwaCompressor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588BFF19787530000D94D0 /* ImfDwaCompressor.h */; };
+		2A588C0D19787530000D94D0 /* ImfDwaCompressorSimd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0019787530000D94D0 /* ImfDwaCompressorSimd.h */; };
+		2A588C0E19787530000D94D0 /* ImfFastHuf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588C0119787530000D94D0 /* ImfFastHuf.cpp */; };
+		2A588C0F19787530000D94D0 /* ImfFastHuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0219787530000D94D0 /* ImfFastHuf.h */; };
+		2A588C1019787530000D94D0 /* ImfFloatVectorAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588C0319787530000D94D0 /* ImfFloatVectorAttribute.cpp */; };
+		2A588C1119787530000D94D0 /* ImfFloatVectorAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0419787530000D94D0 /* ImfFloatVectorAttribute.h */; };
+		2A588C1219787530000D94D0 /* ImfRle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588C0519787530000D94D0 /* ImfRle.cpp */; };
+		2A588C1319787530000D94D0 /* ImfRle.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0619787530000D94D0 /* ImfRle.h */; };
+		2A588C1419787530000D94D0 /* ImfSimd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0719787530000D94D0 /* ImfSimd.h */; };
+		2A588C1519787530000D94D0 /* ImfZip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588C0819787530000D94D0 /* ImfZip.cpp */; };
+		2A588C1619787530000D94D0 /* ImfZip.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C0919787530000D94D0 /* ImfZip.h */; };
+		2A588C1F1978756D000D94D0 /* b44ExpLogTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4B3315CDEAA7006BADE7 /* b44ExpLogTable.cpp */; };
+		2A588C3419787590000D94D0 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A588C2E1978758B000D94D0 /* libIlmBase.a */; };
+		2A588C40197875DB000D94D0 /* libIlmBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A588C2E1978758B000D94D0 /* libIlmBase.a */; };
+		2A588C43197875EC000D94D0 /* dwaLookups.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588BFD19787530000D94D0 /* dwaLookups.cpp */; };
+		2A588C6119787919000D94D0 /* dwaLookups.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A588C5F19787919000D94D0 /* dwaLookups.h */; };
+		2A588C6219787919000D94D0 /* ImfSystemSpecific.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A588C6019787919000D94D0 /* ImfSystemSpecific.cpp */; };
 		2A6D4BBA15CDEAA7006BADE7 /* b44ExpLogTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6D4B3415CDEAA7006BADE7 /* b44ExpLogTable.h */; };
 		2A6D4BBD15CDEAA7006BADE7 /* ImfArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A6D4B3715CDEAA7006BADE7 /* ImfArray.h */; };
 		2A6D4BBE15CDEAA7006BADE7 /* ImfAttribute.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D4B3815CDEAA7006BADE7 /* ImfAttribute.cpp */; };
@@ -198,6 +216,58 @@
 		2AB1A0651860234E001CD612 /* ImfDeepImageStateAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AB1A0621860234E001CD612 /* ImfDeepImageStateAttribute.h */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2A588C2D1978758B000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6D4C4D15CDEB0A006BADE7;
+			remoteInfo = IlmBase;
+		};
+		2A588C2F1978758B000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6D4CFF15CDEBEF006BADE7;
+			remoteInfo = eLut;
+		};
+		2A588C311978758B000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A6D4D3715CDF275006BADE7;
+			remoteInfo = toFloat;
+		};
+		2A588C351978759A000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
+			remoteInfo = IlmBase;
+		};
+		2A588C41197875E5000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
+			remoteInfo = IlmBase;
+		};
+		2A588C4919787649000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A588C1919787559000D94D0;
+			remoteInfo = b44ExpLogTable;
+		};
+		2A588C4B19787649000D94D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A588C3B197875C2000D94D0;
+			remoteInfo = dwaLookups;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2A45852516F92168005E07DE /* ImfOptimizedPixelReading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfOptimizedPixelReading.h; sourceTree = "<group>"; };
 		2A45852616F92168005E07DE /* ImfPartHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfPartHelper.h; sourceTree = "<group>"; };
@@ -251,6 +321,24 @@
 		2A4D26E315CF108E007CAFAC /* ImfTiledInputPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledInputPart.h; sourceTree = "<group>"; };
 		2A4D277115CF122E007CAFAC /* ImfTiledOutputPart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfTiledOutputPart.cpp; sourceTree = "<group>"; };
 		2A4D277215CF122E007CAFAC /* ImfTiledOutputPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfTiledOutputPart.h; sourceTree = "<group>"; };
+		2A588BFD19787530000D94D0 /* dwaLookups.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = dwaLookups.cpp; sourceTree = "<group>"; };
+		2A588BFE19787530000D94D0 /* ImfDwaCompressor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfDwaCompressor.cpp; sourceTree = "<group>"; };
+		2A588BFF19787530000D94D0 /* ImfDwaCompressor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfDwaCompressor.h; sourceTree = "<group>"; };
+		2A588C0019787530000D94D0 /* ImfDwaCompressorSimd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfDwaCompressorSimd.h; sourceTree = "<group>"; };
+		2A588C0119787530000D94D0 /* ImfFastHuf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfFastHuf.cpp; sourceTree = "<group>"; };
+		2A588C0219787530000D94D0 /* ImfFastHuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfFastHuf.h; sourceTree = "<group>"; };
+		2A588C0319787530000D94D0 /* ImfFloatVectorAttribute.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfFloatVectorAttribute.cpp; sourceTree = "<group>"; };
+		2A588C0419787530000D94D0 /* ImfFloatVectorAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfFloatVectorAttribute.h; sourceTree = "<group>"; };
+		2A588C0519787530000D94D0 /* ImfRle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfRle.cpp; sourceTree = "<group>"; };
+		2A588C0619787530000D94D0 /* ImfRle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfRle.h; sourceTree = "<group>"; };
+		2A588C0719787530000D94D0 /* ImfSimd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfSimd.h; sourceTree = "<group>"; };
+		2A588C0819787530000D94D0 /* ImfZip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfZip.cpp; sourceTree = "<group>"; };
+		2A588C0919787530000D94D0 /* ImfZip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImfZip.h; sourceTree = "<group>"; };
+		2A588C1A19787559000D94D0 /* b44ExpLogTable */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = b44ExpLogTable; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A588C221978758B000D94D0 /* IlmBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IlmBase.xcodeproj; path = ../../../IlmBase/xcode/xcode3/IlmBase.xcodeproj; sourceTree = SOURCE_ROOT; };
+		2A588C3C197875C2000D94D0 /* dwaLookups */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dwaLookups; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A588C5F19787919000D94D0 /* dwaLookups.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dwaLookups.h; sourceTree = "<group>"; };
+		2A588C6019787919000D94D0 /* ImfSystemSpecific.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ImfSystemSpecific.cpp; sourceTree = "<group>"; };
 		2A6D4B1515CDE3DE006BADE7 /* libOpenEXR.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenEXR.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6D4B3315CDEAA7006BADE7 /* b44ExpLogTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b44ExpLogTable.cpp; sourceTree = "<group>"; };
 		2A6D4B3415CDEAA7006BADE7 /* b44ExpLogTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b44ExpLogTable.h; sourceTree = "<group>"; };
@@ -393,6 +481,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2A588C1819787559000D94D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A588C3419787590000D94D0 /* libIlmBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A588C3A197875C2000D94D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A588C40197875DB000D94D0 /* libIlmBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A6D4B1315CDE3DE006BADE7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,6 +511,8 @@
 			isa = PBXGroup;
 			children = (
 				2A6D4B1515CDE3DE006BADE7 /* libOpenEXR.a */,
+				2A588C1A19787559000D94D0 /* b44ExpLogTable */,
+				2A588C3C197875C2000D94D0 /* dwaLookups */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -417,6 +523,7 @@
 				2A6D4DE315CE068A006BADE7 /* OpenEXRConfig.h */,
 				2A6D4DDF15CE0667006BADE7 /* IlmBaseConfig.h */,
 				2A6D4B3115CDEAA7006BADE7 /* IlmImf */,
+				2A588C221978758B000D94D0 /* IlmBase.xcodeproj */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				034768DDFF38A45A11DB9C8B /* Products */,
 			);
@@ -430,9 +537,34 @@
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
+		2A588C231978758B000D94D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A588C2E1978758B000D94D0 /* libIlmBase.a */,
+				2A588C301978758B000D94D0 /* eLut */,
+				2A588C321978758B000D94D0 /* toFloat */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		2A6D4B3115CDEAA7006BADE7 /* IlmImf */ = {
 			isa = PBXGroup;
 			children = (
+				2A588C5F19787919000D94D0 /* dwaLookups.h */,
+				2A588C6019787919000D94D0 /* ImfSystemSpecific.cpp */,
+				2A588BFD19787530000D94D0 /* dwaLookups.cpp */,
+				2A588BFE19787530000D94D0 /* ImfDwaCompressor.cpp */,
+				2A588BFF19787530000D94D0 /* ImfDwaCompressor.h */,
+				2A588C0019787530000D94D0 /* ImfDwaCompressorSimd.h */,
+				2A588C0119787530000D94D0 /* ImfFastHuf.cpp */,
+				2A588C0219787530000D94D0 /* ImfFastHuf.h */,
+				2A588C0319787530000D94D0 /* ImfFloatVectorAttribute.cpp */,
+				2A588C0419787530000D94D0 /* ImfFloatVectorAttribute.h */,
+				2A588C0519787530000D94D0 /* ImfRle.cpp */,
+				2A588C0619787530000D94D0 /* ImfRle.h */,
+				2A588C0719787530000D94D0 /* ImfSimd.h */,
+				2A588C0819787530000D94D0 /* ImfZip.cpp */,
+				2A588C0919787530000D94D0 /* ImfZip.h */,
 				2AB1A0601860234E001CD612 /* ImfDeepImageState.h */,
 				2AB1A0611860234E001CD612 /* ImfDeepImageStateAttribute.cpp */,
 				2AB1A0621860234E001CD612 /* ImfDeepImageStateAttribute.h */,
@@ -739,16 +871,59 @@
 				2A45854616F9243F005E07DE /* ImfSystemSpecific.h in Headers */,
 				2AB1A0631860234E001CD612 /* ImfDeepImageState.h in Headers */,
 				2AB1A0651860234E001CD612 /* ImfDeepImageStateAttribute.h in Headers */,
+				2A588C0C19787530000D94D0 /* ImfDwaCompressor.h in Headers */,
+				2A588C0D19787530000D94D0 /* ImfDwaCompressorSimd.h in Headers */,
+				2A588C0F19787530000D94D0 /* ImfFastHuf.h in Headers */,
+				2A588C1119787530000D94D0 /* ImfFloatVectorAttribute.h in Headers */,
+				2A588C1319787530000D94D0 /* ImfRle.h in Headers */,
+				2A588C1419787530000D94D0 /* ImfSimd.h in Headers */,
+				2A588C1619787530000D94D0 /* ImfZip.h in Headers */,
+				2A588C6119787919000D94D0 /* dwaLookups.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2A588C1919787559000D94D0 /* b44ExpLogTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A588C331978758B000D94D0 /* Build configuration list for PBXNativeTarget "b44ExpLogTable" */;
+			buildPhases = (
+				2A588C1719787559000D94D0 /* Sources */,
+				2A588C1819787559000D94D0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A588C361978759A000D94D0 /* PBXTargetDependency */,
+			);
+			name = b44ExpLogTable;
+			productName = b44ExpLogTable;
+			productReference = 2A588C1A19787559000D94D0 /* b44ExpLogTable */;
+			productType = "com.apple.product-type.tool";
+		};
+		2A588C3B197875C2000D94D0 /* dwaLookups */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A588C461978760A000D94D0 /* Build configuration list for PBXNativeTarget "dwaLookups" */;
+			buildPhases = (
+				2A588C39197875C2000D94D0 /* Sources */,
+				2A588C3A197875C2000D94D0 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A588C42197875E5000D94D0 /* PBXTargetDependency */,
+			);
+			name = dwaLookups;
+			productName = dwaLookups;
+			productReference = 2A588C3C197875C2000D94D0 /* dwaLookups */;
+			productType = "com.apple.product-type.tool";
+		};
 		2A6D4B1415CDE3DE006BADE7 /* OpenEXR */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A6D4B1915CDE413006BADE7 /* Build configuration list for PBXNativeTarget "OpenEXR" */;
 			buildPhases = (
+				2A588C4E19787655000D94D0 /* Build Headers */,
 				2A6D4B1115CDE3DE006BADE7 /* Headers */,
 				2A6D4B1215CDE3DE006BADE7 /* Sources */,
 				2A6D4B1315CDE3DE006BADE7 /* Frameworks */,
@@ -756,6 +931,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				2A588C4A19787649000D94D0 /* PBXTargetDependency */,
+				2A588C4C19787649000D94D0 /* PBXTargetDependency */,
 			);
 			name = OpenEXR;
 			productName = OpenEXR;
@@ -780,14 +957,81 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* OpenEXR */;
 			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2A588C231978758B000D94D0 /* Products */;
+					ProjectRef = 2A588C221978758B000D94D0 /* IlmBase.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2A6D4B1415CDE3DE006BADE7 /* OpenEXR */,
+				2A588C1919787559000D94D0 /* b44ExpLogTable */,
+				2A588C3B197875C2000D94D0 /* dwaLookups */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		2A588C2E1978758B000D94D0 /* libIlmBase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libIlmBase.a;
+			remoteRef = 2A588C2D1978758B000D94D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A588C301978758B000D94D0 /* eLut */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = eLut;
+			remoteRef = 2A588C2F1978758B000D94D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A588C321978758B000D94D0 /* toFloat */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = toFloat;
+			remoteRef = 2A588C311978758B000D94D0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A588C4E19787655000D94D0 /* Build Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Headers";
+			outputPaths = (
+				"$(SRCROOT)/../../IlmImf/b44ExpLogTable.h",
+				"$(SRCROOT)/../../IlmImf/dwaLookups.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ ! -e $SRCROOT/../../IlmImf/b44ExpLogTable.h ]\nthen\n\t$TARGET_BUILD_DIR/b44ExpLogTable > $SRCROOT/../../IlmImf/b44ExpLogTable.h\nfi\n\nif [ ! -e $SRCROOT/../../IlmImf/dwaLookups.h ]\nthen\n\t$TARGET_BUILD_DIR/dwaLookups > $SRCROOT/../../IlmImf/dwaLookups.h\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		2A588C1719787559000D94D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A588C1F1978756D000D94D0 /* b44ExpLogTable.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A588C39197875C2000D94D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A588C43197875EC000D94D0 /* dwaLookups.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2A6D4B1215CDE3DE006BADE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -875,10 +1119,39 @@
 				2A4D271115CF108E007CAFAC /* ImfTiledInputPart.cpp in Sources */,
 				2A4D277315CF122E007CAFAC /* ImfTiledOutputPart.cpp in Sources */,
 				2AB1A0641860234E001CD612 /* ImfDeepImageStateAttribute.cpp in Sources */,
+				2A588C0B19787530000D94D0 /* ImfDwaCompressor.cpp in Sources */,
+				2A588C0E19787530000D94D0 /* ImfFastHuf.cpp in Sources */,
+				2A588C1019787530000D94D0 /* ImfFloatVectorAttribute.cpp in Sources */,
+				2A588C1219787530000D94D0 /* ImfRle.cpp in Sources */,
+				2A588C1519787530000D94D0 /* ImfZip.cpp in Sources */,
+				2A588C6219787919000D94D0 /* ImfSystemSpecific.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A588C361978759A000D94D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IlmBase;
+			targetProxy = 2A588C351978759A000D94D0 /* PBXContainerItemProxy */;
+		};
+		2A588C42197875E5000D94D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IlmBase;
+			targetProxy = 2A588C41197875E5000D94D0 /* PBXContainerItemProxy */;
+		};
+		2A588C4A19787649000D94D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A588C1919787559000D94D0 /* b44ExpLogTable */;
+			targetProxy = 2A588C4919787649000D94D0 /* PBXContainerItemProxy */;
+		};
+		2A588C4C19787649000D94D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A588C3B197875C2000D94D0 /* dwaLookups */;
+			targetProxy = 2A588C4B19787649000D94D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB916508733D950010E9CD /* Debug */ = {
@@ -920,6 +1193,62 @@
 			};
 			name = Release;
 		};
+		2A588C1C1978755A000D94D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = b44ExpLogTable;
+			};
+			name = Debug;
+		};
+		2A588C1D1978755A000D94D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = b44ExpLogTable;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A588C3E197875C2000D94D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = dwaLookups;
+			};
+			name = Debug;
+		};
+		2A588C3F197875C2000D94D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = dwaLookups;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		2A6D4B1615CDE3DF006BADE7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -958,6 +1287,24 @@
 			buildConfigurations = (
 				1DEB916508733D950010E9CD /* Debug */,
 				1DEB916608733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A588C331978758B000D94D0 /* Build configuration list for PBXNativeTarget "b44ExpLogTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A588C1C1978755A000D94D0 /* Debug */,
+				2A588C1D1978755A000D94D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A588C461978760A000D94D0 /* Build configuration list for PBXNativeTarget "dwaLookups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A588C3E197875C2000D94D0 /* Debug */,
+				2A588C3F197875C2000D94D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
