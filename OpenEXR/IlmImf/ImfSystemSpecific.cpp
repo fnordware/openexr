@@ -60,18 +60,10 @@ namespace {
     }
 
 #endif // IMF_HAVE_SSE2 && __GNUC__
-<<<<<<< HEAD
-} // namespace 
-
-
-#if defined(IMF_HAVE_SSE2) &&  defined(__GNUC__) && defined(__AVX__)
-	// AVX helper function
-=======
 
 
 #ifdef OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX
 
->>>>>>> upstream/develop
     void xgetbv(int n, int &eax, int &edx)
     {
         __asm__ __volatile__ (
@@ -80,27 +72,17 @@ namespace {
             : /* Input   */ "c"(n)
             : /* Clobber */);
     }
-<<<<<<< HEAD
-	
-#else
-=======
 
 #else //  OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX
->>>>>>> upstream/develop
 
     void xgetbv(int n, int &eax, int &edx)
     {
         eax = edx = 0;
     }
 
-<<<<<<< HEAD
-#endif // IMF_HAVE_SSE2 && __GNUC__ && __AVX__
-
-=======
 #endif //  OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX
 
 } // namespace 
->>>>>>> upstream/develop
 
 CpuId::CpuId():
     sse2(false), 
