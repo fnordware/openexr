@@ -33,7 +33,7 @@
 // Define if we can support GCC style inline asm with AVX instructions
 //
 
-#undef OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX 1
+#define OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX 1
 
 
 //
