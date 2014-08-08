@@ -30,7 +30,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName)\$(ConfigurationName)"
+				CommandLine="..\..\..\buildLUTs_$(PlatformName)_$(ConfigurationName).cmd"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -101,7 +101,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName)\$(ConfigurationName)"
+				CommandLine="..\..\..\buildLUTs_$(PlatformName)_$(ConfigurationName).cmd"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -173,7 +173,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName)\$(ConfigurationName)"
+				CommandLine="..\..\..\buildLUTs_$(PlatformName)_$(ConfigurationName).cmd"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
@@ -243,7 +243,7 @@
 			<Tool
 				Name="VCPreBuildEventTool"
 				Description="Building LUT files..."
-				CommandLine="..\..\..\buildLUTs.cmd $(PlatformName)\$(ConfigurationName)"
+				CommandLine="..\..\..\buildLUTs_$(PlatformName)_$(ConfigurationName).cmd"
 			/>
 			<Tool
 				Name="VCCustomBuildTool"
