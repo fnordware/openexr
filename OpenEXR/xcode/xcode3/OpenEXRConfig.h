@@ -35,6 +35,12 @@
 
 #undef OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX
 
+//
+// Define if we can use sysconf(_SC_NPROCESSORS_ONLN) to get CPU count
+//
+
+#define OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN 1
+
 
 //
 // Version string for runtime access
