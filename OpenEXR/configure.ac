@@ -16,7 +16,7 @@ AM_INIT_AUTOMAKE(1.6.3)  dnl Require automake 1.6.3 or better
 AM_MAINTAINER_MODE
 
 
-LIBTOOL_CURRENT=21
+LIBTOOL_CURRENT=22
 LIBTOOL_REVISION=0
 LIBTOOL_AGE=0
 LIBTOOL_VERSION=$LIBTOOL_CURRENT:$LIBTOOL_REVISION:$LIBTOOL_AGE
@@ -204,6 +204,24 @@ AC_COMPILE_IFELSE(
 AC_MSG_RESULT([$gcc_inline_asm_avx])
 if test "x${gcc_inline_asm_avx}" == xyes ; then
     AC_DEFINE(OPENEXR_IMF_HAVE_GCC_INLINE_ASM_AVX)
+fi
+
+dnl Check if sysconf(_SC_NPROCESSORS_ONLN) can be used for CPU count
+AC_MSG_CHECKING([for sysconf(_SC_NPROCESSORS_ONLN)])
+sysconf_nproc="no"
+AC_COMPILE_IFELSE(
+   [
+        AC_LANG_PROGRAM(
+           [#include <unistd.h>],
+           [sysconf(_SC_NPROCESSORS_ONLN);]
+        )
+   ],
+   [sysconf_nproc="yes"],
+   [sysconf_nproc="no"]
+)
+AC_MSG_RESULT([$sysconf_nproc])
+if test "x${sysconf_nproc}" == xyes ; then
+    AC_DEFINE(OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN)
 fi
 
 dnl Platform-specific stuff

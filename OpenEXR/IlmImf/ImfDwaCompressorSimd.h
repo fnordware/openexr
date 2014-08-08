@@ -108,12 +108,13 @@ class SimdAlignedBuffer64
             _handle = (char *) EXRAllocAligned
                 (64 * sizeof(T), _SSE_ALIGNMENT);
 
-            if ((size_t)_handle & (_SSE_ALIGNMENT - 1))
+            if (((size_t)_handle & (_SSE_ALIGNMENT - 1)) == 0)
             {
                 _buffer = (T *)_handle;
                 return;
             }
 
+            EXRFreeAligned(_handle);
             _handle = (char *) EXRAllocAligned
                 (64 * sizeof(T) + _SSE_ALIGNMENT, _SSE_ALIGNMENT);
 
@@ -1578,6 +1579,8 @@ template <int zeroedRows>
 void
 dctInverse8x8_avx (float *data)
 {
+    #if defined IMF_HAVE_GCC_INLINEASM_64
+
     /* The column-major version of M1, followed by the 
      * column-major version of M2:
      *   
@@ -1598,7 +1601,6 @@ dctInverse8x8_avx (float *data)
         9.754573e-02, -2.777855e-01,  4.157349e-01, -4.903927e-01  /* g -e  d -b */
     };
 
-    #if defined IMF_HAVE_GCC_INLINEASM_64
         #define ROW0(_X) _X
         #define ROW1(_X) _X
         #define ROW2(_X) _X
