@@ -27,6 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2A0FA731199BE1EA0010681B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A4D234315CEFD4F007CAFAC /* OpenEXR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A58889A19784D9F000D94D0 /* b44ExpLogTable */;
+			remoteInfo = b44ExpLogTable;
+		};
+		2A0FA733199BE1EA0010681B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A4D234315CEFD4F007CAFAC /* OpenEXR.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2A5888DC197850F5000D94D0 /* dwaLookups */;
+			remoteInfo = dwaLookups;
+		};
 		2A39B0DE15CF3C480076B3AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A4D239D15CEFDBC007CAFAC /* FLTK.xcodeproj */;
@@ -682,14 +696,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A4D234A15CEFD4F007CAFAC /* zlib.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = D2AAC046055464E500DB518D /* libzlib.a */;
+			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = zlib;
 		};
 		2AD7C2AD175FAF0D00875616 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A4D234A15CEFD4F007CAFAC /* zlib.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = D2AAC045055464E500DB518D /* zlib */;
+			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = zlib;
 		};
 /* End PBXContainerItemProxy section */
@@ -791,6 +805,8 @@
 			isa = PBXGroup;
 			children = (
 				2A4D235815CEFD4F007CAFAC /* libOpenEXR.a */,
+				2A0FA732199BE1EA0010681B /* b44ExpLogTable */,
+				2A0FA734199BE1EA0010681B /* dwaLookups */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -985,6 +1001,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		2A0FA732199BE1EA0010681B /* b44ExpLogTable */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = b44ExpLogTable;
+			remoteRef = 2A0FA731199BE1EA0010681B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2A0FA734199BE1EA0010681B /* dwaLookups */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = dwaLookups;
+			remoteRef = 2A0FA733199BE1EA0010681B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		2A4D235815CEFD4F007CAFAC /* libOpenEXR.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;

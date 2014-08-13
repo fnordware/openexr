@@ -5,14 +5,14 @@
 // used by any OpenEXR library or application code.
 //
 
-#undef HAVE_LINUX_PROCFS
+#undef OPENEXR_IMF_HAVE_LINUX_PROCFS
 
 //
 // Define and set to 1 if the target system is a Darwin-based system
 // (e.g., OS X).
 //
 
-#define HAVE_DARWIN 1
+#define OPENEXR_IMF_HAVE_DARWIN 1
 
 //
 // Define and set to 1 if the target system has a complete <iomanip>
@@ -20,14 +20,14 @@
 // formatter.
 //
 
-#define HAVE_COMPLETE_IOMANIP 1
+#define OPENEXR_IMF_HAVE_COMPLETE_IOMANIP 1
 
 //
 // Define and set to 1 if the target system has support for large
 // stack sizes.
 //
 
-#undef HAVE_LARGE_STACK
+#undef OPENEXR_IMF_HAVE_LARGE_STACK
 
 //
 // Define if we can support GCC style inline asm with AVX instructions
