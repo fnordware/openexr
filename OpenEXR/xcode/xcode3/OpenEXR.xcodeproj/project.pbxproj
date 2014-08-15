@@ -221,49 +221,49 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A58889919784D9F000D94D0 /* b44ExpLogTable */;
+			remoteGlobalIDString = 2A58889919784D9F000D94D0;
 			remoteInfo = b44ExpLogTable;
 		};
 		2A5888AE19784EF7000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A5888A819784EF7000D94D0 /* IlmBase.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2A6D4C4D15CDEB0A006BADE7 /* libIlmBase.a */;
+			remoteGlobalIDString = 2A6D4C4D15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
 		};
 		2A5888B019784EF7000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A5888A819784EF7000D94D0 /* IlmBase.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2A6D4CFF15CDEBEF006BADE7 /* eLut */;
+			remoteGlobalIDString = 2A6D4CFF15CDEBEF006BADE7;
 			remoteInfo = eLut;
 		};
 		2A5888B219784EF7000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A5888A819784EF7000D94D0 /* IlmBase.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 2A6D4D3715CDF275006BADE7 /* toFloat */;
+			remoteGlobalIDString = 2A6D4D3715CDF275006BADE7;
 			remoteInfo = toFloat;
 		};
 		2A5888B519784F13000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A5888A819784EF7000D94D0 /* IlmBase.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7 /* IlmBase */;
+			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
 		};
 		2A5888EE197851CE000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2A5888A819784EF7000D94D0 /* IlmBase.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7 /* IlmBase */;
+			remoteGlobalIDString = 2A6D4C4C15CDEB0A006BADE7;
 			remoteInfo = IlmBase;
 		};
 		2A5888F2197851EC000D94D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2A5888DB197850F5000D94D0 /* dwaLookups */;
+			remoteGlobalIDString = 2A5888DB197850F5000D94D0;
 			remoteInfo = dwaLookups;
 		};
 /* End PBXContainerItemProxy section */
@@ -1160,6 +1160,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = OpenEXR_Prefix.h;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -1180,6 +1181,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREFIX_HEADER = OpenEXR_Prefix.h;
 				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
