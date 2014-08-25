@@ -113,6 +113,417 @@
 		29A99477531233BE9391CE66 /* Fl_Slider.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5119D08DFC92EA1032671 /* Fl_Slider.cxx */; };
 		29B01C1F3FF6C5B007DEEF45 /* fltk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEB0F8FE6383384180570D94 /* fltk.framework */; };
 		29ED282EF51CBBB0CDEE76D6 /* Fl_Color_Chooser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 058BCBC36ADE724A418F1C43 /* Fl_Color_Chooser.cxx */; };
+		2A274B8B144657A500CB21FE /* Fl_Preferences.H in Headers */ = {isa = PBXBuildFile; fileRef = 91173358E60D137409651286 /* Fl_Preferences.H */; };
+		2A274B8C144657B500CB21FE /* Fl_abort.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E93CF8BB106A2249F0FC58B8 /* Fl_abort.cxx */; };
+		2A274B8D144657B800CB21FE /* Fl_Widget.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0B9D4355B2E878715DD43AD3 /* Fl_Widget.cxx */; };
+		2A274B8E144657BA00CB21FE /* fl_color.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0EB55F59B3D0D0BD1A8BFE5E /* fl_color.cxx */; };
+		2A274B8F144657BC00CB21FE /* Fl_Box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C3F048573FAEABD2D27401D4 /* Fl_Box.cxx */; };
+		2A274B90144657BE00CB21FE /* Fl_Window_fullscreen.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F42EEFA08A75F71B33094D50 /* Fl_Window_fullscreen.cxx */; };
+		2A274B91144657BF00CB21FE /* Fl_File_Icon.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5D36F806A2C72F1894F0878E /* Fl_File_Icon.cxx */; };
+		2A274B92144657C100CB21FE /* Fl_Paged_Device.H in Headers */ = {isa = PBXBuildFile; fileRef = 4CABCBB89F9DD5CF57BB9779 /* Fl_Paged_Device.H */; };
+		2A274B93144657C300CB21FE /* filename_setext.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 83733760D651C218178EAEB3 /* filename_setext.cxx */; };
+		2A274B94144657C500CB21FE /* Fl_Output.H in Headers */ = {isa = PBXBuildFile; fileRef = D585CB55BDA143D343033352 /* Fl_Output.H */; };
+		2A274B95144657C700CB21FE /* Fl_Group.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 806103D71A8CD0075BF8E1DA /* Fl_Group.cxx */; };
+		2A274B96144657C900CB21FE /* Fl_Export.H in Headers */ = {isa = PBXBuildFile; fileRef = 53930BEE4CBAAF4C82825F9B /* Fl_Export.H */; };
+		2A274B97144657CB00CB21FE /* Fl_Color_Chooser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 058BCBC36ADE724A418F1C43 /* Fl_Color_Chooser.cxx */; };
+		2A274B98144657CD00CB21FE /* Fl_Chart.H in Headers */ = {isa = PBXBuildFile; fileRef = 0CAFE7CA950A492FE35F2163 /* Fl_Chart.H */; };
+		2A274B99144657CF00CB21FE /* fl_font.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9E8F7BCC0292044D887D423B /* fl_font.cxx */; };
+		2A274B9A144657D100CB21FE /* Fl_File_Chooser.H in Headers */ = {isa = PBXBuildFile; fileRef = 729751A4A3DAAAF169C80ACC /* Fl_File_Chooser.H */; };
+		2A274B9C144657D500CB21FE /* fl_rounded_box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5876E03E2818B598FAA5C307 /* fl_rounded_box.cxx */; };
+		2A274B9D144657D700CB21FE /* Fl_File_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = DE2F47C61B9083A6E7811620 /* Fl_File_Browser.H */; };
+		2A274B9E144657D900CB21FE /* scandir.c in Sources */ = {isa = PBXBuildFile; fileRef = BF30A6F91EA43AB094476FFC /* scandir.c */; };
+		2A274B9F144657DB00CB21FE /* Fl_Help_Dialog.H in Headers */ = {isa = PBXBuildFile; fileRef = A2E97BA0812AEC32965573B8 /* Fl_Help_Dialog.H */; };
+		2A274BA0144657DD00CB21FE /* fl_draw.H in Headers */ = {isa = PBXBuildFile; fileRef = 2621527FD926C67B778C41F3 /* fl_draw.H */; };
+		2A274BA1144657DE00CB21FE /* Fl_Tree.H in Headers */ = {isa = PBXBuildFile; fileRef = 5E0EC227A972D2E4F34A2CEB /* Fl_Tree.H */; };
+		2A274BA2144657E000CB21FE /* Fl_Text_Editor.H in Headers */ = {isa = PBXBuildFile; fileRef = 3E092095198BF5104BE09D78 /* Fl_Text_Editor.H */; };
+		2A274BA3144657E200CB21FE /* Fl_Value_Output.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F1C4032FB66042A96955A62E /* Fl_Value_Output.cxx */; };
+		2A274BA4144657EA00CB21FE /* Fl_Hor_Value_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = 5B8BFBDF9C48A998F0781C9E /* Fl_Hor_Value_Slider.H */; };
+		2A274BA5144657ED00CB21FE /* filename.H in Headers */ = {isa = PBXBuildFile; fileRef = AF65626F49A71525D24ED1B0 /* filename.H */; };
+		2A274BA6144657F400CB21FE /* fl_call_main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1501BD6AB688B2DB8120E852 /* fl_call_main.c */; };
+		2A274BA7144657F600CB21FE /* Fl_own_colormap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = AAE8D31DC4F024028C66743C /* Fl_own_colormap.cxx */; };
+		2A274BA8144657F800CB21FE /* Fl_Menu.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7E05602BE68211B11E493E18 /* Fl_Menu.cxx */; };
+		2A274BA9144657FA00CB21FE /* Fl_Float_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = 00CAAA52DC3193E1133AE26C /* Fl_Float_Input.H */; };
+		2A274BAA144657FC00CB21FE /* Fl_Light_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = B6A59F303E6D6C2EE4481D78 /* Fl_Light_Button.H */; };
+		2A274BAB144657FE00CB21FE /* Fl_add_idle.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 274CBEBF1D1BFD5C91605CBE /* Fl_add_idle.cxx */; };
+		2A274BAC1446580000CB21FE /* fl_types.h in Headers */ = {isa = PBXBuildFile; fileRef = B719FC0289E54CA915BC0B94 /* fl_types.h */; };
+		2A274BAD1446580200CB21FE /* Fl_Table.H in Headers */ = {isa = PBXBuildFile; fileRef = 70CEC1A84E24275F0861403F /* Fl_Table.H */; };
+		2A274BAE1446580400CB21FE /* filename_isdir.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2BECA86D733575C07B9982DF /* filename_isdir.cxx */; };
+		2A274BAF1446580600CB21FE /* cmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = AC0F7C69B25854F609BD1A0C /* cmap.cxx */; };
+		2A274BB01446580800CB21FE /* Fl_GIF_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = BA939493F873CF0518DB0A1B /* Fl_GIF_Image.H */; };
+		2A274BB11446580A00CB21FE /* Fl_Radio_Light_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 03D5B076E8097600496915F7 /* Fl_Radio_Light_Button.H */; };
+		2A274BB21446580C00CB21FE /* Fl_PNM_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 330837DFFF31CE2EB245C7EC /* Fl_PNM_Image.H */; };
+		2A274BB31446580E00CB21FE /* Fl_display.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0E259033BF45B73C21409C8F /* Fl_display.cxx */; };
+		2A274BB41446581000CB21FE /* Fl_Hor_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = AE1717E43F50EBA343960B1E /* Fl_Hor_Slider.H */; };
+		2A274BB51446581200CB21FE /* Fl_Multiline_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = 8A322CF28E7EAA76A260345A /* Fl_Multiline_Input.H */; };
+		2A274BB61446581300CB21FE /* Fl_Counter.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E9893274B0B6C5F24730235F /* Fl_Counter.cxx */; };
+		2A274BB71446581500CB21FE /* math.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D499CE6ECA4995EEA46EAD7 /* math.h */; };
+		2A274BB81446581700CB21FE /* fl_diamond_box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 077BDEA1F0364BDA61518702 /* fl_diamond_box.cxx */; };
+		2A274BB91446581900CB21FE /* jpeglib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4E61274BBB600ADB21C /* jpeglib.h */; };
+		2A274BBA1446581B00CB21FE /* fl_vertex.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 67A896B990EDB45C5BC93F01 /* fl_vertex.cxx */; };
+		2A274BBB1446581D00CB21FE /* Fl_Native_File_Chooser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2DE25DB4CE986C1857B5ECF7 /* Fl_Native_File_Chooser.cxx */; };
+		2A274BBC1446581F00CB21FE /* Fl_Valuator.H in Headers */ = {isa = PBXBuildFile; fileRef = F8BAA8B283D4CF4D904B6486 /* Fl_Valuator.H */; };
+		2A274BBD1446582100CB21FE /* fl_utf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F46F93E8F77640543107453 /* fl_utf8.h */; };
+		2A274BBE1446582300CB21FE /* Fl_Paged_Device.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C9A4F054C48CDD6A2DE44 /* Fl_Paged_Device.cxx */; };
+		2A274BBF1446582F00CB21FE /* Fl_Help_View.H in Headers */ = {isa = PBXBuildFile; fileRef = 31D736821E68F01A1A11FC9F /* Fl_Help_View.H */; };
+		2A274BC01446583100CB21FE /* fl_plastic.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E4A2A361D4B13B70464C6A26 /* fl_plastic.cxx */; };
+		2A274BC11446583300CB21FE /* Fl_Text_Buffer.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D390A37D428892B9A8AD63AD /* Fl_Text_Buffer.cxx */; };
+		2A274BC21446583500CB21FE /* Fl_Fill_Dial.H in Headers */ = {isa = PBXBuildFile; fileRef = CEC9BC26680806AD2B47C07F /* Fl_Fill_Dial.H */; };
+		2A274BC31446583700CB21FE /* Fl_Hor_Nice_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = 21094B942E7FBFBCF1679259 /* Fl_Hor_Nice_Slider.H */; };
+		2A274BC41446583900CB21FE /* Fl_Pixmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D79D3910F834D4B78FED92F3 /* Fl_Pixmap.cxx */; };
+		2A274BC51446583B00CB21FE /* Enumerations.H in Headers */ = {isa = PBXBuildFile; fileRef = 84CE79448708855561FEE498 /* Enumerations.H */; };
+		2A274BC61446583C00CB21FE /* Fl_PNG_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 87F83C8E6003FAE14C4E8249 /* Fl_PNG_Image.H */; };
+		2A274BC71446583E00CB21FE /* Fl_Browser_.H in Headers */ = {isa = PBXBuildFile; fileRef = 149DEBE486F3554738429684 /* Fl_Browser_.H */; };
+		2A274BC81446584000CB21FE /* fl_set_fonts.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A68E1C76E8C3DC37B869BE48 /* fl_set_fonts.cxx */; };
+		2A274BC91446584200CB21FE /* Fl_File_Browser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = DC4C39F3567A5571CABF1038 /* Fl_File_Browser.cxx */; };
+		2A274BCA1446584400CB21FE /* Fl_XBM_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = D2DE1079C826533A91053A9C /* Fl_XBM_Image.H */; };
+		2A274BCB1446584600CB21FE /* Fl_Menu_Bar.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B8ADD01CB2F8BFE43ACBA /* Fl_Menu_Bar.cxx */; };
+		2A274BCC1446584800CB21FE /* Fl_Box.H in Headers */ = {isa = PBXBuildFile; fileRef = 390863A4D5D1B4C7C9B58679 /* Fl_Box.H */; };
+		2A274BCD1446584A00CB21FE /* Fl_FormsBitmap.H in Headers */ = {isa = PBXBuildFile; fileRef = E82DD2B5676CF315E945AF23 /* Fl_FormsBitmap.H */; };
+		2A274BCE1446584C00CB21FE /* Fl_Menu_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 199EA4C60DD488096817D322 /* Fl_Menu_Button.cxx */; };
+		2A274BCF1446584E00CB21FE /* pngconf.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4DF1274BB6600ADB21C /* pngconf.h */; };
+		2A274BD01446585000CB21FE /* Fl_File_Chooser2.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 17D7629A8FC1C1A1DABEDAC0 /* Fl_File_Chooser2.cxx */; };
+		2A274BD11446585200CB21FE /* Fl_Menu.H in Headers */ = {isa = PBXBuildFile; fileRef = 75DEA03FA1E1CA10E4AF212A /* Fl_Menu.H */; };
+		2A274BD21446585300CB21FE /* Fl_PostScript.H in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD5B11274C4FA00ADB21C /* Fl_PostScript.H */; };
+		2A274BD31446585500CB21FE /* is_right2left.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B30F6EA5CA69E305D2B82EE /* is_right2left.c */; };
+		2A274BD41446585700CB21FE /* Fl_Menu_Bar.H in Headers */ = {isa = PBXBuildFile; fileRef = 1DBDBB6B583C028BD8D1D2F4 /* Fl_Menu_Bar.H */; };
+		2A274BD51446585900CB21FE /* Fl_Bitmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3F000DD5F091F66BC42822E3 /* Fl_Bitmap.cxx */; };
+		2A274BD61446585B00CB21FE /* fl_encoding_mac_roman.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0A447B8708FA755BB960A134 /* fl_encoding_mac_roman.cxx */; };
+		2A274BD71446585D00CB21FE /* x.H in Headers */ = {isa = PBXBuildFile; fileRef = 83CED42A779FA76E98D37CA8 /* x.H */; };
+		2A274BD81446586400CB21FE /* Fl_Sys_Menu_Bar.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 30662FB4292F9C613576933B /* Fl_Sys_Menu_Bar.cxx */; };
+		2A274BD91446586600CB21FE /* jconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4E31274BBB600ADB21C /* jconfig.h */; };
+		2A274BDA1446586800CB21FE /* Fl_compose.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 00B08A2C8EA901C350696F8D /* Fl_compose.cxx */; };
+		2A274BDB1446586A00CB21FE /* Fl_Overlay_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D1C792936D427CC48581BFAE /* Fl_Overlay_Window.cxx */; };
+		2A274BDC1446586C00CB21FE /* fl_scroll_area.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7C67E3A1368F9AC0A03A7BD6 /* fl_scroll_area.cxx */; };
+		2A274BDD1446586E00CB21FE /* Fl_Tooltip.H in Headers */ = {isa = PBXBuildFile; fileRef = 8C5CB5680264401FDA1C693C /* Fl_Tooltip.H */; };
+		2A274BDE1446587000CB21FE /* Fl_Value_Output.H in Headers */ = {isa = PBXBuildFile; fileRef = 71034AFDF079B24D53146252 /* Fl_Value_Output.H */; };
+		2A274BDF1446587200CB21FE /* Fl_Valuator.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4194C917D667C0E2FCEF0A39 /* Fl_Valuator.cxx */; };
+		2A274BE01446587400CB21FE /* fl_file_dir.cxx in Sources */ = {isa = PBXBuildFile; fileRef = FA2F70BA8FF4E7F4B7B36971 /* fl_file_dir.cxx */; };
+		2A274BE11446587600CB21FE /* Fl_Round_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 270962DA6A7684128875ADDE /* Fl_Round_Button.H */; };
+		2A274BE21446587800CB21FE /* Fl_Single_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = 0EC11A5CAD4E3607A72BEF84 /* Fl_Single_Window.H */; };
+		2A274BE31446587A00CB21FE /* Fl_Fill_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = BDEA9C0CFFA25A943140F7FC /* Fl_Fill_Slider.H */; };
+		2A274BE41446587C00CB21FE /* Fl_Repeat_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 41D6B03607BD43BB0D703411 /* Fl_Repeat_Button.cxx */; };
+		2A274BE51446587E00CB21FE /* fl_encoding_latin1.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4D124BD72F4E63D99837CE0C /* fl_encoding_latin1.cxx */; };
+		2A274BE61446587F00CB21FE /* fl_show_colormap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = EB15CE98189A4C0A7A8A480F /* fl_show_colormap.cxx */; };
+		2A274BE71446588100CB21FE /* fl_overlay.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 577F8362F7016862051E2AC3 /* fl_overlay.cxx */; };
+		2A274BE81446588300CB21FE /* Fl_Progress.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 570D0C7510FE3A3FB7A1BD5D /* Fl_Progress.cxx */; };
+		2A274BE91446588500CB21FE /* Fl_Choice.H in Headers */ = {isa = PBXBuildFile; fileRef = C8AE10A8DDF53B8B27E3215A /* Fl_Choice.H */; };
+		2A274BEA1446588700CB21FE /* Fl_Secret_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = 42FEA3A2967D04217C27FA61 /* Fl_Secret_Input.H */; };
+		2A274BEB1446588900CB21FE /* Fl_Input_Choice.H in Headers */ = {isa = PBXBuildFile; fileRef = 648E9C3B61328280244FCCA5 /* Fl_Input_Choice.H */; };
+		2A274BEC1446588B00CB21FE /* Fl_Multi_Label.H in Headers */ = {isa = PBXBuildFile; fileRef = D513CAE8AAED897D6B3B72F7 /* Fl_Multi_Label.H */; };
+		2A274BED1446588D00CB21FE /* Fl_Scroll.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3F60A41762817C834FF38947 /* Fl_Scroll.cxx */; };
+		2A274BEE1446588F00CB21FE /* Fl_Table_Row.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 351BFCA4747AF494F84FFE36 /* Fl_Table_Row.cxx */; };
+		2A274BEF1446589100CB21FE /* fl_round_box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6E69780F02E318A2154C338D /* fl_round_box.cxx */; };
+		2A274BF01446589300CB21FE /* Fl_Overlay_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = 1FCDDD4E00F7CAA8193CAE04 /* Fl_Overlay_Window.H */; };
+		2A274BF11446589500CB21FE /* fl_overlay_visual.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5CE4CB9AEF9070A32A27696D /* fl_overlay_visual.cxx */; };
+		2A274BF21446589D00CB21FE /* Fl_JPEG_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 15B635124165659EFD5640FF /* Fl_JPEG_Image.H */; };
+		2A274BF31446589F00CB21FE /* Fl_Hor_Fill_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = EE6507EFCDDA13ACF9373E3E /* Fl_Hor_Fill_Slider.H */; };
+		2A274BF4144658A100CB21FE /* Fl_Pack.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 813C830680D031C1B2FCF9B6 /* Fl_Pack.cxx */; };
+		2A274BF5144658A300CB21FE /* Xutf8.h in Headers */ = {isa = PBXBuildFile; fileRef = 91A43F37963443EA5E91BF1F /* Xutf8.h */; };
+		2A274BF6144658A500CB21FE /* Fl_Multiline_Output.H in Headers */ = {isa = PBXBuildFile; fileRef = AC5B933E5C802F33BC495FF8 /* Fl_Multiline_Output.H */; };
+		2A274BF7144658A700CB21FE /* Fl_File_Input.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A66819BE170F44B94F2E1981 /* Fl_File_Input.cxx */; };
+		2A274BF8144658A900CB21FE /* Fl_Tiled_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 76726B622EF72DCDAD1C0D23 /* Fl_Tiled_Image.cxx */; };
+		2A274BF9144658AB00CB21FE /* Fl_Light_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = BA7B1E9C7AA7316E98D369C2 /* Fl_Light_Button.cxx */; };
+		2A274BFA144658AC00CB21FE /* Fl_lock.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D004B2D87C53E063F848C539 /* Fl_lock.cxx */; };
+		2A274BFB144658AE00CB21FE /* Fl_Native_File_Chooser.H in Headers */ = {isa = PBXBuildFile; fileRef = F91DEF40DC3592BE52CAB001 /* Fl_Native_File_Chooser.H */; };
+		2A274BFC144658B000CB21FE /* Fl_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = F2E5612A81A6E8D53ED91CAE /* Fl_Slider.H */; };
+		2A274BFD144658B200CB21FE /* fl_labeltype.cxx in Sources */ = {isa = PBXBuildFile; fileRef = EF6D2F48B12359DE60E499C2 /* fl_labeltype.cxx */; };
+		2A274BFE144658B400CB21FE /* Fl_Positioner.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 05BBBFE4BED0452E5D6A81F7 /* Fl_Positioner.cxx */; };
+		2A274BFF144658B600CB21FE /* Fl_Int_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = 1CFFC165E8EE6C1AD9CFD33C /* Fl_Int_Input.H */; };
+		2A274C00144658B800CB21FE /* Fl_Tile.H in Headers */ = {isa = PBXBuildFile; fileRef = FAA6BA6E4DC1AF28F5FC8466 /* Fl_Tile.H */; };
+		2A274C01144658BA00CB21FE /* Fl_Input.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 63CB19652C470F1E58DCF01E /* Fl_Input.cxx */; };
+		2A274C02144658BC00CB21FE /* Fl_Tree_Item_Array.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 00E3864092375950FE42449E /* Fl_Tree_Item_Array.cxx */; };
+		2A274C03144658BE00CB21FE /* Fl_RGB_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 1072C2A463FBCF2C5E278649 /* Fl_RGB_Image.H */; };
+		2A274C04144658C000CB21FE /* fl_set_font.cxx in Sources */ = {isa = PBXBuildFile; fileRef = FBB2C3FCFF8322A237DDBE23 /* fl_set_font.cxx */; };
+		2A274C05144658C200CB21FE /* fl_symbols.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7C8D88FDB0A0A32E59465025 /* fl_symbols.cxx */; };
+		2A274C06144658C400CB21FE /* Fl.H in Headers */ = {isa = PBXBuildFile; fileRef = C359E5D5187606DD69C7938B /* Fl.H */; };
+		2A274C07144658C600CB21FE /* Fl_Select_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = 9DA766AE10DC532F3D0401A2 /* Fl_Select_Browser.H */; };
+		2A274C08144658C700CB21FE /* Fl_Clock.H in Headers */ = {isa = PBXBuildFile; fileRef = 9BCF393F94482AE7C7421397 /* Fl_Clock.H */; };
+		2A274C09144658C900CB21FE /* fl_arci.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4E2468990092988E147B08B3 /* fl_arci.cxx */; };
+		2A274C0A144658CB00CB21FE /* fl_draw_pixmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = B25F1323447C32308AA017DE /* fl_draw_pixmap.cxx */; };
+		2A274C0B144658D200CB21FE /* filename_match.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 81CBEA61461E59652A309159 /* filename_match.cxx */; };
+		2A274C0C144658D400CB21FE /* Fl_Repeat_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 4F64CD29833871B09CCB278E /* Fl_Repeat_Button.H */; };
+		2A274C0D144658D600CB21FE /* Fl_Menu_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5FB757CD5BD887D355358D2E /* Fl_Menu_Window.cxx */; };
+		2A274C0E144658D800CB21FE /* Fl_Tree_Item.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6170B3704ED34EBCF80E43C1 /* Fl_Tree_Item.cxx */; };
+		2A274C0F144658DA00CB21FE /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4DE1274BB6600ADB21C /* png.h */; };
+		2A274C10144658DC00CB21FE /* Fl_File_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = 0512326568039B9A0C5BD3DB /* Fl_File_Input.H */; };
+		2A274C11144658DE00CB21FE /* Fl_Window_hotspot.cxx in Sources */ = {isa = PBXBuildFile; fileRef = CC2482EC04B752BF38D4DBE2 /* Fl_Window_hotspot.cxx */; };
+		2A274C12144658E000CB21FE /* fl_message.H in Headers */ = {isa = PBXBuildFile; fileRef = A8B7D1DA9AAC707EBD991D57 /* fl_message.H */; };
+		2A274C13144658E200CB21FE /* Fl_XBM_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 800E34DEF9E503C5EC6C4FA5 /* Fl_XBM_Image.cxx */; };
+		2A274C14144658E400CB21FE /* is_spacing.c in Sources */ = {isa = PBXBuildFile; fileRef = 5AE1F936F1C186E18C1B9C28 /* is_spacing.c */; };
+		2A274C15144658E600CB21FE /* Fl_Tree_Item_Array.H in Headers */ = {isa = PBXBuildFile; fileRef = CCDF80CC7D27689DDC83FBA1 /* Fl_Tree_Item_Array.H */; };
+		2A274C16144658E800CB21FE /* Fl_Toggle_Light_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 79EE61E7DCB96EF56E71DD19 /* Fl_Toggle_Light_Button.H */; };
+		2A274C17144658EA00CB21FE /* Fl_Wizard.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9951B49F640C2C15321EED9C /* Fl_Wizard.cxx */; };
+		2A274C18144658EB00CB21FE /* Fl_get_system_colors.cxx in Sources */ = {isa = PBXBuildFile; fileRef = EB5B18A1B9B1E41F2AB56A97 /* Fl_get_system_colors.cxx */; };
+		2A274C19144658ED00CB21FE /* Fl_Cairo.H in Headers */ = {isa = PBXBuildFile; fileRef = 87F89271469726AE756E4D93 /* Fl_Cairo.H */; };
+		2A274C1A144658EF00CB21FE /* filename_list.cxx in Sources */ = {isa = PBXBuildFile; fileRef = CD0C572F3E0A8040E9C52E0F /* filename_list.cxx */; };
+		2A274C1B144658F100CB21FE /* names.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CE28437ABB8513BE08AC77 /* names.h */; };
+		2A274C1C144658F300CB21FE /* Fl_Shared_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 57639C1D5415FB55436556A2 /* Fl_Shared_Image.cxx */; };
+		2A274C1D144658F500CB21FE /* ps_image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 1C75365D167645656C3A6752 /* ps_image.cxx */; };
+		2A274C1E144658F700CB21FE /* Fl_BMP_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = B20D11CF3F871C99011F632E /* Fl_BMP_Image.H */; };
+		2A274C1F144658F900CB21FE /* Fl_Menu_global.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D7E1955B57E8EF19FD90CF61 /* Fl_Menu_global.cxx */; };
+		2A274C20144658FB00CB21FE /* glut.H in Headers */ = {isa = PBXBuildFile; fileRef = 451D01896EFDD83277515630 /* glut.H */; };
+		2A274C21144658FD00CB21FE /* Fl_Text_Editor.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D9FC21A432D9F4C118B2B1D4 /* Fl_Text_Editor.cxx */; };
+		2A274C22144658FF00CB21FE /* Fl_Value_Input.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 34CB383C3A4360C14B58562E /* Fl_Value_Input.cxx */; };
+		2A274C231446590100CB21FE /* Fl_Roller.H in Headers */ = {isa = PBXBuildFile; fileRef = 9961D74307F5B7D0FE016FC7 /* Fl_Roller.H */; };
+		2A274C341446591500CB21FE /* glu.h in Headers */ = {isa = PBXBuildFile; fileRef = E159325B70E8DAA4D9DE0C1B /* glu.h */; };
+		2A274C351446591800CB21FE /* filename_ext.cxx in Sources */ = {isa = PBXBuildFile; fileRef = B140C9F8CF34FDAC94E15FE1 /* filename_ext.cxx */; };
+		2A274C361446591A00CB21FE /* Fl_Browser_.cxx in Sources */ = {isa = PBXBuildFile; fileRef = AAD25B747F4122A2C5224708 /* Fl_Browser_.cxx */; };
+		2A274C371446591D00CB21FE /* Fl_Adjuster.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 19C5DB6F3DD5011DAE6F79AB /* Fl_Adjuster.cxx */; };
+		2A274C381446591F00CB21FE /* fl_line_style.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0B5987E1A293E67A6290612A /* fl_line_style.cxx */; };
+		2A274C391446592100CB21FE /* Fl_Device.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D9A7DCBAFF41CBC3DCB67C6F /* Fl_Device.cxx */; };
+		2A274C3A1446592300CB21FE /* Fl_Text_Display.H in Headers */ = {isa = PBXBuildFile; fileRef = 64C9C1F20285A471398A7818 /* Fl_Text_Display.H */; };
+		2A274C3B1446592500CB21FE /* Fl_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = EFEEE679374D7E4191873447 /* Fl_Input.H */; };
+		2A274C3C1446592700CB21FE /* jmorecfg.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4E51274BBB600ADB21C /* jmorecfg.h */; };
+		2A274C3D1446592900CB21FE /* Fl_Double_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = 80D32CF90973629228CAA7F0 /* Fl_Double_Window.H */; };
+		2A274C3E1446592B00CB21FE /* Fl_Tree_Prefs.H in Headers */ = {isa = PBXBuildFile; fileRef = 7E51DAB7D0F93ACFB736EE9A /* Fl_Tree_Prefs.H */; };
+		2A274C3F1446592D00CB21FE /* Fl_Printer.cxx in Sources */ = {isa = PBXBuildFile; fileRef = B4CAFA162560925C4591997A /* Fl_Printer.cxx */; };
+		2A274C401446592F00CB21FE /* fl_utf.c in Sources */ = {isa = PBXBuildFile; fileRef = 42660BA0E346168608D0FADB /* fl_utf.c */; };
+		2A274C411446593100CB21FE /* Fl_XPM_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 1433F1B8C4085D5D5E1BA0E1 /* Fl_XPM_Image.H */; };
+		2A274C421446593300CB21FE /* filename_absolute.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D60CC89D1A70BE6AA3929604 /* filename_absolute.cxx */; };
+		2A274C431446593800CB21FE /* Fl_Gl_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = E7C720E51DAC292F13358811 /* Fl_Gl_Window.H */; };
+		2A274C441446593A00CB21FE /* Fl_Nice_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = F8990CDEFF54C483BD6BF716 /* Fl_Nice_Slider.H */; };
+		2A274C451446593C00CB21FE /* Fl_Shared_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = A46A39199806D09CE0ABEE59 /* Fl_Shared_Image.H */; };
+		2A274C461446593E00CB21FE /* Fl_Tiled_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 72C56BE76B2ECF1908249803 /* Fl_Tiled_Image.H */; };
+		2A274C471446594000CB21FE /* Fl_Free.H in Headers */ = {isa = PBXBuildFile; fileRef = 9D938B561E268ECE660B88D2 /* Fl_Free.H */; };
+		2A274C481446594200CB21FE /* Fl_Group.H in Headers */ = {isa = PBXBuildFile; fileRef = BF88B604F8342EF96DFF5AEA /* Fl_Group.H */; };
+		2A274C491446594400CB21FE /* fl_gtk.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7A2CE7959780A1C6E60103E8 /* fl_gtk.cxx */; };
+		2A274C4A1446594600CB21FE /* Fl_Text_Display.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A0C1440AC6EE3239EEC7D81B /* Fl_Text_Display.cxx */; };
+		2A274C4B1446594800CB21FE /* fl_ask.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D8332361B912AFCE6DDF4B11 /* fl_ask.cxx */; };
+		2A274C4C1446594A00CB21FE /* fl_read_image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9CA94171ECE3444BB9D65BAE /* fl_read_image.cxx */; };
+		2A274C4D1446594C00CB21FE /* flstring.c in Sources */ = {isa = PBXBuildFile; fileRef = 530B066D0F3AC2972D9FEC30 /* flstring.c */; };
+		2A274C4E1446594E00CB21FE /* jerror.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EDD4E41274BBB600ADB21C /* jerror.h */; };
+		2A274C4F1446594F00CB21FE /* Fl_Line_Dial.H in Headers */ = {isa = PBXBuildFile; fileRef = 790078FB2B75406B2E250E59 /* Fl_Line_Dial.H */; };
+		2A274C501446595600CB21FE /* Fl_Tabs.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D5F75B6C9483B2BB47965789 /* Fl_Tabs.cxx */; };
+		2A274C511446595800CB21FE /* Fl_Tree_Prefs.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 197D446B1F4FEB565793FC67 /* Fl_Tree_Prefs.cxx */; };
+		2A274C521446595A00CB21FE /* Fl_Multi_Label.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D02CF2893ECCE831CD5D3176 /* Fl_Multi_Label.cxx */; };
+		2A274C531446595C00CB21FE /* forms.H in Headers */ = {isa = PBXBuildFile; fileRef = E0132688B22159A85307F264 /* forms.H */; };
+		2A274C541446595E00CB21FE /* Fl_Window_iconize.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9E22773911BDBADEA86730D4 /* Fl_Window_iconize.cxx */; };
+		2A274C551446596000CB21FE /* Fl_Menu_Item.H in Headers */ = {isa = PBXBuildFile; fileRef = A0224B94F206123F3583F2A3 /* Fl_Menu_Item.H */; };
+		2A274C561446596200CB21FE /* Fl_Simple_Counter.H in Headers */ = {isa = PBXBuildFile; fileRef = 9B57B581401BD8575BFAF2F1 /* Fl_Simple_Counter.H */; };
+		2A274C571446596300CB21FE /* Fl_Menu_add.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 382F938CFABC25BC02C13939 /* Fl_Menu_add.cxx */; };
+		2A274C581446596500CB21FE /* Fl_Single_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9D942824B8FC886F6FCD853D /* Fl_Single_Window.cxx */; };
+		2A274C591446596700CB21FE /* mac.H in Headers */ = {isa = PBXBuildFile; fileRef = AC13C8877FA6231BEBF524FD /* mac.H */; };
+		2A274C5A1446596900CB21FE /* Fl_Check_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A2CF2FD35911638AD607092F /* Fl_Check_Button.cxx */; };
+		2A274C5B1446597000CB21FE /* Fl_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = F98FE04C081FB5B1161C546C /* Fl_Window.H */; };
+		2A274C5C1446597200CB21FE /* Fl_Dial.H in Headers */ = {isa = PBXBuildFile; fileRef = 02C21BB31E7DDFE9E76F4997 /* Fl_Dial.H */; };
+		2A274C5D1446597400CB21FE /* Fl_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = BF1FE1C69D048AA23CF27B1E /* Fl_Window.cxx */; };
+		2A274C5E1446597600CB21FE /* Fl_Tree_Item.H in Headers */ = {isa = PBXBuildFile; fileRef = 0BD550D5F4A9E53E93B19234 /* Fl_Tree_Item.H */; };
+		2A274C5F1446597800CB21FE /* Fl_Input_.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D531F77A15AACC9E297B4490 /* Fl_Input_.cxx */; };
+		2A274C601446597A00CB21FE /* Fl_Radio_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 59EAC37D26FEC2AB49D79C08 /* Fl_Radio_Button.H */; };
+		2A274C611446597C00CB21FE /* Fl_Help_View.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 790419B5A0AD64D66F9B19E1 /* Fl_Help_View.cxx */; };
+		2A274C621446597E00CB21FE /* Fl_Object.H in Headers */ = {isa = PBXBuildFile; fileRef = EE2FB1F7B99BE408E1B4DFB7 /* Fl_Object.H */; };
+		2A274C631446598000CB21FE /* Fl_Pixmap.H in Headers */ = {isa = PBXBuildFile; fileRef = B8455C1BD96FF6FB3C197C34 /* Fl_Pixmap.H */; };
+		2A274C641446598200CB21FE /* Fl_Input_.H in Headers */ = {isa = PBXBuildFile; fileRef = A5166C3C9311628F6E450095 /* Fl_Input_.H */; };
+		2A274C651446598400CB21FE /* Fl_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6DCFF326B588B1B27618F28C /* Fl_Image.cxx */; };
+		2A274C661446598600CB21FE /* Fl_Tree.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5FF610230DB4932346044FC7 /* Fl_Tree.cxx */; };
+		2A274C671446598800CB21FE /* Fl_Toggle_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = B7E85200DC5E9EBB605EE1CB /* Fl_Toggle_Button.H */; };
+		2A274C681446598A00CB21FE /* gl_draw.H in Headers */ = {isa = PBXBuildFile; fileRef = 88C72DFE480F42D0547F786B /* gl_draw.H */; };
+		2A274C691446599000CB21FE /* numericsort.c in Sources */ = {isa = PBXBuildFile; fileRef = 977642DF53013F6E6F98A12C /* numericsort.c */; };
+		2A274C6A1446599200CB21FE /* fl_boxtype.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9B54C6B8D801E899981FC5E6 /* fl_boxtype.cxx */; };
+		2A274C6B1446599400CB21FE /* case.c in Sources */ = {isa = PBXBuildFile; fileRef = FB7A9EFB3C7CDAE324E9544F /* case.c */; };
+		2A274C6C1446599600CB21FE /* Fl_Plugin.H in Headers */ = {isa = PBXBuildFile; fileRef = A8F89055CABBCFECCC4CC940 /* Fl_Plugin.H */; };
+		2A274C6D1446599800CB21FE /* Fl_Value_Slider.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D80607C7E1AAA63C8B8F1978 /* Fl_Value_Slider.cxx */; };
+		2A274C6E1446599A00CB21FE /* Fl_Adjuster.H in Headers */ = {isa = PBXBuildFile; fileRef = 5CDA214AEABC15E3EF1BB172 /* Fl_Adjuster.H */; };
+		2A274C6F1446599C00CB21FE /* Fl_Tile.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E82932DF2A0C624C6EDC9207 /* Fl_Tile.cxx */; };
+		2A274C701446599E00CB21FE /* Fl_Radio_Round_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = FD1BB104911A6726B02EEE37 /* Fl_Radio_Round_Button.H */; };
+		2A274C71144659A000CB21FE /* Fl_cocoa.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F66B1D612BB924C00C67B59 /* Fl_cocoa.mm */; };
+		2A274C72144659A200CB21FE /* Fl_Scrollbar.H in Headers */ = {isa = PBXBuildFile; fileRef = 28F3E4EBB6E5F8420624A5DA /* Fl_Scrollbar.H */; };
+		2A274C73144659A400CB21FE /* Fl_Widget.H in Headers */ = {isa = PBXBuildFile; fileRef = 5426FC8371108CE8BCAB85B2 /* Fl_Widget.H */; };
+		2A274C74144659A600CB21FE /* filename_expand.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E49427F44D81B0A6192BC7CB /* filename_expand.cxx */; };
+		2A274C75144659A800CB21FE /* fl_show_input.H in Headers */ = {isa = PBXBuildFile; fileRef = EFAE92A1C7CA90BC56E5A70A /* fl_show_input.H */; };
+		2A274C76144659AF00CB21FE /* fl_utf8.cxx in Sources */ = {isa = PBXBuildFile; fileRef = DEF20F6B91F7FB0EBCBD2411 /* fl_utf8.cxx */; };
+		2A274C77144659B100CB21FE /* Fl_File_Chooser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 1AC9AD74C0E0B27EA2A99DF7 /* Fl_File_Chooser.cxx */; };
+		2A274C78144659B500CB21FE /* Fl_Return_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9A3D4184FF1C89B7CEE9FBD6 /* Fl_Return_Button.cxx */; };
+		2A274C79144659B700CB21FE /* Fl_Quartz_Printer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F66B1D812BB924C00C67B59 /* Fl_Quartz_Printer.mm */; };
+		2A274C7A144659B900CB21FE /* Fl_Chart.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F397A185D11C3DED903CB99F /* Fl_Chart.cxx */; };
+		2A274C7B144659BB00CB21FE /* Fl.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F4EFF27D730BED51EF0EAA8D /* Fl.cxx */; };
+		2A274C7C144659BD00CB21FE /* Fl_Multi_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = B707DB501C8702446FA24146 /* Fl_Multi_Browser.H */; };
+		2A274C7D144659BF00CB21FE /* Fl_Counter.H in Headers */ = {isa = PBXBuildFile; fileRef = CE97D58B5B0F1A2A7DB2A3FF /* Fl_Counter.H */; };
+		2A274C7E144659C100CB21FE /* fl_shortcut.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 7C57535613D421F393DD662F /* fl_shortcut.cxx */; };
+		2A274C7F144659C700CB21FE /* Fl_Round_Clock.H in Headers */ = {isa = PBXBuildFile; fileRef = 461BBD068DF8C58F4FFB131B /* Fl_Round_Clock.H */; };
+		2A274C80144659C800CB21FE /* Fl_Device.H in Headers */ = {isa = PBXBuildFile; fileRef = 82863AEFE086C3469C386C22 /* Fl_Device.H */; };
+		2A274C81144659CB00CB21FE /* Fl_Browser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4E2BE7807B57162E18C7E63F /* Fl_Browser.cxx */; };
+		2A274C82144659CD00CB21FE /* Fl_Return_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = CFE13249EA12A63C478888A8 /* Fl_Return_Button.H */; };
+		2A274C83144659CF00CB21FE /* Fl_Tabs.H in Headers */ = {isa = PBXBuildFile; fileRef = B8166E088FC996C9A89D2D37 /* Fl_Tabs.H */; };
+		2A274C84144659D100CB21FE /* Fl_Check_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = A2B930ADD957B492869191EB /* Fl_Check_Browser.H */; };
+		2A274C85144659D200CB21FE /* fl_shadow_box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F6A596316AE6F65117FF7196 /* fl_shadow_box.cxx */; };
+		2A274C86144659D400CB21FE /* Fl_Timer.H in Headers */ = {isa = PBXBuildFile; fileRef = DCEE2710A7119519AEF640AD /* Fl_Timer.H */; };
+		2A274C87144659D600CB21FE /* Fl_grab.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 28E8F2802DEA5334F914BE98 /* Fl_grab.cxx */; };
+		2A274C88144659D800CB21FE /* Fl_Image.H in Headers */ = {isa = PBXBuildFile; fileRef = 332598626430923370C48554 /* Fl_Image.H */; };
+		2A274C89144659DA00CB21FE /* Fl_visual.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5B2B6ED6A3649923BAAFFDF1 /* Fl_visual.cxx */; };
+		2A274C8A144659E000CB21FE /* screen_xywh.cxx in Sources */ = {isa = PBXBuildFile; fileRef = BD87D324A97F12C5C38A1432 /* screen_xywh.cxx */; };
+		2A274C8B144659E200CB21FE /* Fl_Browser_load.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E46A3C4F955A94AE095FF726 /* Fl_Browser_load.cxx */; };
+		2A274C8C144659E400CB21FE /* fl_show_colormap.H in Headers */ = {isa = PBXBuildFile; fileRef = 7574410DEB61AC3D68A6C137 /* fl_show_colormap.H */; };
+		2A274C8D144659E600CB21FE /* Fl_Sys_Menu_Bar.H in Headers */ = {isa = PBXBuildFile; fileRef = A71FBABB9EC90A680225B485 /* Fl_Sys_Menu_Bar.H */; };
+		2A274C8E144659E800CB21FE /* fl_cursor.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4343E645136756B9FEEE6902 /* fl_cursor.cxx */; };
+		2A274C8F144659EA00CB21FE /* fl_rect.cxx in Sources */ = {isa = PBXBuildFile; fileRef = BAF6DCFBAFBE016247558B82 /* fl_rect.cxx */; };
+		2A274C90144659EC00CB21FE /* Fl_Toggle_Round_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = A2C688326DDAF4AA29EA9120 /* Fl_Toggle_Round_Button.H */; };
+		2A274C91144659EE00CB21FE /* Fl_x.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 09A359CA8F522F64BAF6CEAF /* Fl_x.cxx */; };
+		2A274C92144659F000CB21FE /* fl_dnd.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93178E8AFA850DAC293FC /* fl_dnd.cxx */; };
+		2A274C93144659F200CB21FE /* Fl_Printer.H in Headers */ = {isa = PBXBuildFile; fileRef = A694A1F3298E15E532C3F784 /* Fl_Printer.H */; };
+		2A274C94144659F400CB21FE /* dirent.h in Headers */ = {isa = PBXBuildFile; fileRef = E448719A354B3D80FD2E1992 /* dirent.h */; };
+		2A274C95144659F600CB21FE /* Fl_arg.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 9F484B5F88CDE466AC0D0592 /* Fl_arg.cxx */; };
+		2A274C96144659F800CB21FE /* fl_draw_image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6F065A63833D5944E820C951 /* fl_draw_image.cxx */; };
+		2A274C97144659FA00CB21FE /* Fl_Progress.H in Headers */ = {isa = PBXBuildFile; fileRef = 4CD4094D8712818EACF5C7C5 /* Fl_Progress.H */; };
+		2A274C98144659FF00CB21FE /* Fl_Menu_.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D50A8FFC111398E34136B192 /* Fl_Menu_.cxx */; };
+		2A274C9914465A0100CB21FE /* Fl_Wizard.H in Headers */ = {isa = PBXBuildFile; fileRef = A57A8421086F1F0F9906B692 /* Fl_Wizard.H */; };
+		2A274C9A14465A0300CB21FE /* fl_arc.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 39E501DBC41F2617B69BEE95 /* fl_arc.cxx */; };
+		2A274C9B14465A0500CB21FE /* Fl_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5A7532B3CDA46030885D1D14 /* Fl_Button.cxx */; };
+		2A274C9C14465A0700CB21FE /* Fl_Check_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 4B1195741A8CCE772D17856C /* Fl_Check_Button.H */; };
+		2A274C9D14465A0900CB21FE /* Fl_Cairo_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = 8B02E11D61E46AD79DE7EFE7 /* Fl_Cairo_Window.H */; };
+		2A274C9E14465A0B00CB21FE /* Fl_Hold_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = A36535CFF8B14BA8B087A880 /* Fl_Hold_Browser.H */; };
+		2A274C9F14465A0D00CB21FE /* Fl_Browser.H in Headers */ = {isa = PBXBuildFile; fileRef = D90A34CD50A6825298459CCE /* Fl_Browser.H */; };
+		2A274CA014465A0F00CB21FE /* Fl_FormsPixmap.H in Headers */ = {isa = PBXBuildFile; fileRef = B145D961F04ADDCF78EFDFD1 /* Fl_FormsPixmap.H */; };
+		2A274CA114465A1000CB21FE /* Fl_get_key.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5B566F3BAD7101C63D5494E3 /* Fl_get_key.cxx */; };
+		2A274CA214465A1200CB21FE /* Fl_Roller.cxx in Sources */ = {isa = PBXBuildFile; fileRef = D0E376E93B4F22BE701D29E0 /* Fl_Roller.cxx */; };
+		2A274CA314465A1400CB21FE /* Fl_Menu_.H in Headers */ = {isa = PBXBuildFile; fileRef = 8985E851BEC6BB2BC613E5AD /* Fl_Menu_.H */; };
+		2A274CA414465A1800CB21FE /* Fl_Scrollbar.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A5B9A5CE605BB8A57F66A2E6 /* Fl_Scrollbar.cxx */; };
+		2A274CA514465A1A00CB21FE /* gl2opengl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C9AF6F2C1B78A67FFD177F9 /* gl2opengl.h */; };
+		2A274CA614465A1C00CB21FE /* Fl_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = E21339D33557BB5501B08AB1 /* Fl_Button.H */; };
+		2A274CA714465A1E00CB21FE /* Fl_Native_File_Chooser_MAC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7F66B1D712BB924C00C67B59 /* Fl_Native_File_Chooser_MAC.mm */; };
+		2A274CA814465A2000CB21FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9628FFD1274D0B3007D3CFE /* Cocoa.framework */; };
+		2A274CA914465A2200CB21FE /* Fl_Choice.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4D55C9FE101986BC47029A16 /* Fl_Choice.cxx */; };
+		2A274CAA14465A2400CB21FE /* fl_ask.H in Headers */ = {isa = PBXBuildFile; fileRef = 87259ACF8723616344D9AEB2 /* fl_ask.H */; };
+		2A274CAB14465A2600CB21FE /* fl_engraved_label.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3D85A740C2D5F1D6C6A9420D /* fl_engraved_label.cxx */; };
+		2A274CAC14465A2800CB21FE /* Fl_Double_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 33AF346DF043165E0A62ABB5 /* Fl_Double_Window.cxx */; };
+		2A274CAD14465A2C00CB21FE /* Fl_Preferences.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3789CACF6C845E9C0DE0C58F /* Fl_Preferences.cxx */; };
+		2A274CAE14465A2E00CB21FE /* Fl_Spinner.H in Headers */ = {isa = PBXBuildFile; fileRef = 76DD2676B757CB7F19B6EF94 /* Fl_Spinner.H */; };
+		2A274CAF14465A3100CB21FE /* Fl_Slider.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 5AF5119D08DFC92EA1032671 /* Fl_Slider.cxx */; };
+		2A274CB014465A3300CB21FE /* Fl_Value_Input.H in Headers */ = {isa = PBXBuildFile; fileRef = FF88A1DACCAFA2D143A7F234 /* Fl_Value_Input.H */; };
+		2A274CB114465A3500CB21FE /* Fl_Text_Buffer.H in Headers */ = {isa = PBXBuildFile; fileRef = 50E8E04A4389A8A2DAB7C53B /* Fl_Text_Buffer.H */; };
+		2A274CB214465A3700CB21FE /* Fl_Dial.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC31503AB99F6D00BAC647 /* Fl_Dial.cxx */; };
+		2A274CB314465A3900CB21FE /* fl_open_uri.cxx in Sources */ = {isa = PBXBuildFile; fileRef = FAD24127A06F3F9F0EEB843A /* fl_open_uri.cxx */; };
+		2A274CB414465A3B00CB21FE /* Fl_Menu_Window.H in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB9E7E8DB3AEC762613348 /* Fl_Menu_Window.H */; };
+		2A274CB514465A3C00CB21FE /* Fl_Table.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 116F849BE68830F05CA66B9A /* Fl_Table.cxx */; };
+		2A274CB614465A3E00CB21FE /* Fl_Color_Chooser.H in Headers */ = {isa = PBXBuildFile; fileRef = 2CD1EF8B4BFD0820E9A42641 /* Fl_Color_Chooser.H */; };
+		2A274CB714465A4000CB21FE /* win32.H in Headers */ = {isa = PBXBuildFile; fileRef = 62281FC096BA407C4F1E6824 /* win32.H */; };
+		2A274CB814465A4200CB21FE /* Fl_Scroll.H in Headers */ = {isa = PBXBuildFile; fileRef = EC2BAEE540612218DC9EEC75 /* Fl_Scroll.H */; };
+		2A274CB914465A4400CB21FE /* gl.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C1CBF782BBD9CCBFC0B451B /* gl.h */; };
+		2A274CBA14465A4A00CB21FE /* Fl_Check_Browser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F5B04FDCF453C6444285D186 /* Fl_Check_Browser.cxx */; };
+		2A274CBB14465A4C00CB21FE /* Fl_XPM_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC6DC7942212D47B70681B /* Fl_XPM_Image.cxx */; };
+		2A274CBC14465A4E00CB21FE /* Fl_File_Icon.H in Headers */ = {isa = PBXBuildFile; fileRef = 18A8E88697605A73C46C0DDF /* Fl_File_Icon.H */; };
+		2A274CBD14465A5000CB21FE /* Fl_Round_Button.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 13BCF00369D5254F0CE49599 /* Fl_Round_Button.cxx */; };
+		2A274CBE14465A5200CB21FE /* fl_oval_box.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 340E5CD1F39C1484B1BCE8F3 /* fl_oval_box.cxx */; };
+		2A274CBF14465A5400CB21FE /* Fl_Positioner.H in Headers */ = {isa = PBXBuildFile; fileRef = 20A898FCF6349F72BABDC497 /* Fl_Positioner.H */; };
+		2A274CC014465A5600CB21FE /* Fl_Bitmap.H in Headers */ = {isa = PBXBuildFile; fileRef = FE90AA3BB40510FA45E0C27B /* Fl_Bitmap.H */; };
+		2A274CC114465A5800CB21FE /* Fl_Clock.cxx in Sources */ = {isa = PBXBuildFile; fileRef = F5CAE7DC565B8398F02ED7BA /* Fl_Clock.cxx */; };
+		2A274CC214465A5A00CB21FE /* vsnprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = EBC0D2C965EDD6503B0CF519 /* vsnprintf.c */; };
+		2A274CC314465A5C00CB21FE /* fl_draw.cxx in Sources */ = {isa = PBXBuildFile; fileRef = FFFC4EDB5F397E3575B3A310 /* fl_draw.cxx */; };
+		2A274CC414465A5E00CB21FE /* Fl_Pack.H in Headers */ = {isa = PBXBuildFile; fileRef = 52C3B1D0A473BDC01D497917 /* Fl_Pack.H */; };
+		2A274CC514465A6000CB21FE /* Fl_Menu_Button.H in Headers */ = {isa = PBXBuildFile; fileRef = 97A233FBA4B73A1CA45A1388 /* Fl_Menu_Button.H */; };
+		2A274CC614465A6200CB21FE /* fl_curve.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3306C66283D192B1B1739E25 /* fl_curve.cxx */; };
+		2A274CC714465A6600CB21FE /* Fl_Value_Slider.H in Headers */ = {isa = PBXBuildFile; fileRef = 80D58C2358E8BBA86A8ADB7C /* Fl_Value_Slider.H */; };
+		2A274CC814465A6900CB21FE /* Fl_Tooltip.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0DBD503036293A8AEFAC6725 /* Fl_Tooltip.cxx */; };
+		2A274CC914465A6B00CB21FE /* Fl_Table_Row.H in Headers */ = {isa = PBXBuildFile; fileRef = 0CFB24E7079EC601366BCECF /* Fl_Table_Row.H */; };
+		2A274D3614465C7100CB21FE /* Fl_Gl_Window.cxx in Sources */ = {isa = PBXBuildFile; fileRef = EC57889382FB898FD3EF2580 /* Fl_Gl_Window.cxx */; };
+		2A274D3714465C7300CB21FE /* gl_draw.cxx in Sources */ = {isa = PBXBuildFile; fileRef = AFB1FA7E614E064C55880F21 /* gl_draw.cxx */; };
+		2A274D3814465C7500CB21FE /* Fl_Gl_Overlay.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 8E81EE378D475F9CFDE296C9 /* Fl_Gl_Overlay.cxx */; };
+		2A274D3914465C7800CB21FE /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96290E51274D100007D3CFE /* OpenGL.framework */; };
+		2A274D3A14465C7A00CB21FE /* freeglut_geometry.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 98E423BB92A1B4F201F6B042 /* freeglut_geometry.cxx */; };
+		2A274D3B14465C7C00CB21FE /* freeglut_teapot.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 95604163D1E6CBE33AAD66CD /* freeglut_teapot.cxx */; };
+		2A274D3C14465C7E00CB21FE /* freeglut_stroke_roman.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 6CCA5064754A8314839CB37A /* freeglut_stroke_roman.cxx */; };
+		2A274D3D14465C8000CB21FE /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4762ED12D22C470073A4F9 /* ApplicationServices.framework */; };
+		2A274D3E14465C8200CB21FE /* glut_font.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 29E61287C1F4A1123829C900 /* glut_font.cxx */; };
+		2A274D4014465C8500CB21FE /* freeglut_stroke_mono_roman.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 73374F6E214D9DC3E2264866 /* freeglut_stroke_mono_roman.cxx */; };
+		2A274D4114465C8700CB21FE /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C96290E11274D0EF007D3CFE /* AGL.framework */; };
+		2A274D4214465C8900CB21FE /* Fl_Gl_Device_Plugin.cxx in Sources */ = {isa = PBXBuildFile; fileRef = A7A692EB67C5CBE35D4A4B5C /* Fl_Gl_Device_Plugin.cxx */; };
+		2A274D4314465C8B00CB21FE /* Fl_Gl_Choice.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 27C65F509527076EB26E9C0F /* Fl_Gl_Choice.cxx */; };
+		2A274D4414465C8D00CB21FE /* glut_compatability.cxx in Sources */ = {isa = PBXBuildFile; fileRef = DD77F09FACBBCDC3C5276B93 /* glut_compatability.cxx */; };
+		2A274D7414465D1800CB21FE /* Fl_PNM_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = ECFF712363202EC351A51E53 /* Fl_PNM_Image.cxx */; };
+		2A274D7714465D1F00CB21FE /* Fl_BMP_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 3EB2D50857F16B94D2C516E9 /* Fl_BMP_Image.cxx */; };
+		2A274D7814465D2100CB21FE /* fl_images_core.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 67715F3670D58DDDB47DB256 /* fl_images_core.cxx */; };
+		2A274D7914465D2300CB21FE /* Fl_PNG_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = CE1157541DFCB8DC69A00345 /* Fl_PNG_Image.cxx */; };
+		2A274D7A14465D2500CB21FE /* Fl_JPEG_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 96F45BDA96C23534006C5538 /* Fl_JPEG_Image.cxx */; };
+		2A274D7B14465D2700CB21FE /* Fl_GIF_Image.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 877ED586A536CA9D898220D3 /* Fl_GIF_Image.cxx */; };
+		2A274D7C14465D2900CB21FE /* Fl_Help_Dialog.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 393BD835A7EBE8F1F43AC188 /* Fl_Help_Dialog.cxx */; };
+		2A274D7D14465D2B00CB21FE /* Fl_File_Icon2.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 0330777F0ECC3BA2B055C80E /* Fl_File_Icon2.cxx */; };
+		2A274DC214465DCA00CB21FE /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = BD535A20C799334E639DDD81 /* pngmem.c */; };
+		2A274DC314465DCC00CB21FE /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = BBD2663C0F428CC57126F4E2 /* pngrutil.c */; };
+		2A274DC414465DCE00CB21FE /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = 754E11ECF7EB2B3E7E1E3C68 /* pngset.c */; };
+		2A274DC514465DD000CB21FE /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 8AA117275273E1E3B906DA35 /* pngget.c */; };
+		2A274DC614465DD200CB21FE /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 24E8C158A0FFA9C8900E98D8 /* pngwtran.c */; };
+		2A274DC714465DD500CB21FE /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = C4CF7DDC2EC8792157A3F43B /* pngread.c */; };
+		2A274DC814465DD700CB21FE /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 9795165015E763BF705783DC /* pngerror.c */; };
+		2A274DC914465DD900CB21FE /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 037E92E807DF3B8C0B19FF85 /* pngrtran.c */; };
+		2A274DCA14465DDB00CB21FE /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = B7DE70E246F6A05A42991CC1 /* pngwio.c */; };
+		2A274DCB14465DDD00CB21FE /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = ADC532751F27C32E46DEFF6F /* pngtrans.c */; };
+		2A274DCC14465DDF00CB21FE /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = 2A5CB08352A0DBD0980FC770 /* pngpread.c */; };
+		2A274DCE14465DE300CB21FE /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 11A4DF1725F38E4341C5C663 /* pngwrite.c */; };
+		2A274DCF14465DE500CB21FE /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = D33C668435685F7CCB359EE2 /* pngrio.c */; };
+		2A274DD014465DE700CB21FE /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 577CE0F473400471A5F96A52 /* pngwutil.c */; };
+		2A274DD114465DE900CB21FE /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 5575DA9A654EB53C515F917A /* png.c */; };
+		2A274E0214465E7C00CB21FE /* jmemnobs.c in Sources */ = {isa = PBXBuildFile; fileRef = D3E25408466639AACEF4D2A6 /* jmemnobs.c */; };
+		2A274E0314465E7E00CB21FE /* jcinit.c in Sources */ = {isa = PBXBuildFile; fileRef = 819B540345E59C29EE9DF3DA /* jcinit.c */; };
+		2A274E0414465E8000CB21FE /* jdtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 4577F046D6D5D93D2553BFBC /* jdtrans.c */; };
+		2A274E0514465E8200CB21FE /* jcparam.c in Sources */ = {isa = PBXBuildFile; fileRef = 7DF4AD3769671959EA813845 /* jcparam.c */; };
+		2A274E0614465E8400CB21FE /* jdapistd.c in Sources */ = {isa = PBXBuildFile; fileRef = AB3E00F5BBC9AB1C51B0EEDC /* jdapistd.c */; };
+		2A274E0714465E8600CB21FE /* jdatadst.c in Sources */ = {isa = PBXBuildFile; fileRef = 90D9C06A2DCECD5B99C4A90A /* jdatadst.c */; };
+		2A274E0814465E8B00CB21FE /* jcdctmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = CF8C02ED9EB60F55A5713F10 /* jcdctmgr.c */; };
+		2A274E0914465E8E00CB21FE /* jinclude.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EA939130ACF91000D6870 /* jinclude.h */; };
+		2A274E0A14465E9000CB21FE /* jdsample.c in Sources */ = {isa = PBXBuildFile; fileRef = 5538B949B47F04D03589F2CE /* jdsample.c */; };
+		2A274E0B14465E9200CB21FE /* jcomapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 5CD5D087391E39030838C823 /* jcomapi.c */; };
+		2A274E0C14465E9400CB21FE /* jctrans.c in Sources */ = {isa = PBXBuildFile; fileRef = E4337D2D7CEEDCAD78B068E5 /* jctrans.c */; };
+		2A274E0D14465E9600CB21FE /* jfdctflt.c in Sources */ = {isa = PBXBuildFile; fileRef = D5CDFA360799E961187294DC /* jfdctflt.c */; };
+		2A274E0E14465E9800CB21FE /* jcapimin.c in Sources */ = {isa = PBXBuildFile; fileRef = 37EC93410A76CE3EB094F162 /* jcapimin.c */; };
+		2A274E0F14465E9A00CB21FE /* jdmainct.c in Sources */ = {isa = PBXBuildFile; fileRef = 428497C5DD96FDB07B2A8BC5 /* jdmainct.c */; };
+		2A274E1014465E9C00CB21FE /* jutils.c in Sources */ = {isa = PBXBuildFile; fileRef = 4CD5A5D2975A2CCB77EBAD43 /* jutils.c */; };
+		2A274E1114465E9E00CB21FE /* jfdctfst.c in Sources */ = {isa = PBXBuildFile; fileRef = A4456FF8D730E5BE234723F8 /* jfdctfst.c */; };
+		2A274E1214465EA000CB21FE /* jcmarker.c in Sources */ = {isa = PBXBuildFile; fileRef = 6F23DFF159ADA2C05E62C263 /* jcmarker.c */; };
+		2A274E1314465EA300CB21FE /* jpegint.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EA93B130ACF91000D6870 /* jpegint.h */; };
+		2A274E1414465EA500CB21FE /* jcmaster.c in Sources */ = {isa = PBXBuildFile; fileRef = D77F126A951A15185214FF2E /* jcmaster.c */; };
+		2A274E1514465EA700CB21FE /* jdatasrc.c in Sources */ = {isa = PBXBuildFile; fileRef = 5722EFFA9B8A529E03233053 /* jdatasrc.c */; };
+		2A274E1614465EA900CB21FE /* jdhuff.c in Sources */ = {isa = PBXBuildFile; fileRef = AB46BE0BB9C13E4684CB6D76 /* jdhuff.c */; };
+		2A274E1714465EAB00CB21FE /* jdcoefct.c in Sources */ = {isa = PBXBuildFile; fileRef = A715D265EAD3C5DA5628485C /* jdcoefct.c */; };
+		2A274E1814465EAD00CB21FE /* jquant2.c in Sources */ = {isa = PBXBuildFile; fileRef = 51A1DE1F52564E84C104F074 /* jquant2.c */; };
+		2A274E1914465EAF00CB21FE /* jdinput.c in Sources */ = {isa = PBXBuildFile; fileRef = EB9D2470FCD53D54DDB5CA10 /* jdinput.c */; };
+		2A274E1A14465EB100CB21FE /* jversion.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EA93C130ACF91000D6870 /* jversion.h */; };
+		2A274E1B14465EB300CB21FE /* jcapistd.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C4D02EC5E80D2BF56CFB48B /* jcapistd.c */; };
+		2A274E1D14465EBA00CB21FE /* jcsample.c in Sources */ = {isa = PBXBuildFile; fileRef = 65E1ABE72414529CBD1F937C /* jcsample.c */; };
+		2A274E1E14465EBC00CB21FE /* jquant1.c in Sources */ = {isa = PBXBuildFile; fileRef = DD96B70D85E60B641F061D51 /* jquant1.c */; };
+		2A274E1F14465EBE00CB21FE /* jidctflt.c in Sources */ = {isa = PBXBuildFile; fileRef = 377C68AADE10A3244413CFF6 /* jidctflt.c */; };
+		2A274E2014465EC000CB21FE /* jcmainct.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C2979BC9629FABDCC0271BB /* jcmainct.c */; };
+		2A274E2114465EC200CB21FE /* jcprepct.c in Sources */ = {isa = PBXBuildFile; fileRef = 14AA766D5DA5A8BCFF60B626 /* jcprepct.c */; };
+		2A274E2214465EC500CB21FE /* jfdctint.c in Sources */ = {isa = PBXBuildFile; fileRef = EB3B78BA6DFC3CD491D13E83 /* jfdctint.c */; };
+		2A274E2314465EC700CB21FE /* jdcolor.c in Sources */ = {isa = PBXBuildFile; fileRef = F123133D8A3AD430ED07DF17 /* jdcolor.c */; };
+		2A274E2414465EC900CB21FE /* jdmerge.c in Sources */ = {isa = PBXBuildFile; fileRef = C84F99F5AC8C6517F45055B0 /* jdmerge.c */; };
+		2A274E2514465ECB00CB21FE /* jmemmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = E618B793B357747DC837667E /* jmemmgr.c */; };
+		2A274E2614465ECD00CB21FE /* jidctfst.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B5CC86924C64E849EBE0179 /* jidctfst.c */; };
+		2A274E2714465ECF00CB21FE /* jmemsys.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EA93A130ACF91000D6870 /* jmemsys.h */; };
+		2A274E2814465ED100CB21FE /* jdarith.c in Sources */ = {isa = PBXBuildFile; fileRef = 273EA937130ACF91000D6870 /* jdarith.c */; };
+		2A274E2914465ED300CB21FE /* jccoefct.c in Sources */ = {isa = PBXBuildFile; fileRef = 2483CB305CCA0A319EF35BCF /* jccoefct.c */; };
+		2A274E2A14465ED500CB21FE /* jchuff.c in Sources */ = {isa = PBXBuildFile; fileRef = D9DB580DCA05DE487FACA272 /* jchuff.c */; };
+		2A274E2B14465ED700CB21FE /* jccolor.c in Sources */ = {isa = PBXBuildFile; fileRef = FE466F26BF6C316E5A1770E6 /* jccolor.c */; };
+		2A274E2C14465ED900CB21FE /* jddctmgr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FB7B9BDAA5F88A0223A5EA9 /* jddctmgr.c */; };
+		2A274E2D14465EDB00CB21FE /* jcarith.c in Sources */ = {isa = PBXBuildFile; fileRef = 273EA936130ACF91000D6870 /* jcarith.c */; };
+		2A274E2E14465EDE00CB21FE /* jdct.h in Headers */ = {isa = PBXBuildFile; fileRef = 273EA938130ACF91000D6870 /* jdct.h */; };
+		2A274E2F14465EE000CB21FE /* jdpostct.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D4D056FC1F1EFEC7585CA17 /* jdpostct.c */; };
+		2A274E3014465EE200CB21FE /* jdapimin.c in Sources */ = {isa = PBXBuildFile; fileRef = D3FB35B309F2E1E59D1618C8 /* jdapimin.c */; };
+		2A274E3114465EE400CB21FE /* jaricom.c in Sources */ = {isa = PBXBuildFile; fileRef = 273EA935130ACF91000D6870 /* jaricom.c */; };
+		2A274E3214465EE600CB21FE /* jdmarker.c in Sources */ = {isa = PBXBuildFile; fileRef = BB37899B104B362F32F0F417 /* jdmarker.c */; };
+		2A274E3314465EE800CB21FE /* jdmaster.c in Sources */ = {isa = PBXBuildFile; fileRef = 28AFF174A53E38CCB7475C19 /* jdmaster.c */; };
+		2A274E3414465EEE00CB21FE /* jerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 86685DA60EFE7C0F07DC5C3B /* jerror.c */; };
+		2A274E3514465EF100CB21FE /* jidctint.c in Sources */ = {isa = PBXBuildFile; fileRef = 33F18D02CA150D5654D48366 /* jidctint.c */; };
+		2A274E5914465F3C00CB21FE /* forms_pixmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = E954F5F2730C01DC9FD2866D /* forms_pixmap.cxx */; };
+		2A274E5A14465F3E00CB21FE /* forms_timer.cxx in Sources */ = {isa = PBXBuildFile; fileRef = EF7E3948AA6D39FF92C88E06 /* forms_timer.cxx */; };
+		2A274E5B14465F4100CB21FE /* forms_compatability.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB54753C46D7CB01A3C8C /* forms_compatability.cxx */; };
+		2A274E5C14465F4300CB21FE /* forms_free.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 4036292D2024DE5622EA0D11 /* forms_free.cxx */; };
+		2A274E5D14465F4500CB21FE /* forms_bitmap.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 34A2B3EFA6146F599E7CA80A /* forms_bitmap.cxx */; };
+		2A274E5E14465F4700CB21FE /* forms_fselect.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 62777DA2221D60EC8F03C905 /* forms_fselect.cxx */; };
+		2A274E8D14465FC300CB21FE /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = B95D0F0F7652C2937824E87D /* crc32.c */; };
+		2A274E8E14465FC600CB21FE /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F54C8A7130FAC4F00E736F3 /* infback.c */; };
+		2A274E8F14465FC800CB21FE /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F54C8A4130FAC4F00E736F3 /* gzlib.c */; };
+		2A274E9014465FCA00CB21FE /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 65B20106A8A21FCCA56538F8 /* inftrees.c */; };
+		2A274E9114465FCC00CB21FE /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = C64D06EA8317E22EE4B2376D /* inflate.c */; };
+		2A274E9214465FCF00CB21FE /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 49F26943DBCFA9878A9C3F55 /* adler32.c */; };
+		2A274E9314465FD100CB21FE /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = D816F0ECD89EEA82EC711076 /* trees.c */; };
+		2A274E9414465FD300CB21FE /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D546B243A6858F60A678FF1 /* uncompr.c */; };
+		2A274E9514465FD500CB21FE /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F54C8A3130FAC4F00E736F3 /* gzclose.c */; };
+		2A274E9614465FD700CB21FE /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B4931D88DEFF9253DD2B260 /* inffast.c */; };
+		2A274E9714465FD900CB21FE /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F54C8A6130FAC4F00E736F3 /* gzwrite.c */; };
+		2A274E9814465FDB00CB21FE /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 65E5BAE2A9732DA6B4A53098 /* deflate.c */; };
+		2A274E9914465FDD00CB21FE /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 7F54C8A5130FAC4F00E736F3 /* gzread.c */; };
+		2A274E9A14465FDF00CB21FE /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 6BCDA929CD8600DE9AC516DD /* compress.c */; };
+		2A274E9B14465FE100CB21FE /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F328DFEE7B768CF141C8E9E /* zutil.c */; };
 		2A2F82B3FE0E053BB79FB38E /* device.cxx in Sources */ = {isa = PBXBuildFile; fileRef = DF2662F7275F8873F9BA6C64 /* device.cxx */; };
 		2BE1A3AC07CE39EEAC5E2B98 /* filename_list.cxx in Sources */ = {isa = PBXBuildFile; fileRef = CD0C572F3E0A8040E9C52E0F /* filename_list.cxx */; };
 		2C0BDF55B026879D401DF915 /* Fl_File_Chooser.cxx in Sources */ = {isa = PBXBuildFile; fileRef = 1AC9AD74C0E0B27EA2A99DF7 /* Fl_File_Chooser.cxx */; };
@@ -4132,6 +4543,13 @@
 		28E8F2802DEA5334F914BE98 /* Fl_grab.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fl_grab.cxx; path = ../../src/Fl_grab.cxx; sourceTree = SOURCE_ROOT; };
 		28F3E4EBB6E5F8420624A5DA /* Fl_Scrollbar.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Fl_Scrollbar.H; path = ../../FL/Fl_Scrollbar.H; sourceTree = SOURCE_ROOT; };
 		29E61287C1F4A1123829C900 /* glut_font.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = glut_font.cxx; path = ../../src/glut_font.cxx; sourceTree = SOURCE_ROOT; };
+		2A274A1D14464E7200CB21FE /* libfltk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274D1314465C3C00CB21FE /* libfltk_gl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_gl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274D6214465CF800CB21FE /* libfltk_images.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_images.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274DB114465D9A00CB21FE /* libfltk_png.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_png.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274DF114465E5700CB21FE /* libfltk_jpeg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_jpeg.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274E4814465F0D00CB21FE /* libfltk_forms.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_forms.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A274E7C14465F9800CB21FE /* libfltk_zlib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfltk_zlib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3CEBA07E8AE9BF4C002531 /* CubeMain.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CubeMain.cxx; path = ../../test/CubeMain.cxx; sourceTree = SOURCE_ROOT; };
 		2A5CB08352A0DBD0980FC770 /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngpread.c; path = ../../png/pngpread.c; sourceTree = SOURCE_ROOT; };
 		2B5CC86924C64E849EBE0179 /* jidctfst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jidctfst.c; path = ../../jpeg/jidctfst.c; sourceTree = SOURCE_ROOT; };
@@ -4745,6 +5163,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				C228B2DA444B36D2F9C3E168 /* fltk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274A1B14464E7200CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274CA814465A2000CB21FE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D1114465C3C00CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274D3914465C7800CB21FE /* OpenGL.framework in Frameworks */,
+				2A274D3D14465C8000CB21FE /* ApplicationServices.framework in Frameworks */,
+				2A274D4114465C8700CB21FE /* AGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D6014465CF800CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DAF14465D9A00CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DEF14465E5700CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E4614465F0D00CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E7A14465F9800CB21FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6600,6 +7071,13 @@
 				C05E4BE052F69E6F1FD92730 /* utf8.app */,
 				5191489A6263E11B65A57B4D /* valuators.app */,
 				C9165EAF1291A304003FF4F0 /* utf8.app */,
+				2A274A1D14464E7200CB21FE /* libfltk.a */,
+				2A274D1314465C3C00CB21FE /* libfltk_gl.a */,
+				2A274D6214465CF800CB21FE /* libfltk_images.a */,
+				2A274DB114465D9A00CB21FE /* libfltk_png.a */,
+				2A274DF114465E5700CB21FE /* libfltk_jpeg.a */,
+				2A274E4814465F0D00CB21FE /* libfltk_forms.a */,
+				2A274E7C14465F9800CB21FE /* libfltk_zlib.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -6686,6 +7164,208 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2A274A1914464E7200CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274B8B144657A500CB21FE /* Fl_Preferences.H in Headers */,
+				2A274B92144657C100CB21FE /* Fl_Paged_Device.H in Headers */,
+				2A274B94144657C500CB21FE /* Fl_Output.H in Headers */,
+				2A274B96144657C900CB21FE /* Fl_Export.H in Headers */,
+				2A274B98144657CD00CB21FE /* Fl_Chart.H in Headers */,
+				2A274B9A144657D100CB21FE /* Fl_File_Chooser.H in Headers */,
+				2A274B9D144657D700CB21FE /* Fl_File_Browser.H in Headers */,
+				2A274B9F144657DB00CB21FE /* Fl_Help_Dialog.H in Headers */,
+				2A274BA0144657DD00CB21FE /* fl_draw.H in Headers */,
+				2A274BA1144657DE00CB21FE /* Fl_Tree.H in Headers */,
+				2A274BA2144657E000CB21FE /* Fl_Text_Editor.H in Headers */,
+				2A274BA4144657EA00CB21FE /* Fl_Hor_Value_Slider.H in Headers */,
+				2A274BA5144657ED00CB21FE /* filename.H in Headers */,
+				2A274BA9144657FA00CB21FE /* Fl_Float_Input.H in Headers */,
+				2A274BAA144657FC00CB21FE /* Fl_Light_Button.H in Headers */,
+				2A274BAC1446580000CB21FE /* fl_types.h in Headers */,
+				2A274BAD1446580200CB21FE /* Fl_Table.H in Headers */,
+				2A274BB01446580800CB21FE /* Fl_GIF_Image.H in Headers */,
+				2A274BB11446580A00CB21FE /* Fl_Radio_Light_Button.H in Headers */,
+				2A274BB21446580C00CB21FE /* Fl_PNM_Image.H in Headers */,
+				2A274BB41446581000CB21FE /* Fl_Hor_Slider.H in Headers */,
+				2A274BB51446581200CB21FE /* Fl_Multiline_Input.H in Headers */,
+				2A274BB71446581500CB21FE /* math.h in Headers */,
+				2A274BB91446581900CB21FE /* jpeglib.h in Headers */,
+				2A274BBC1446581F00CB21FE /* Fl_Valuator.H in Headers */,
+				2A274BBD1446582100CB21FE /* fl_utf8.h in Headers */,
+				2A274BBF1446582F00CB21FE /* Fl_Help_View.H in Headers */,
+				2A274BC21446583500CB21FE /* Fl_Fill_Dial.H in Headers */,
+				2A274BC31446583700CB21FE /* Fl_Hor_Nice_Slider.H in Headers */,
+				2A274BC51446583B00CB21FE /* Enumerations.H in Headers */,
+				2A274BC61446583C00CB21FE /* Fl_PNG_Image.H in Headers */,
+				2A274BC71446583E00CB21FE /* Fl_Browser_.H in Headers */,
+				2A274BCA1446584400CB21FE /* Fl_XBM_Image.H in Headers */,
+				2A274BCC1446584800CB21FE /* Fl_Box.H in Headers */,
+				2A274BCD1446584A00CB21FE /* Fl_FormsBitmap.H in Headers */,
+				2A274BCF1446584E00CB21FE /* pngconf.h in Headers */,
+				2A274BD11446585200CB21FE /* Fl_Menu.H in Headers */,
+				2A274BD21446585300CB21FE /* Fl_PostScript.H in Headers */,
+				2A274BD41446585700CB21FE /* Fl_Menu_Bar.H in Headers */,
+				2A274BD71446585D00CB21FE /* x.H in Headers */,
+				2A274BD91446586600CB21FE /* jconfig.h in Headers */,
+				2A274BDD1446586E00CB21FE /* Fl_Tooltip.H in Headers */,
+				2A274BDE1446587000CB21FE /* Fl_Value_Output.H in Headers */,
+				2A274BE11446587600CB21FE /* Fl_Round_Button.H in Headers */,
+				2A274BE21446587800CB21FE /* Fl_Single_Window.H in Headers */,
+				2A274BE31446587A00CB21FE /* Fl_Fill_Slider.H in Headers */,
+				2A274BE91446588500CB21FE /* Fl_Choice.H in Headers */,
+				2A274BEA1446588700CB21FE /* Fl_Secret_Input.H in Headers */,
+				2A274BEB1446588900CB21FE /* Fl_Input_Choice.H in Headers */,
+				2A274BEC1446588B00CB21FE /* Fl_Multi_Label.H in Headers */,
+				2A274BF01446589300CB21FE /* Fl_Overlay_Window.H in Headers */,
+				2A274BF21446589D00CB21FE /* Fl_JPEG_Image.H in Headers */,
+				2A274BF31446589F00CB21FE /* Fl_Hor_Fill_Slider.H in Headers */,
+				2A274BF5144658A300CB21FE /* Xutf8.h in Headers */,
+				2A274BF6144658A500CB21FE /* Fl_Multiline_Output.H in Headers */,
+				2A274BFB144658AE00CB21FE /* Fl_Native_File_Chooser.H in Headers */,
+				2A274BFC144658B000CB21FE /* Fl_Slider.H in Headers */,
+				2A274BFF144658B600CB21FE /* Fl_Int_Input.H in Headers */,
+				2A274C00144658B800CB21FE /* Fl_Tile.H in Headers */,
+				2A274C03144658BE00CB21FE /* Fl_RGB_Image.H in Headers */,
+				2A274C06144658C400CB21FE /* Fl.H in Headers */,
+				2A274C07144658C600CB21FE /* Fl_Select_Browser.H in Headers */,
+				2A274C08144658C700CB21FE /* Fl_Clock.H in Headers */,
+				2A274C0C144658D400CB21FE /* Fl_Repeat_Button.H in Headers */,
+				2A274C0F144658DA00CB21FE /* png.h in Headers */,
+				2A274C10144658DC00CB21FE /* Fl_File_Input.H in Headers */,
+				2A274C12144658E000CB21FE /* fl_message.H in Headers */,
+				2A274C15144658E600CB21FE /* Fl_Tree_Item_Array.H in Headers */,
+				2A274C16144658E800CB21FE /* Fl_Toggle_Light_Button.H in Headers */,
+				2A274C19144658ED00CB21FE /* Fl_Cairo.H in Headers */,
+				2A274C1B144658F100CB21FE /* names.h in Headers */,
+				2A274C1E144658F700CB21FE /* Fl_BMP_Image.H in Headers */,
+				2A274C20144658FB00CB21FE /* glut.H in Headers */,
+				2A274C231446590100CB21FE /* Fl_Roller.H in Headers */,
+				2A274C341446591500CB21FE /* glu.h in Headers */,
+				2A274C3A1446592300CB21FE /* Fl_Text_Display.H in Headers */,
+				2A274C3B1446592500CB21FE /* Fl_Input.H in Headers */,
+				2A274C3C1446592700CB21FE /* jmorecfg.h in Headers */,
+				2A274C3D1446592900CB21FE /* Fl_Double_Window.H in Headers */,
+				2A274C3E1446592B00CB21FE /* Fl_Tree_Prefs.H in Headers */,
+				2A274C411446593100CB21FE /* Fl_XPM_Image.H in Headers */,
+				2A274C431446593800CB21FE /* Fl_Gl_Window.H in Headers */,
+				2A274C441446593A00CB21FE /* Fl_Nice_Slider.H in Headers */,
+				2A274C451446593C00CB21FE /* Fl_Shared_Image.H in Headers */,
+				2A274C461446593E00CB21FE /* Fl_Tiled_Image.H in Headers */,
+				2A274C471446594000CB21FE /* Fl_Free.H in Headers */,
+				2A274C481446594200CB21FE /* Fl_Group.H in Headers */,
+				2A274C4E1446594E00CB21FE /* jerror.h in Headers */,
+				2A274C4F1446594F00CB21FE /* Fl_Line_Dial.H in Headers */,
+				2A274C531446595C00CB21FE /* forms.H in Headers */,
+				2A274C551446596000CB21FE /* Fl_Menu_Item.H in Headers */,
+				2A274C561446596200CB21FE /* Fl_Simple_Counter.H in Headers */,
+				2A274C591446596700CB21FE /* mac.H in Headers */,
+				2A274C5B1446597000CB21FE /* Fl_Window.H in Headers */,
+				2A274C5C1446597200CB21FE /* Fl_Dial.H in Headers */,
+				2A274C5E1446597600CB21FE /* Fl_Tree_Item.H in Headers */,
+				2A274C601446597A00CB21FE /* Fl_Radio_Button.H in Headers */,
+				2A274C621446597E00CB21FE /* Fl_Object.H in Headers */,
+				2A274C631446598000CB21FE /* Fl_Pixmap.H in Headers */,
+				2A274C641446598200CB21FE /* Fl_Input_.H in Headers */,
+				2A274C671446598800CB21FE /* Fl_Toggle_Button.H in Headers */,
+				2A274C681446598A00CB21FE /* gl_draw.H in Headers */,
+				2A274C6C1446599600CB21FE /* Fl_Plugin.H in Headers */,
+				2A274C6E1446599A00CB21FE /* Fl_Adjuster.H in Headers */,
+				2A274C701446599E00CB21FE /* Fl_Radio_Round_Button.H in Headers */,
+				2A274C72144659A200CB21FE /* Fl_Scrollbar.H in Headers */,
+				2A274C73144659A400CB21FE /* Fl_Widget.H in Headers */,
+				2A274C75144659A800CB21FE /* fl_show_input.H in Headers */,
+				2A274C7C144659BD00CB21FE /* Fl_Multi_Browser.H in Headers */,
+				2A274C7D144659BF00CB21FE /* Fl_Counter.H in Headers */,
+				2A274C7F144659C700CB21FE /* Fl_Round_Clock.H in Headers */,
+				2A274C80144659C800CB21FE /* Fl_Device.H in Headers */,
+				2A274C82144659CD00CB21FE /* Fl_Return_Button.H in Headers */,
+				2A274C83144659CF00CB21FE /* Fl_Tabs.H in Headers */,
+				2A274C84144659D100CB21FE /* Fl_Check_Browser.H in Headers */,
+				2A274C86144659D400CB21FE /* Fl_Timer.H in Headers */,
+				2A274C88144659D800CB21FE /* Fl_Image.H in Headers */,
+				2A274C8C144659E400CB21FE /* fl_show_colormap.H in Headers */,
+				2A274C8D144659E600CB21FE /* Fl_Sys_Menu_Bar.H in Headers */,
+				2A274C90144659EC00CB21FE /* Fl_Toggle_Round_Button.H in Headers */,
+				2A274C93144659F200CB21FE /* Fl_Printer.H in Headers */,
+				2A274C94144659F400CB21FE /* dirent.h in Headers */,
+				2A274C97144659FA00CB21FE /* Fl_Progress.H in Headers */,
+				2A274C9914465A0100CB21FE /* Fl_Wizard.H in Headers */,
+				2A274C9C14465A0700CB21FE /* Fl_Check_Button.H in Headers */,
+				2A274C9D14465A0900CB21FE /* Fl_Cairo_Window.H in Headers */,
+				2A274C9E14465A0B00CB21FE /* Fl_Hold_Browser.H in Headers */,
+				2A274C9F14465A0D00CB21FE /* Fl_Browser.H in Headers */,
+				2A274CA014465A0F00CB21FE /* Fl_FormsPixmap.H in Headers */,
+				2A274CA314465A1400CB21FE /* Fl_Menu_.H in Headers */,
+				2A274CA514465A1A00CB21FE /* gl2opengl.h in Headers */,
+				2A274CA614465A1C00CB21FE /* Fl_Button.H in Headers */,
+				2A274CAA14465A2400CB21FE /* fl_ask.H in Headers */,
+				2A274CAE14465A2E00CB21FE /* Fl_Spinner.H in Headers */,
+				2A274CB014465A3300CB21FE /* Fl_Value_Input.H in Headers */,
+				2A274CB114465A3500CB21FE /* Fl_Text_Buffer.H in Headers */,
+				2A274CB414465A3B00CB21FE /* Fl_Menu_Window.H in Headers */,
+				2A274CB614465A3E00CB21FE /* Fl_Color_Chooser.H in Headers */,
+				2A274CB714465A4000CB21FE /* win32.H in Headers */,
+				2A274CB814465A4200CB21FE /* Fl_Scroll.H in Headers */,
+				2A274CB914465A4400CB21FE /* gl.h in Headers */,
+				2A274CBC14465A4E00CB21FE /* Fl_File_Icon.H in Headers */,
+				2A274CBF14465A5400CB21FE /* Fl_Positioner.H in Headers */,
+				2A274CC014465A5600CB21FE /* Fl_Bitmap.H in Headers */,
+				2A274CC414465A5E00CB21FE /* Fl_Pack.H in Headers */,
+				2A274CC514465A6000CB21FE /* Fl_Menu_Button.H in Headers */,
+				2A274CC714465A6600CB21FE /* Fl_Value_Slider.H in Headers */,
+				2A274CC914465A6B00CB21FE /* Fl_Table_Row.H in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D0F14465C3C00CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D5E14465CF800CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DAD14465D9A00CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DED14465E5700CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274E0914465E8E00CB21FE /* jinclude.h in Headers */,
+				2A274E1314465EA300CB21FE /* jpegint.h in Headers */,
+				2A274E1A14465EB100CB21FE /* jversion.h in Headers */,
+				2A274E2714465ECF00CB21FE /* jmemsys.h in Headers */,
+				2A274E2E14465EDE00CB21FE /* jdct.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E4414465F0D00CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E7814465F9800CB21FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7A0DD0617839B6CF397E2894 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -6989,6 +7669,125 @@
 			productName = ask;
 			productReference = DA8A450882FEFFAC70EE12ED /* ask.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2A274A1C14464E7200CB21FE /* fltk_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274A2014464E7D00CB21FE /* Build configuration list for PBXNativeTarget "fltk_lib" */;
+			buildPhases = (
+				2A274A1914464E7200CB21FE /* Headers */,
+				2A274A1A14464E7200CB21FE /* Sources */,
+				2A274A1B14464E7200CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_lib;
+			productName = static_lib;
+			productReference = 2A274A1D14464E7200CB21FE /* libfltk.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274D1214465C3C00CB21FE /* fltk_gl_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274D5D14465CF300CB21FE /* Build configuration list for PBXNativeTarget "fltk_gl_lib" */;
+			buildPhases = (
+				2A274D0F14465C3C00CB21FE /* Headers */,
+				2A274D1014465C3C00CB21FE /* Sources */,
+				2A274D1114465C3C00CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_gl_lib;
+			productName = fltk_gl_lib;
+			productReference = 2A274D1314465C3C00CB21FE /* libfltk_gl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274D6114465CF800CB21FE /* fltk_images_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274D8C14465D4900CB21FE /* Build configuration list for PBXNativeTarget "fltk_images_lib" */;
+			buildPhases = (
+				2A274D5E14465CF800CB21FE /* Headers */,
+				2A274D5F14465CF800CB21FE /* Sources */,
+				2A274D6014465CF800CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_images_lib;
+			productName = fltk_images_lib;
+			productReference = 2A274D6214465CF800CB21FE /* libfltk_images.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274DB014465D9A00CB21FE /* fltk_png_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274DD414465E0700CB21FE /* Build configuration list for PBXNativeTarget "fltk_png_lib" */;
+			buildPhases = (
+				2A274DAD14465D9A00CB21FE /* Headers */,
+				2A274DAE14465D9A00CB21FE /* Sources */,
+				2A274DAF14465D9A00CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_png_lib;
+			productName = fltk_png_lib;
+			productReference = 2A274DB114465D9A00CB21FE /* libfltk_png.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274DF014465E5700CB21FE /* fltk_jpeg_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274E6814465F8800CB21FE /* Build configuration list for PBXNativeTarget "fltk_jpeg_lib" */;
+			buildPhases = (
+				2A274DED14465E5700CB21FE /* Headers */,
+				2A274DEE14465E5700CB21FE /* Sources */,
+				2A274DEF14465E5700CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_jpeg_lib;
+			productName = fltk_jpeg_lib;
+			productReference = 2A274DF114465E5700CB21FE /* libfltk_jpeg.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274E4714465F0D00CB21FE /* fltk_forms_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274E6914465F8800CB21FE /* Build configuration list for PBXNativeTarget "fltk_forms_lib" */;
+			buildPhases = (
+				2A274E4414465F0D00CB21FE /* Headers */,
+				2A274E4514465F0D00CB21FE /* Sources */,
+				2A274E4614465F0D00CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_forms_lib;
+			productName = fltk_forms_lib;
+			productReference = 2A274E4814465F0D00CB21FE /* libfltk_forms.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2A274E7B14465F9800CB21FE /* fltk_zlib_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A274ECA144660B600CB21FE /* Build configuration list for PBXNativeTarget "fltk_zlib_lib" */;
+			buildPhases = (
+				2A274E7814465F9800CB21FE /* Headers */,
+				2A274E7914465F9800CB21FE /* Sources */,
+				2A274E7A14465F9800CB21FE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fltk_zlib_lib;
+			productName = fltk_zlib_lib;
+			productReference = 2A274E7C14465F9800CB21FE /* libfltk_zlib.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		2A6B003A80FBAF126EC8F448 /* browser */ = {
 			isa = PBXNativeTarget;
@@ -8456,6 +9255,13 @@
 				0392A304CDC05B94337B7C04 /* fltk_jpeg */,
 				3C13C653905795060D6D4F0A /* fltk_forms */,
 				AA5932F4EEB6D1D7E5D1A314 /* fltk_zlib */,
+				2A274A1C14464E7200CB21FE /* fltk_lib */,
+				2A274D1214465C3C00CB21FE /* fltk_gl_lib */,
+				2A274D6114465CF800CB21FE /* fltk_images_lib */,
+				2A274DB014465D9A00CB21FE /* fltk_png_lib */,
+				2A274DF014465E5700CB21FE /* fltk_jpeg_lib */,
+				2A274E4714465F0D00CB21FE /* fltk_forms_lib */,
+				2A274E7B14465F9800CB21FE /* fltk_zlib_lib */,
 				79BD42AF87FBA9AE10BD7C58 /* Demo */,
 				E8BE99F75E5F3C8725834B33 /* adjuster */,
 				9A8F59CD813587E2E463DF07 /* arc */,
@@ -9247,6 +10053,309 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE82A6E34B6A3F1B030E8AB3 /* image.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274A1A14464E7200CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274B8C144657B500CB21FE /* Fl_abort.cxx in Sources */,
+				2A274B8D144657B800CB21FE /* Fl_Widget.cxx in Sources */,
+				2A274B8E144657BA00CB21FE /* fl_color.cxx in Sources */,
+				2A274B8F144657BC00CB21FE /* Fl_Box.cxx in Sources */,
+				2A274B90144657BE00CB21FE /* Fl_Window_fullscreen.cxx in Sources */,
+				2A274B91144657BF00CB21FE /* Fl_File_Icon.cxx in Sources */,
+				2A274B93144657C300CB21FE /* filename_setext.cxx in Sources */,
+				2A274B95144657C700CB21FE /* Fl_Group.cxx in Sources */,
+				2A274B97144657CB00CB21FE /* Fl_Color_Chooser.cxx in Sources */,
+				2A274B99144657CF00CB21FE /* fl_font.cxx in Sources */,
+				2A274B9C144657D500CB21FE /* fl_rounded_box.cxx in Sources */,
+				2A274B9E144657D900CB21FE /* scandir.c in Sources */,
+				2A274BA3144657E200CB21FE /* Fl_Value_Output.cxx in Sources */,
+				2A274BA6144657F400CB21FE /* fl_call_main.c in Sources */,
+				2A274BA7144657F600CB21FE /* Fl_own_colormap.cxx in Sources */,
+				2A274BA8144657F800CB21FE /* Fl_Menu.cxx in Sources */,
+				2A274BAB144657FE00CB21FE /* Fl_add_idle.cxx in Sources */,
+				2A274BAE1446580400CB21FE /* filename_isdir.cxx in Sources */,
+				2A274BAF1446580600CB21FE /* cmap.cxx in Sources */,
+				2A274BB31446580E00CB21FE /* Fl_display.cxx in Sources */,
+				2A274BB61446581300CB21FE /* Fl_Counter.cxx in Sources */,
+				2A274BB81446581700CB21FE /* fl_diamond_box.cxx in Sources */,
+				2A274BBA1446581B00CB21FE /* fl_vertex.cxx in Sources */,
+				2A274BBB1446581D00CB21FE /* Fl_Native_File_Chooser.cxx in Sources */,
+				2A274BBE1446582300CB21FE /* Fl_Paged_Device.cxx in Sources */,
+				2A274BC01446583100CB21FE /* fl_plastic.cxx in Sources */,
+				2A274BC11446583300CB21FE /* Fl_Text_Buffer.cxx in Sources */,
+				2A274BC41446583900CB21FE /* Fl_Pixmap.cxx in Sources */,
+				2A274BC81446584000CB21FE /* fl_set_fonts.cxx in Sources */,
+				2A274BC91446584200CB21FE /* Fl_File_Browser.cxx in Sources */,
+				2A274BCB1446584600CB21FE /* Fl_Menu_Bar.cxx in Sources */,
+				2A274BCE1446584C00CB21FE /* Fl_Menu_Button.cxx in Sources */,
+				2A274BD01446585000CB21FE /* Fl_File_Chooser2.cxx in Sources */,
+				2A274BD31446585500CB21FE /* is_right2left.c in Sources */,
+				2A274BD51446585900CB21FE /* Fl_Bitmap.cxx in Sources */,
+				2A274BD61446585B00CB21FE /* fl_encoding_mac_roman.cxx in Sources */,
+				2A274BD81446586400CB21FE /* Fl_Sys_Menu_Bar.cxx in Sources */,
+				2A274BDA1446586800CB21FE /* Fl_compose.cxx in Sources */,
+				2A274BDB1446586A00CB21FE /* Fl_Overlay_Window.cxx in Sources */,
+				2A274BDC1446586C00CB21FE /* fl_scroll_area.cxx in Sources */,
+				2A274BDF1446587200CB21FE /* Fl_Valuator.cxx in Sources */,
+				2A274BE01446587400CB21FE /* fl_file_dir.cxx in Sources */,
+				2A274BE41446587C00CB21FE /* Fl_Repeat_Button.cxx in Sources */,
+				2A274BE51446587E00CB21FE /* fl_encoding_latin1.cxx in Sources */,
+				2A274BE61446587F00CB21FE /* fl_show_colormap.cxx in Sources */,
+				2A274BE71446588100CB21FE /* fl_overlay.cxx in Sources */,
+				2A274BE81446588300CB21FE /* Fl_Progress.cxx in Sources */,
+				2A274BED1446588D00CB21FE /* Fl_Scroll.cxx in Sources */,
+				2A274BEE1446588F00CB21FE /* Fl_Table_Row.cxx in Sources */,
+				2A274BEF1446589100CB21FE /* fl_round_box.cxx in Sources */,
+				2A274BF11446589500CB21FE /* fl_overlay_visual.cxx in Sources */,
+				2A274BF4144658A100CB21FE /* Fl_Pack.cxx in Sources */,
+				2A274BF7144658A700CB21FE /* Fl_File_Input.cxx in Sources */,
+				2A274BF8144658A900CB21FE /* Fl_Tiled_Image.cxx in Sources */,
+				2A274BF9144658AB00CB21FE /* Fl_Light_Button.cxx in Sources */,
+				2A274BFA144658AC00CB21FE /* Fl_lock.cxx in Sources */,
+				2A274BFD144658B200CB21FE /* fl_labeltype.cxx in Sources */,
+				2A274BFE144658B400CB21FE /* Fl_Positioner.cxx in Sources */,
+				2A274C01144658BA00CB21FE /* Fl_Input.cxx in Sources */,
+				2A274C02144658BC00CB21FE /* Fl_Tree_Item_Array.cxx in Sources */,
+				2A274C04144658C000CB21FE /* fl_set_font.cxx in Sources */,
+				2A274C05144658C200CB21FE /* fl_symbols.cxx in Sources */,
+				2A274C09144658C900CB21FE /* fl_arci.cxx in Sources */,
+				2A274C0A144658CB00CB21FE /* fl_draw_pixmap.cxx in Sources */,
+				2A274C0B144658D200CB21FE /* filename_match.cxx in Sources */,
+				2A274C0D144658D600CB21FE /* Fl_Menu_Window.cxx in Sources */,
+				2A274C0E144658D800CB21FE /* Fl_Tree_Item.cxx in Sources */,
+				2A274C11144658DE00CB21FE /* Fl_Window_hotspot.cxx in Sources */,
+				2A274C13144658E200CB21FE /* Fl_XBM_Image.cxx in Sources */,
+				2A274C14144658E400CB21FE /* is_spacing.c in Sources */,
+				2A274C17144658EA00CB21FE /* Fl_Wizard.cxx in Sources */,
+				2A274C18144658EB00CB21FE /* Fl_get_system_colors.cxx in Sources */,
+				2A274C1A144658EF00CB21FE /* filename_list.cxx in Sources */,
+				2A274C1C144658F300CB21FE /* Fl_Shared_Image.cxx in Sources */,
+				2A274C1D144658F500CB21FE /* ps_image.cxx in Sources */,
+				2A274C1F144658F900CB21FE /* Fl_Menu_global.cxx in Sources */,
+				2A274C21144658FD00CB21FE /* Fl_Text_Editor.cxx in Sources */,
+				2A274C22144658FF00CB21FE /* Fl_Value_Input.cxx in Sources */,
+				2A274C351446591800CB21FE /* filename_ext.cxx in Sources */,
+				2A274C361446591A00CB21FE /* Fl_Browser_.cxx in Sources */,
+				2A274C371446591D00CB21FE /* Fl_Adjuster.cxx in Sources */,
+				2A274C381446591F00CB21FE /* fl_line_style.cxx in Sources */,
+				2A274C391446592100CB21FE /* Fl_Device.cxx in Sources */,
+				2A274C3F1446592D00CB21FE /* Fl_Printer.cxx in Sources */,
+				2A274C401446592F00CB21FE /* fl_utf.c in Sources */,
+				2A274C421446593300CB21FE /* filename_absolute.cxx in Sources */,
+				2A274C491446594400CB21FE /* fl_gtk.cxx in Sources */,
+				2A274C4A1446594600CB21FE /* Fl_Text_Display.cxx in Sources */,
+				2A274C4B1446594800CB21FE /* fl_ask.cxx in Sources */,
+				2A274C4C1446594A00CB21FE /* fl_read_image.cxx in Sources */,
+				2A274C4D1446594C00CB21FE /* flstring.c in Sources */,
+				2A274C501446595600CB21FE /* Fl_Tabs.cxx in Sources */,
+				2A274C511446595800CB21FE /* Fl_Tree_Prefs.cxx in Sources */,
+				2A274C521446595A00CB21FE /* Fl_Multi_Label.cxx in Sources */,
+				2A274C541446595E00CB21FE /* Fl_Window_iconize.cxx in Sources */,
+				2A274C571446596300CB21FE /* Fl_Menu_add.cxx in Sources */,
+				2A274C581446596500CB21FE /* Fl_Single_Window.cxx in Sources */,
+				2A274C5A1446596900CB21FE /* Fl_Check_Button.cxx in Sources */,
+				2A274C5D1446597400CB21FE /* Fl_Window.cxx in Sources */,
+				2A274C5F1446597800CB21FE /* Fl_Input_.cxx in Sources */,
+				2A274C611446597C00CB21FE /* Fl_Help_View.cxx in Sources */,
+				2A274C651446598400CB21FE /* Fl_Image.cxx in Sources */,
+				2A274C661446598600CB21FE /* Fl_Tree.cxx in Sources */,
+				2A274C691446599000CB21FE /* numericsort.c in Sources */,
+				2A274C6A1446599200CB21FE /* fl_boxtype.cxx in Sources */,
+				2A274C6B1446599400CB21FE /* case.c in Sources */,
+				2A274C6D1446599800CB21FE /* Fl_Value_Slider.cxx in Sources */,
+				2A274C6F1446599C00CB21FE /* Fl_Tile.cxx in Sources */,
+				2A274C71144659A000CB21FE /* Fl_cocoa.mm in Sources */,
+				2A274C74144659A600CB21FE /* filename_expand.cxx in Sources */,
+				2A274C76144659AF00CB21FE /* fl_utf8.cxx in Sources */,
+				2A274C77144659B100CB21FE /* Fl_File_Chooser.cxx in Sources */,
+				2A274C78144659B500CB21FE /* Fl_Return_Button.cxx in Sources */,
+				2A274C79144659B700CB21FE /* Fl_Quartz_Printer.mm in Sources */,
+				2A274C7A144659B900CB21FE /* Fl_Chart.cxx in Sources */,
+				2A274C7B144659BB00CB21FE /* Fl.cxx in Sources */,
+				2A274C7E144659C100CB21FE /* fl_shortcut.cxx in Sources */,
+				2A274C81144659CB00CB21FE /* Fl_Browser.cxx in Sources */,
+				2A274C85144659D200CB21FE /* fl_shadow_box.cxx in Sources */,
+				2A274C87144659D600CB21FE /* Fl_grab.cxx in Sources */,
+				2A274C89144659DA00CB21FE /* Fl_visual.cxx in Sources */,
+				2A274C8A144659E000CB21FE /* screen_xywh.cxx in Sources */,
+				2A274C8B144659E200CB21FE /* Fl_Browser_load.cxx in Sources */,
+				2A274C8E144659E800CB21FE /* fl_cursor.cxx in Sources */,
+				2A274C8F144659EA00CB21FE /* fl_rect.cxx in Sources */,
+				2A274C91144659EE00CB21FE /* Fl_x.cxx in Sources */,
+				2A274C92144659F000CB21FE /* fl_dnd.cxx in Sources */,
+				2A274C95144659F600CB21FE /* Fl_arg.cxx in Sources */,
+				2A274C96144659F800CB21FE /* fl_draw_image.cxx in Sources */,
+				2A274C98144659FF00CB21FE /* Fl_Menu_.cxx in Sources */,
+				2A274C9A14465A0300CB21FE /* fl_arc.cxx in Sources */,
+				2A274C9B14465A0500CB21FE /* Fl_Button.cxx in Sources */,
+				2A274CA114465A1000CB21FE /* Fl_get_key.cxx in Sources */,
+				2A274CA214465A1200CB21FE /* Fl_Roller.cxx in Sources */,
+				2A274CA414465A1800CB21FE /* Fl_Scrollbar.cxx in Sources */,
+				2A274CA714465A1E00CB21FE /* Fl_Native_File_Chooser_MAC.mm in Sources */,
+				2A274CA914465A2200CB21FE /* Fl_Choice.cxx in Sources */,
+				2A274CAB14465A2600CB21FE /* fl_engraved_label.cxx in Sources */,
+				2A274CAC14465A2800CB21FE /* Fl_Double_Window.cxx in Sources */,
+				2A274CAD14465A2C00CB21FE /* Fl_Preferences.cxx in Sources */,
+				2A274CAF14465A3100CB21FE /* Fl_Slider.cxx in Sources */,
+				2A274CB214465A3700CB21FE /* Fl_Dial.cxx in Sources */,
+				2A274CB314465A3900CB21FE /* fl_open_uri.cxx in Sources */,
+				2A274CB514465A3C00CB21FE /* Fl_Table.cxx in Sources */,
+				2A274CBA14465A4A00CB21FE /* Fl_Check_Browser.cxx in Sources */,
+				2A274CBB14465A4C00CB21FE /* Fl_XPM_Image.cxx in Sources */,
+				2A274CBD14465A5000CB21FE /* Fl_Round_Button.cxx in Sources */,
+				2A274CBE14465A5200CB21FE /* fl_oval_box.cxx in Sources */,
+				2A274CC114465A5800CB21FE /* Fl_Clock.cxx in Sources */,
+				2A274CC214465A5A00CB21FE /* vsnprintf.c in Sources */,
+				2A274CC314465A5C00CB21FE /* fl_draw.cxx in Sources */,
+				2A274CC614465A6200CB21FE /* fl_curve.cxx in Sources */,
+				2A274CC814465A6900CB21FE /* Fl_Tooltip.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D1014465C3C00CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274D3614465C7100CB21FE /* Fl_Gl_Window.cxx in Sources */,
+				2A274D3714465C7300CB21FE /* gl_draw.cxx in Sources */,
+				2A274D3814465C7500CB21FE /* Fl_Gl_Overlay.cxx in Sources */,
+				2A274D3A14465C7A00CB21FE /* freeglut_geometry.cxx in Sources */,
+				2A274D3B14465C7C00CB21FE /* freeglut_teapot.cxx in Sources */,
+				2A274D3C14465C7E00CB21FE /* freeglut_stroke_roman.cxx in Sources */,
+				2A274D3E14465C8200CB21FE /* glut_font.cxx in Sources */,
+				2A274D4014465C8500CB21FE /* freeglut_stroke_mono_roman.cxx in Sources */,
+				2A274D4214465C8900CB21FE /* Fl_Gl_Device_Plugin.cxx in Sources */,
+				2A274D4314465C8B00CB21FE /* Fl_Gl_Choice.cxx in Sources */,
+				2A274D4414465C8D00CB21FE /* glut_compatability.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274D5F14465CF800CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274D7414465D1800CB21FE /* Fl_PNM_Image.cxx in Sources */,
+				2A274D7714465D1F00CB21FE /* Fl_BMP_Image.cxx in Sources */,
+				2A274D7814465D2100CB21FE /* fl_images_core.cxx in Sources */,
+				2A274D7914465D2300CB21FE /* Fl_PNG_Image.cxx in Sources */,
+				2A274D7A14465D2500CB21FE /* Fl_JPEG_Image.cxx in Sources */,
+				2A274D7B14465D2700CB21FE /* Fl_GIF_Image.cxx in Sources */,
+				2A274D7C14465D2900CB21FE /* Fl_Help_Dialog.cxx in Sources */,
+				2A274D7D14465D2B00CB21FE /* Fl_File_Icon2.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DAE14465D9A00CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274DC214465DCA00CB21FE /* pngmem.c in Sources */,
+				2A274DC314465DCC00CB21FE /* pngrutil.c in Sources */,
+				2A274DC414465DCE00CB21FE /* pngset.c in Sources */,
+				2A274DC514465DD000CB21FE /* pngget.c in Sources */,
+				2A274DC614465DD200CB21FE /* pngwtran.c in Sources */,
+				2A274DC714465DD500CB21FE /* pngread.c in Sources */,
+				2A274DC814465DD700CB21FE /* pngerror.c in Sources */,
+				2A274DC914465DD900CB21FE /* pngrtran.c in Sources */,
+				2A274DCA14465DDB00CB21FE /* pngwio.c in Sources */,
+				2A274DCB14465DDD00CB21FE /* pngtrans.c in Sources */,
+				2A274DCC14465DDF00CB21FE /* pngpread.c in Sources */,
+				2A274DCE14465DE300CB21FE /* pngwrite.c in Sources */,
+				2A274DCF14465DE500CB21FE /* pngrio.c in Sources */,
+				2A274DD014465DE700CB21FE /* pngwutil.c in Sources */,
+				2A274DD114465DE900CB21FE /* png.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274DEE14465E5700CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274E0214465E7C00CB21FE /* jmemnobs.c in Sources */,
+				2A274E0314465E7E00CB21FE /* jcinit.c in Sources */,
+				2A274E0414465E8000CB21FE /* jdtrans.c in Sources */,
+				2A274E0514465E8200CB21FE /* jcparam.c in Sources */,
+				2A274E0614465E8400CB21FE /* jdapistd.c in Sources */,
+				2A274E0714465E8600CB21FE /* jdatadst.c in Sources */,
+				2A274E0814465E8B00CB21FE /* jcdctmgr.c in Sources */,
+				2A274E0A14465E9000CB21FE /* jdsample.c in Sources */,
+				2A274E0B14465E9200CB21FE /* jcomapi.c in Sources */,
+				2A274E0C14465E9400CB21FE /* jctrans.c in Sources */,
+				2A274E0D14465E9600CB21FE /* jfdctflt.c in Sources */,
+				2A274E0E14465E9800CB21FE /* jcapimin.c in Sources */,
+				2A274E0F14465E9A00CB21FE /* jdmainct.c in Sources */,
+				2A274E1014465E9C00CB21FE /* jutils.c in Sources */,
+				2A274E1114465E9E00CB21FE /* jfdctfst.c in Sources */,
+				2A274E1214465EA000CB21FE /* jcmarker.c in Sources */,
+				2A274E1414465EA500CB21FE /* jcmaster.c in Sources */,
+				2A274E1514465EA700CB21FE /* jdatasrc.c in Sources */,
+				2A274E1614465EA900CB21FE /* jdhuff.c in Sources */,
+				2A274E1714465EAB00CB21FE /* jdcoefct.c in Sources */,
+				2A274E1814465EAD00CB21FE /* jquant2.c in Sources */,
+				2A274E1914465EAF00CB21FE /* jdinput.c in Sources */,
+				2A274E1B14465EB300CB21FE /* jcapistd.c in Sources */,
+				2A274E1D14465EBA00CB21FE /* jcsample.c in Sources */,
+				2A274E1E14465EBC00CB21FE /* jquant1.c in Sources */,
+				2A274E1F14465EBE00CB21FE /* jidctflt.c in Sources */,
+				2A274E2014465EC000CB21FE /* jcmainct.c in Sources */,
+				2A274E2114465EC200CB21FE /* jcprepct.c in Sources */,
+				2A274E2214465EC500CB21FE /* jfdctint.c in Sources */,
+				2A274E2314465EC700CB21FE /* jdcolor.c in Sources */,
+				2A274E2414465EC900CB21FE /* jdmerge.c in Sources */,
+				2A274E2514465ECB00CB21FE /* jmemmgr.c in Sources */,
+				2A274E2614465ECD00CB21FE /* jidctfst.c in Sources */,
+				2A274E2814465ED100CB21FE /* jdarith.c in Sources */,
+				2A274E2914465ED300CB21FE /* jccoefct.c in Sources */,
+				2A274E2A14465ED500CB21FE /* jchuff.c in Sources */,
+				2A274E2B14465ED700CB21FE /* jccolor.c in Sources */,
+				2A274E2C14465ED900CB21FE /* jddctmgr.c in Sources */,
+				2A274E2D14465EDB00CB21FE /* jcarith.c in Sources */,
+				2A274E2F14465EE000CB21FE /* jdpostct.c in Sources */,
+				2A274E3014465EE200CB21FE /* jdapimin.c in Sources */,
+				2A274E3114465EE400CB21FE /* jaricom.c in Sources */,
+				2A274E3214465EE600CB21FE /* jdmarker.c in Sources */,
+				2A274E3314465EE800CB21FE /* jdmaster.c in Sources */,
+				2A274E3414465EEE00CB21FE /* jerror.c in Sources */,
+				2A274E3514465EF100CB21FE /* jidctint.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E4514465F0D00CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274E5914465F3C00CB21FE /* forms_pixmap.cxx in Sources */,
+				2A274E5A14465F3E00CB21FE /* forms_timer.cxx in Sources */,
+				2A274E5B14465F4100CB21FE /* forms_compatability.cxx in Sources */,
+				2A274E5C14465F4300CB21FE /* forms_free.cxx in Sources */,
+				2A274E5D14465F4500CB21FE /* forms_bitmap.cxx in Sources */,
+				2A274E5E14465F4700CB21FE /* forms_fselect.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A274E7914465F9800CB21FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A274E8D14465FC300CB21FE /* crc32.c in Sources */,
+				2A274E8E14465FC600CB21FE /* infback.c in Sources */,
+				2A274E8F14465FC800CB21FE /* gzlib.c in Sources */,
+				2A274E9014465FCA00CB21FE /* inftrees.c in Sources */,
+				2A274E9114465FCC00CB21FE /* inflate.c in Sources */,
+				2A274E9214465FCF00CB21FE /* adler32.c in Sources */,
+				2A274E9314465FD100CB21FE /* trees.c in Sources */,
+				2A274E9414465FD300CB21FE /* uncompr.c in Sources */,
+				2A274E9514465FD500CB21FE /* gzclose.c in Sources */,
+				2A274E9614465FD700CB21FE /* inffast.c in Sources */,
+				2A274E9714465FD900CB21FE /* gzwrite.c in Sources */,
+				2A274E9814465FDB00CB21FE /* deflate.c in Sources */,
+				2A274E9914465FDD00CB21FE /* gzread.c in Sources */,
+				2A274E9A14465FDF00CB21FE /* compress.c in Sources */,
+				2A274E9B14465FE100CB21FE /* zutil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -11003,7 +12112,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = line_style;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11036,7 +12144,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_images;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11067,7 +12174,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = ask;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11100,7 +12206,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tile;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11133,7 +12238,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = mandelbrot;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11166,7 +12270,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = hello;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11196,7 +12299,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = list_visuals;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11226,7 +12328,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = image;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11259,7 +12360,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = keyboard;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11289,7 +12389,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tiled_image;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11322,7 +12421,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = utf8;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11352,7 +12450,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = checkers;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11385,7 +12482,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = doublebuffer;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11418,7 +12514,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = overlay;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11451,7 +12546,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = checkers;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11481,7 +12575,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = radio;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11511,7 +12604,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = navigation;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11541,7 +12633,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tile;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11571,7 +12662,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = utf8;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11601,7 +12691,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = output;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11631,13 +12720,320 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = CubeView;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
 				);
 			};
 			name = Debug;
+		};
+		2A274A1E14464E7200CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk;
+			};
+			name = Debug;
+		};
+		2A274A1F14464E7200CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274D2214465C3C00CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_gl;
+			};
+			name = Debug;
+		};
+		2A274D2314465C3C00CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_gl;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274D6314465CF900CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_images;
+			};
+			name = Debug;
+		};
+		2A274D6414465CF900CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_images;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274DB214465D9B00CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_png;
+			};
+			name = Debug;
+		};
+		2A274DB314465D9B00CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_png;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274DF214465E5700CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_jpeg;
+			};
+			name = Debug;
+		};
+		2A274DF314465E5700CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_jpeg;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274E4914465F0D00CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_forms;
+			};
+			name = Debug;
+		};
+		2A274E4A14465F0D00CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_forms;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		2A274E7D14465F9900CB21FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_zlib;
+			};
+			name = Debug;
+		};
+		2A274E7E14465F9900CB21FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PREPROCESSOR_DEFINITIONS = FL_LIBRARY;
+				HEADER_SEARCH_PATHS = (
+					../../ide/XCode3/,
+					../../,
+					../../png,
+					../../jpeg,
+				);
+				INSTALL_PATH = /usr/local/lib;
+				PREBINDING = NO;
+				PRODUCT_NAME = fltk_zlib;
+				ZERO_LINK = NO;
+			};
+			name = Release;
 		};
 		2B5D11814BD06DEEA705390B /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -11664,7 +13060,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = editor;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11697,7 +13092,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tree;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11730,7 +13124,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tabs;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11763,7 +13156,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = image;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11793,7 +13185,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = help;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11826,7 +13217,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = bitmap;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11859,7 +13249,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = list_visuals;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11890,7 +13279,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = arc;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11920,7 +13308,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = resizebox;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11950,7 +13337,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = sudoku;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -11983,7 +13369,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = boxtype;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12013,7 +13398,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = label;
-				SDKROOT = macosx;
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12043,7 +13427,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = gl_overlay;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12071,7 +13454,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = adjuster;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12104,7 +13486,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = browser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12137,7 +13518,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = cursor;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12170,7 +13550,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = blocks;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12203,7 +13582,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = colbrowser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12236,7 +13614,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = glpuzzle;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12266,7 +13643,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = clock;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12296,7 +13672,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = inactive;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12329,7 +13704,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = help;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12359,7 +13733,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = valuators;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12389,7 +13762,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fast_slow;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12422,7 +13794,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = navigation;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12455,7 +13826,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = resize;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12488,7 +13858,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pack;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12521,7 +13890,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = symbols;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12552,7 +13920,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_png;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12586,7 +13953,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_gl;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12620,7 +13986,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = message;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12651,7 +14016,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_jpeg;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12684,7 +14048,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = cube;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12714,7 +14077,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fonts;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12741,7 +14103,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = CubeView;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12774,7 +14135,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = shape;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12804,7 +14164,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = iconize;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12837,7 +14196,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = "native-filechooser";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12870,7 +14228,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = menubar;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12900,7 +14257,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fractals;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12933,7 +14289,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = valuators;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12961,7 +14316,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = arc;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -12991,7 +14345,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = device;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13028,7 +14381,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13058,7 +14410,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = minimum;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13088,7 +14439,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_png;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13106,7 +14456,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -13132,7 +14482,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = rotated_text;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13165,7 +14514,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = iconize;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13198,7 +14546,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = sudoku;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13231,7 +14578,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pixmap_browser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13261,7 +14607,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = preferences;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13291,7 +14636,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = forms;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13324,7 +14668,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = preferences;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13357,7 +14700,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = label;
-				SDKROOT = macosx;
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13387,7 +14729,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = buttons;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13417,7 +14758,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_jpeg;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13445,7 +14785,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Demo;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13475,7 +14814,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = glpuzzle;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13508,7 +14846,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = button;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13541,7 +14878,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fast_slow;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13571,7 +14907,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = message;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13601,7 +14936,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = editor;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13631,7 +14965,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = bitmap;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13664,7 +14997,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = inactive;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13697,7 +15029,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = clock;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13727,7 +15058,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = file_chooser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13752,7 +15082,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Fluid;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13782,7 +15111,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = curve;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13812,7 +15140,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fullscreen;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13842,7 +15169,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = colbrowser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13870,7 +15196,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Fluid;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13900,7 +15225,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = browser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13930,7 +15254,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tree;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13963,7 +15286,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = scroll;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -13993,7 +15315,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = hello;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14027,7 +15348,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_images;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14057,7 +15377,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pack;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14090,7 +15409,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = device;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14123,7 +15441,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = subwindow;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14153,7 +15470,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = doublebuffer;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14183,7 +15499,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = mandelbrot;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14216,7 +15531,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = resizebox;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14227,14 +15541,14 @@
 		AC3226B9FE17327A0476ACA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ARCHS = "$(ONLY_ACTIVE_ARCH_PRE_XCODE_3_1)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH_PRE_XCODE_3_1 = "$(NATIVE_ARCH_ACTUAL)";
 				PREBINDING = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -14260,7 +15574,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pixmap_browser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14290,7 +15603,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = color_chooser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14322,7 +15634,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_forms;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14356,7 +15667,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = buttons;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14389,7 +15699,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = minimum;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14422,7 +15731,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = input;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14455,7 +15763,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = file_chooser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14488,7 +15795,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fonts;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14518,7 +15824,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tabs;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14551,7 +15856,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_forms;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14581,7 +15885,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = input_choice;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14611,7 +15914,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = keyboard;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14641,7 +15943,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = scroll;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14674,7 +15975,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = curve;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14710,7 +16010,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14741,7 +16040,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_zlib;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14772,7 +16070,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = menubar;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14802,7 +16099,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = table;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14835,7 +16131,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = rotated_text;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14868,7 +16163,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = input_choice;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14901,7 +16195,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = output;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14931,7 +16224,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = boxtype;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14964,7 +16256,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = table;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -14997,7 +16288,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = threads;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15030,7 +16320,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = utf8;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15060,7 +16349,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = utf8;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15090,7 +16378,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = button;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15123,7 +16410,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = gl_overlay;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15156,7 +16442,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = tiled_image;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15189,7 +16474,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pixmap;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15222,7 +16506,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = radio;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15252,7 +16535,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = pixmap;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15282,7 +16564,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = line_style;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15312,7 +16593,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = shape;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15342,7 +16622,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = subwindow;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15372,7 +16651,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = overlay;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15405,7 +16683,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = ask;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15435,7 +16712,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = input;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15468,7 +16744,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = forms;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15498,7 +16773,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = cube;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15528,7 +16802,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = blocks;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15553,7 +16826,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = adjuster;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15583,7 +16855,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = cursor;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15613,7 +16884,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = "native-filechooser";
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15646,7 +16916,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = color_chooser;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15681,7 +16950,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_gl;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15711,7 +16979,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = symbols;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15741,7 +17008,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = resize;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15771,7 +17037,6 @@
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = Demo;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15804,7 +17069,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fractals;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15835,7 +17099,6 @@
 				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				PRODUCT_NAME = fltk_zlib;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15868,7 +17131,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = fullscreen;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15898,7 +17160,6 @@
 					Cocoa,
 				);
 				PRODUCT_NAME = threads;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
 				WARNING_CFLAGS = (
 					"-Wno-format-security",
 					"-Wall",
@@ -15986,6 +17247,69 @@
 			buildConfigurations = (
 				7FD9FF3CBC717FD201EA3584 /* Debug */,
 				ADE4C4ABB8D7F6FD30F85AFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274A2014464E7D00CB21FE /* Build configuration list for PBXNativeTarget "fltk_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274A1E14464E7200CB21FE /* Debug */,
+				2A274A1F14464E7200CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274D5D14465CF300CB21FE /* Build configuration list for PBXNativeTarget "fltk_gl_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274D2214465C3C00CB21FE /* Debug */,
+				2A274D2314465C3C00CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274D8C14465D4900CB21FE /* Build configuration list for PBXNativeTarget "fltk_images_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274D6314465CF900CB21FE /* Debug */,
+				2A274D6414465CF900CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274DD414465E0700CB21FE /* Build configuration list for PBXNativeTarget "fltk_png_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274DB214465D9B00CB21FE /* Debug */,
+				2A274DB314465D9B00CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274E6814465F8800CB21FE /* Build configuration list for PBXNativeTarget "fltk_jpeg_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274DF214465E5700CB21FE /* Debug */,
+				2A274DF314465E5700CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274E6914465F8800CB21FE /* Build configuration list for PBXNativeTarget "fltk_forms_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274E4914465F0D00CB21FE /* Debug */,
+				2A274E4A14465F0D00CB21FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		2A274ECA144660B600CB21FE /* Build configuration list for PBXNativeTarget "fltk_zlib_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A274E7D14465F9900CB21FE /* Debug */,
+				2A274E7E14465F9900CB21FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
