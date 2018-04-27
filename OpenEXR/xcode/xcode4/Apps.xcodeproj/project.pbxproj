@@ -293,7 +293,7 @@
 		2A45851316F92090005E07DE /* exrmultipart */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exrmultipart; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A45851716F920DF005E07DE /* exrmultipart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exrmultipart.cpp; sourceTree = "<group>"; };
 		2A4D282215CF1A0B007CAFAC /* OpenEXRConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEXRConfig.h; sourceTree = "<group>"; };
-		2A4D282315CF1A18007CAFAC /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IlmBaseConfig.h; path = ../../../IlmBase/xcode/xcode3/IlmBaseConfig.h; sourceTree = SOURCE_ROOT; };
+		2A4D282315CF1A18007CAFAC /* IlmBaseConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IlmBaseConfig.h; path = ../../../IlmBase/xcode/xcode4/IlmBaseConfig.h; sourceTree = SOURCE_ROOT; };
 		2A4D283715CF1A7E007CAFAC /* exrbuild */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = exrbuild; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A4D283B15CF1A9F007CAFAC /* exrbuild.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exrbuild.cpp; sourceTree = "<group>"; };
 		2A4D284415CF1AB9007CAFAC /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
