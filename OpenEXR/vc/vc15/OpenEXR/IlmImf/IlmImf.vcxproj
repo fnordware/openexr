@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_4ByteStruct|Win32">
+      <Configuration>Debug_4ByteStruct</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_4ByteStruct|x64">
+      <Configuration>Debug_4ByteStruct</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_4ByteStruct|Win32">
+      <Configuration>Release_4ByteStruct</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_4ByteStruct|x64">
+      <Configuration>Release_4ByteStruct</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7DF42126-D237-41D3-9ABE-A3ACC8BAC56E}</ProjectGuid>
+    <RootNamespace>IlmImf</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|Win32'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|x64'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|Win32'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|x64'">
+    <OutDir>..\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|Win32'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|x64'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|Win32'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|x64'">
+    <PreBuildEvent>
+      <Message>Building LUT files...</Message>
+      <Command>..\..\buildLUTs_$(Platform)_$(Configuration).cmd</Command>
+    </PreBuildEvent>
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmImf;..\..\..\..\config.windows;..\..\..\..\..\IlmBase\Half;..\..\..\..\..\IlmBase\Iex;..\..\..\..\..\IlmBase\Imath;..\..\..\..\..\IlmBase\IlmThread;..\..\..\..\..\IlmBase\config.windows;..\..\..\..\..\..\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\IlmImf\ImfAcesFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfB44Compressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfBoxAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfChannelList.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfChannelListAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfChromaticities.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfChromaticitiesAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfCompositeDeepScanLine.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfCompressionAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfConvert.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfCRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepCompositing.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepImageStateAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepScanLineInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepScanLineOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepScanLineOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDeepTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDoubleAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfDwaCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfEnvmap.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfEnvmapAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfFastHuf.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfFloatAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfFloatVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfFrameBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfFramesPerSecond.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfGenericInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfGenericOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfHeader.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfHuf.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfInputPartData.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfIntAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfIO.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfKeyCode.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfKeyCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfLineOrderAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfLut.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfMatrixAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfMisc.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfMultiPartInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfMultiPartOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfMultiView.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfOpaqueAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfOutputPartData.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfPartType.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfPizCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfPreviewImage.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfPreviewImageAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfPxr24Compressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRational.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRationalAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRgbaYca.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRle.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfRleCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfScanLineInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfStandardAttributes.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfStdIO.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfStringAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfStringVectorAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfSystemSpecific.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTestFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfThreading.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTileDescriptionAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledInputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledInputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledMisc.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledOutputFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledOutputPart.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTiledRgbaFile.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTileOffsets.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTimeCode.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfTimeCodeAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfVecAttribute.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfVersion.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfWav.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfZip.cpp" />
+    <ClCompile Include="..\..\..\..\IlmImf\ImfZipCompressor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\IlmImf\ImfAcesFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfArray.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfAutoArray.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfB44Compressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfBoxAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfChannelList.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfChannelListAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCheckedArithmetic.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfChromaticities.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfChromaticitiesAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCompositeDeepScanLine.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCompression.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCompressionAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCompressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfConvert.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfCRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepCompositing.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepFrameBuffer.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepImageState.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepImageStateAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepScanLineInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepScanLineInputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepScanLineOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepScanLineOutputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepTiledInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepTiledInputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDeepTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDoubleAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDwaCompressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfDwaCompressorSimd.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfEnvmap.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfEnvmapAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfExport.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfFastHuf.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfFloatAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfFloatVectorAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfForward.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfFrameBuffer.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfFramesPerSecond.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfGenericInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfGenericOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfHeader.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfHuf.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfInputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfInputPartData.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfInputStreamMutex.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfInt64.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfIntAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfIO.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfKeyCode.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfKeyCodeAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfLineOrder.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfLineOrderAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfLut.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfMatrixAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfMisc.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfMultiPartInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfMultiPartOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfMultiView.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfName.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfNamespace.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOpaqueAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOptimizedPixelReading.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOutputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOutputPartData.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfOutputStreamMutex.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPartHelper.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPartType.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPixelType.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPizCompressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPreviewImage.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPreviewImageAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfPxr24Compressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRational.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRationalAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRgba.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRgbaYca.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRle.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfRleCompressor.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfScanLineInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfSimd.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfStandardAttributes.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfStdIO.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfStringAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfStringVectorAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfSystemSpecific.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTestFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfThreading.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTileDescription.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTileDescriptionAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledInputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledInputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledMisc.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledOutputFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledOutputPart.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTiledRgbaFile.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTileOffsets.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTimeCode.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfTimeCodeAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfVecAttribute.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfVersion.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfWav.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfXdr.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfZip.h" />
+    <ClInclude Include="..\..\..\..\IlmImf\ImfZipCompressor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\IlmBase\vc\vc15\IlmBase\Half\Half.vcxproj">
+      <Project>{9edb5c0f-bfd0-4a59-bb93-f06a52bb0128}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\IlmBase\vc\vc15\IlmBase\Iex\Iex.vcxproj">
+      <Project>{c46b9a53-86d8-4b7f-ab15-b2c04518a195}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\IlmBase\vc\vc15\IlmBase\IlmThread\IlmThread.vcxproj">
+      <Project>{76addb29-9c6a-442c-9ba9-764c050f75dd}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\IlmBase\vc\vc15\IlmBase\Imath\Imath.vcxproj">
+      <Project>{39e34f88-dd2e-4a1c-96b7-624ea55fc1d7}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
