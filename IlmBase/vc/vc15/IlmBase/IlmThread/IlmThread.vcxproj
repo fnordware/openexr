@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug_4ByteStruct|Win32">
       <Configuration>Debug_4ByteStruct</Configuration>
@@ -35,8 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{39E34F88-DD2E-4A1C-96B7-624EA55FC1D7}</ProjectGuid>
-    <RootNamespace>Imath</RootNamespace>
+    <ProjectGuid>{76ADDB29-9C6A-442C-9BA9-764C050F75DD}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -155,8 +154,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -177,8 +176,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -195,8 +194,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
@@ -214,9 +213,8 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <ForceConformanceInForLoopScope>true</ForceConformanceInForLoopScope>
@@ -232,8 +230,8 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_4ByteStruct|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;_DEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -255,8 +253,8 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;_DEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -274,8 +272,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_4ByteStruct|Win32'">
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN32;NDEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
@@ -294,9 +292,8 @@
       <TargetEnvironment>X64</TargetEnvironment>
     </Midl>
     <ClCompile>
-      <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\..\..\config.windows;..\..\..\..\Iex;..\..\..\..\Half;..\..\..\..\Imath;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;IMATH_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\..\IlmThread;..\..\..\..\Iex;..\..\..\..\config.windows;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>PLATFORM_WINDOWS;PLATFORM_BUILD_STATIC;WIN64;NDEBUG;_WINDOWS;ILMTHREAD_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <StructMemberAlignment>4Bytes</StructMemberAlignment>
       <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
@@ -311,43 +308,23 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Imath\ImathColorAlgo.cpp" />
-    <ClCompile Include="..\..\..\..\Imath\ImathFun.cpp" />
-    <ClCompile Include="..\..\..\..\Imath\ImathMatrixAlgo.cpp" />
-    <ClCompile Include="..\..\..\..\Imath\ImathRandom.cpp" />
-    <ClCompile Include="..\..\..\..\Imath\ImathVec.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThread.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadMutex.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadMutexPosix.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadMutexWin32.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadPool.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadPosix.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadSemaphore.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadSemaphorePosix.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadSemaphorePosixCompat.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadSemaphoreWin32.cpp" />
+    <ClCompile Include="..\..\..\..\IlmThread\IlmThreadWin32.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Imath\ImathBox.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathBoxAlgo.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathColor.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathColorAlgo.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathEuler.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathExc.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathFrame.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathFrustum.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathFrustumTest.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathFun.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathGL.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathGLU.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathHalfLimits.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathInt64.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathInterval.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathLimits.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathLine.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathLineAlgo.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathMath.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathMatrix.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathMatrixAlgo.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathPlane.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathPlatform.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathQuat.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathRandom.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathRoots.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathShear.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathSphere.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathVec.h" />
-    <ClInclude Include="..\..\..\..\Imath\ImathVecAlgo.h" />
+    <ClInclude Include="..\..\..\..\IlmThread\IlmThread.h" />
+    <ClInclude Include="..\..\..\..\IlmThread\IlmThreadMutex.h" />
+    <ClInclude Include="..\..\..\..\IlmThread\IlmThreadPool.h" />
+    <ClInclude Include="..\..\..\..\IlmThread\IlmThreadSemaphore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
