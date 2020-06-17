@@ -919,9 +919,9 @@
 			productReference = 2A588C3C197875C2000D94D0 /* dwaLookups */;
 			productType = "com.apple.product-type.tool";
 		};
-		2A6D4B1415CDE3DE006BADE7 /* OpenEXR */ = {
+		2A6D4B1415CDE3DE006BADE7 /* OpenEXR_lib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A6D4B1915CDE413006BADE7 /* Build configuration list for PBXNativeTarget "OpenEXR" */;
+			buildConfigurationList = 2A6D4B1915CDE413006BADE7 /* Build configuration list for PBXNativeTarget "OpenEXR_lib" */;
 			buildPhases = (
 				2A588C4E19787655000D94D0 /* Build Headers */,
 				2A6D4B1115CDE3DE006BADE7 /* Headers */,
@@ -934,7 +934,7 @@
 				2A588C4A19787649000D94D0 /* PBXTargetDependency */,
 				2A588C4C19787649000D94D0 /* PBXTargetDependency */,
 			);
-			name = OpenEXR;
+			name = OpenEXR_lib;
 			productName = OpenEXR;
 			productReference = 2A6D4B1515CDE3DE006BADE7 /* libOpenEXR.a */;
 			productType = "com.apple.product-type.library.static";
@@ -967,7 +967,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				2A6D4B1415CDE3DE006BADE7 /* OpenEXR */,
+				2A6D4B1415CDE3DE006BADE7 /* OpenEXR_lib */,
 				2A588C1919787559000D94D0 /* b44ExpLogTable */,
 				2A588C3B197875C2000D94D0 /* dwaLookups */,
 			);
@@ -1315,7 +1315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2A6D4B1915CDE413006BADE7 /* Build configuration list for PBXNativeTarget "OpenEXR" */ = {
+		2A6D4B1915CDE413006BADE7 /* Build configuration list for PBXNativeTarget "OpenEXR_lib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2A6D4B1615CDE3DF006BADE7 /* Debug */,
