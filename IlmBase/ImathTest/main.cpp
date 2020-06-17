@@ -34,28 +34,28 @@
 
 
 
-#include <testVec.h>
-#include <testRoots.h>
-#include <testFun.h>
-#include <testInvert.h>
-#include <testFrustum.h>
-#include <testRandom.h>
-#include <testColor.h>
-#include <testShear.h>
-#include <testMatrix.h>
-#include <testMiscMatrixAlgo.h>
-#include <testExtractEuler.h>
-#include <testExtractSHRT.h>
-#include <testQuat.h>
-#include <testQuatSetRotation.h>
-#include <testQuatSlerp.h>
-#include <testLineAlgo.h>
-#include <testBoxAlgo.h>
-#include <testBox.h>
-#include <testProcrustes.h>
-#include <testTinySVD.h>
-#include <testJacobiEigenSolver.h>
-#include <testFrustumTest.h>
+#include "testVec.h"
+#include "testRoots.h"
+#include "testFun.h"
+#include "testInvert.h"
+#include "testFrustum.h"
+#include "testRandom.h"
+#include "testColor.h"
+#include "testShear.h"
+#include "testMatrix.h"
+#include "testMiscMatrixAlgo.h"
+#include "testExtractEuler.h"
+#include "testExtractSHRT.h"
+#include "testQuat.h"
+#include "testQuatSetRotation.h"
+#include "testQuatSlerp.h"
+#include "testLineAlgo.h"
+#include "testBoxAlgo.h"
+#include "testBox.h"
+#include "testProcrustes.h"
+#include "testTinySVD.h"
+#include "testJacobiEigenSolver.h"
+#include "testFrustumTest.h"
 
 #include <string.h>
 

@@ -42,7 +42,7 @@
 #include <math.h>
 #include <vector>
 
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 
 #ifdef OPENEXR_IMF_HAVE_SYSCONF_NPROCESSORS_ONLN
 #include <unistd.h>
@@ -51,8 +51,8 @@
 #include <half.h>
 #include <IlmThread.h>
 #include <IlmThreadSemaphore.h>
-#include <ImfIO.h>
-#include <ImfXdr.h>
+#include "ImfIO.h"
+#include "ImfXdr.h"
 #include "ImfNamespace.h"
 
 using namespace OPENEXR_IMF_NAMESPACE;

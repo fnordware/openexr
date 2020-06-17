@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testBoxAlgo.h>
+#include "testBoxAlgo.h"
 #include "ImathBoxAlgo.h"
 #include "ImathRandom.h"
 #include <iostream>

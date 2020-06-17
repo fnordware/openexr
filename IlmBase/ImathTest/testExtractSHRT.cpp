@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testExtractSHRT.h>
+#include "testExtractSHRT.h"
 #include "ImathMatrixAlgo.h"
 #include "ImathEuler.h"
 #include "ImathRandom.h"

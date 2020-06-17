@@ -1,10 +1,10 @@
-#include <testSize.h>
-#include <testArithmetic.h>
-#include <testError.h>
-#include <testBitPatterns.h>
-#include <testClassification.h>
-#include <testLimits.h>
-#include <testFunction.h>
+#include "testSize.h"
+#include "testArithmetic.h"
+#include "testError.h"
+#include "testBitPatterns.h"
+#include "testClassification.h"
+#include "testLimits.h"
+#include "testFunction.h"
 
 #include <iostream>
 #include <string.h>

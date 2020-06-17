@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testFun.h>
+#include "testFun.h"
 #include "ImathFun.h"
 #include <iostream>
 #include <assert.h>

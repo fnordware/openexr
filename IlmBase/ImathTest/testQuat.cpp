@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testQuat.h>
+#include "testQuat.h"
 #include "ImathQuat.h"
 #include "ImathMatrixAlgo.h"
 #include "ImathFun.h"

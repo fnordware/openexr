@@ -1,4 +1,4 @@
-#include <testBitPatterns.h>
+#include "testBitPatterns.h"
 #include "half.h"
 #include <float.h>
 #include <iostream>

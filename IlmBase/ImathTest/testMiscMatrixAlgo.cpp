@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testMiscMatrixAlgo.h>
+#include "testMiscMatrixAlgo.h"
 #include "ImathMatrixAlgo.h"
 #include "ImathRandom.h"
 #include <iostream>

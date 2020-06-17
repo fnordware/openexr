@@ -34,7 +34,7 @@
 
 
 
-#include <testColor.h>
+#include "testColor.h"
 #include "ImathColor.h"
 #include "ImathColorAlgo.h"
 #include "ImathLimits.h"

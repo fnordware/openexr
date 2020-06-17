@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <testVec.h>
+#include "testVec.h"
 #include "ImathVec.h"
 #include "ImathFun.h"
 #include "ImathLimits.h"

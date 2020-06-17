@@ -34,7 +34,7 @@
 
 
 
-#include <testInvert.h>
+#include "testInvert.h"
 #include "ImathMatrix.h"
 #include "ImathMatrixAlgo.h"
 #include <iostream>
