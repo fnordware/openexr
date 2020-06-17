@@ -55,7 +55,7 @@
 #include <ImfPartHelper.h>
 #include <ImfPartType.h>
 
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 #include <Iex.h>
 
 #include <iostream>

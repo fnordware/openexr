@@ -33,8 +33,8 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <tmpDir.h>
-#include <fuzzFile.h>
+#include "tmpDir.h"
+#include "fuzzFile.h"
 
 #include <ImfTiledRgbaFile.h>
 #include <ImfArray.h>
@@ -48,7 +48,7 @@
 #include <vector>
 
 // Handle the case when the custom namespace is not exposed
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 #include <ImfPartType.h>
 #include <ImfMultiPartOutputFile.h>
 #include <ImfTiledOutputPart.h>

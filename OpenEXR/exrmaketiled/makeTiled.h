@@ -47,7 +47,7 @@
 #include <ImfMultiPartInputFile.h>
 #include <ImfTileDescription.h>
 #include <ImfCompression.h>
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 
 #include <string>
 #include <set>

@@ -49,7 +49,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 using namespace OPENEXR_IMF_NAMESPACE;
 using namespace IMATH_NAMESPACE;
 using namespace std;

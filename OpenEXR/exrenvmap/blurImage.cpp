@@ -43,7 +43,7 @@
 
 #include "namespaceAlias.h"
 
-#include <resizeImage.h>
+#include "resizeImage.h"
 #include <cstring>
 #include "Iex.h"
 #include <iostream>

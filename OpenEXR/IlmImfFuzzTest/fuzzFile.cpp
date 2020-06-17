@@ -33,7 +33,7 @@
 ///////////////////////////////////////////////////////////////////////////
 
 
-#include <fuzzFile.h>
+#include "fuzzFile.h"
 
 #include <ImfRgbaFile.h>
 #include <ImfArray.h>
@@ -44,7 +44,7 @@
 #include <fstream>
 
 // Handle the case when the custom namespace is not exposed
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 using namespace OPENEXR_IMF_INTERNAL_NAMESPACE;
 using namespace std;
 using namespace IMATH_NAMESPACE;

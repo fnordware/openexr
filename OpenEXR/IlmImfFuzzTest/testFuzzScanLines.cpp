@@ -59,7 +59,7 @@
 
 
 // Handle the case when the custom namespace is not exposed
-#include <OpenEXRConfig.h>
+#include "OpenEXRConfig.h"
 #include <ImfChannelList.h>
 using namespace OPENEXR_IMF_INTERNAL_NAMESPACE;
 using namespace std;
