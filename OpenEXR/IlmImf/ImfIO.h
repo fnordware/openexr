@@ -108,6 +108,28 @@ class IStream
     virtual char *	readMemoryMapped (int n);
 
 
+    //------------------------------------------------------
+    // Supports pread:
+    //
+    // Subclass supports pread function, which reads from a
+    // file offset without changing a file pointer.
+    //------------------------------------------------------
+    
+    IMF_EXPORT
+    virtual bool	supportsPread () const;
+    
+    
+    //------------------------------------------------------
+    // pread:
+    //
+    // pread(c,n,p) reads n bytes from the stream, starting
+    // at oppset p, storing them in array c.
+    //------------------------------------------------------
+    
+    IMF_EXPORT
+    virtual bool	pread (char c[/*n*/], int n, Int64 pos);
+
+
     //--------------------------------------------------------
     // Get the current reading position, in bytes from the
     // beginning of the file.  If the next call to read() will

@@ -74,6 +74,21 @@ IStream::readMemoryMapped (int n)
 }
 
 
+bool
+IStream::supportsPread () const
+{
+	return false;
+}
+
+
+bool
+IStream::pread (char *c, int n, Int64 pos)
+{
+    throw IEX_NAMESPACE::InputExc ("Attempt to perform a pread "
+			 "when pread was not supported.");
+    return 0;
+}
+
 void
 IStream::clear ()
 {
