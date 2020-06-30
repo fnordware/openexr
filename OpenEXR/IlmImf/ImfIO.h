@@ -261,6 +261,20 @@ struct StreamIO
     }
 };
 
+struct StreamIO_V1
+{
+    static void
+    writeChars (OStream &os, const char c[/*n*/], int n, Imf::Int64 pos)
+    {
+        os.write (c, n);
+    }
+
+    static bool
+    readChars (IStream &is, char c[/*n*/], int n, Imf::Int64 pos)
+    {
+        return is.pread (c, n, pos);
+    }
+};
 
 struct CharPtrIO
 {

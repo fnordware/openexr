@@ -64,6 +64,11 @@
 #include <vector>
 #include <assert.h>
 #include <cstring>
+#include <sys/types.h>
+#include <sys/uio.h>
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
 
 OPENEXR_IMF_INTERNAL_NAMESPACE_SOURCE_ENTER
 
@@ -361,9 +366,9 @@ readLineOffsets (OPENEXR_IMF_INTERNAL_NAMESPACE::IStream &is,
 void
 readPixelData (InputStreamMutex *streamData,
                ScanLineInputFile::Data *ifd,
-	       int minY,
-	       char *&buffer,
-	       int &dataSize)
+               int minY,
+               char *&buffer,
+               int &dataSize)
 {
     //
     // Read a single line buffer from the input file.
@@ -379,7 +384,7 @@ readPixelData (InputStreamMutex *streamData,
         THROW (IEX_NAMESPACE::InputExc, "Invalid scan line " << minY << " requested or missing.");
 
     Int64 lineOffset = ifd->lineOffsets[lineBufferNumber];
-
+    
     if (lineOffset == 0)
 	THROW (IEX_NAMESPACE::InputExc, "Scan line " << minY << " is missing.");
 
@@ -387,11 +392,14 @@ readPixelData (InputStreamMutex *streamData,
     // Seek to the start of the scan line in the file,
     // if necessary.
     //
-
+    
     if ( !isMultiPart(ifd->version) )
     {
         if (ifd->nextLineBufferMinY != minY)
-            streamData->is->seekg (lineOffset);
+        {
+            if (!streamData->is->supportsPread())
+                streamData->is->seekg (lineOffset);
+        }
     }
     else
     {
@@ -399,23 +407,32 @@ readPixelData (InputStreamMutex *streamData,
         // In a multi-part file, the file pointer may have been moved by
         // other parts, so we have to ask tellg() where we are.
         //
-        if (streamData->is->tellg() != ifd->lineOffsets[lineBufferNumber])
-            streamData->is->seekg (lineOffset);
+        if (!streamData->is->supportsPread())
+        {
+            if (streamData->is->tellg() != ifd->lineOffsets[lineBufferNumber])
+            {
+                streamData->is->seekg (lineOffset);
+            }
+        }
     }
 
     //
     // Read the data block's header.
     //
-
+    
     int yInFile;
 
     //
     // Read the part number when we are dealing with a multi-part file.
     //
+    
     if (isMultiPart(ifd->version))
     {
         int partNumber;
-        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, partNumber);
+        if (streamData->is->supportsPread())
+            OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::pread <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO_V1> (*streamData->is, partNumber, lineOffset);
+        else
+            OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, partNumber);
         if (partNumber != ifd->partNumber)
         {
             THROW (IEX_NAMESPACE::ArgExc, "Unexpected part number " << partNumber
@@ -423,8 +440,16 @@ readPixelData (InputStreamMutex *streamData,
         }
     }
 
-    OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, yInFile);
-    OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, dataSize);
+    if (streamData->is->supportsPread())
+    {
+        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::pread <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO_V1> (*streamData->is, yInFile,(lineOffset+4));
+        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::pread <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO_V1> (*streamData->is, dataSize,(lineOffset+8));
+    }
+    else
+    {
+        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, yInFile);
+        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*streamData->is, dataSize);
+    }
     
     if (yInFile != minY)
         throw IEX_NAMESPACE::InputExc ("Unexpected data block y coordinate.");
@@ -433,13 +458,22 @@ readPixelData (InputStreamMutex *streamData,
 	throw IEX_NAMESPACE::InputExc ("Unexpected data block length.");
 
     //
-    // Read the pixel data.
-    //
-
+    // Read the pixel data using pread() implemented under the hood of readLockFree
+    
+    if (streamData->is->supportsPread())
+    {
+        bool bytesReadFlag = streamData->is->pread (buffer,dataSize,(lineOffset+12));
+    }
+    else
+    {
+        streamData->is->read (buffer, dataSize);
+    }
+    
+    /*
     if (streamData->is->isMemoryMapped ())
         buffer = streamData->is->readMemoryMapped (dataSize);
     else
-        streamData->is->read (buffer, dataSize);
+        streamData->is->read (buffer, dataSize);*/
 
     //
     // Keep track of which scan line is the next one in
@@ -464,7 +498,7 @@ class LineBufferTask : public Task
 {
   public:
 
-    LineBufferTask (TaskGroup *group,
+    LineBufferTask (TaskGroup *group, InputStreamMutex *streamData,
                     ScanLineInputFile::Data *ifd,
 		    LineBuffer *lineBuffer,
                     int scanLineMin,
@@ -476,7 +510,7 @@ class LineBufferTask : public Task
     virtual void		execute ();
 
   private:
-
+    InputStreamMutex *   _streamData;
     ScanLineInputFile::Data *	_ifd;
     LineBuffer *		_lineBuffer;
     int				_scanLineMin;
@@ -487,12 +521,14 @@ class LineBufferTask : public Task
 
 LineBufferTask::LineBufferTask
     (TaskGroup *group,
+     InputStreamMutex *streamData,
      ScanLineInputFile::Data *ifd,
      LineBuffer *lineBuffer,
      int scanLineMin,
      int scanLineMax,OptimizationMode optimizationMode)
 :
     Task (group),
+    _streamData(streamData),
     _ifd (ifd),
     _lineBuffer (lineBuffer),
     _scanLineMin (scanLineMin),
@@ -521,6 +557,10 @@ LineBufferTask::execute ()
         //
         // Uncompress the data, if necessary
         //
+        /*
+        readPixelData (_streamData, _ifd, _lineBuffer->minY,
+                       _lineBuffer->buffer,
+                       _lineBuffer->dataSize);*/
     
         if (_lineBuffer->uncompressedData == 0)
         {
@@ -1081,7 +1121,7 @@ newLineBufferTask (TaskGroup *group,
      else
 #endif         
      {
-         retTask = new LineBufferTask (group, ifd, lineBuffer,
+         retTask = new LineBufferTask (group, streamData, ifd, lineBuffer,
                                        scanLineMin, scanLineMax,
                                        optimizationMode);
      }

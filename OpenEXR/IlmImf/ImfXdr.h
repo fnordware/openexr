@@ -318,6 +318,12 @@ readSignedChars (T &in, signed char c[], int n)
     S::readChars (in, (char *) c, n);
 }
 
+template <class S, class T>
+inline void
+preadSignedChars (T &in, signed char c[], int n, Imf::Int64 pos)
+{
+    S::readChars (in, (char *) c, n, pos);
+}
 
 template <class S, class T>
 inline void
@@ -326,6 +332,12 @@ readUnsignedChars (T &in, unsigned char c[], int n)
     S::readChars (in, (char *) c, n);
 }
 
+template <class S, class T>
+inline void
+preadUnsignedChars (T &in, unsigned char c[], int n, Imf::Int64 pos)
+{
+    S::readChars (in, (char *) c, n, pos);
+}
 
 template <class S, class T>
 inline void
@@ -681,6 +693,19 @@ read (T &in, signed int &v)
 	 (b[3] << 24);
 }
 
+template <class S, class T>
+void
+pread (T &in, signed int &v, Imf::Int64 pos)
+{
+    signed char b[4];
+
+    preadSignedChars<S> (in, b, 4, pos);
+
+    v =  (b[0]        & 0x000000ff) |
+    ((b[1] << 8)  & 0x0000ff00) |
+    ((b[2] << 16) & 0x00ff0000) |
+     (b[3] << 24);
+}
 
 template <class S, class T>
 void
@@ -737,6 +762,67 @@ read (T &in, signed long &v)
     #endif
 }
 
+template <class S, class T>
+void
+pread (T &in, unsigned long &v, Imf::Int64 pos)
+{
+    unsigned char b[8];
+
+    preadUnsignedChars<S> (in, b, 8, pos);
+
+    #if ULONG_MAX == 4294967295U
+
+    v =  (b[0]        & 0x000000ff) |
+        ((b[1] << 8)  & 0x0000ff00) |
+        ((b[2] << 16) & 0x00ff0000) |
+         (b[3] << 24);
+
+    if (b[4] || b[5] || b[6] || b[7])
+    {
+        throw IEX_NAMESPACE::OverflowExc ("Long int overflow - read a large "
+                    "64-bit integer in a 32-bit process.");
+    }
+
+    #elif ULONG_MAX == 18446744073709551615LU
+
+    v =  ((unsigned long) b[0]        & 0x00000000000000ff) |
+        (((unsigned long) b[1] << 8)  & 0x000000000000ff00) |
+        (((unsigned long) b[2] << 16) & 0x0000000000ff0000) |
+        (((unsigned long) b[3] << 24) & 0x00000000ff000000) |
+        (((unsigned long) b[4] << 32) & 0x000000ff00000000) |
+        (((unsigned long) b[5] << 40) & 0x0000ff0000000000) |
+        (((unsigned long) b[6] << 48) & 0x00ff000000000000) |
+         ((unsigned long) b[7] << 56);
+
+    #else
+
+    #error read<T> (T &in, unsigned long &v) not implemented
+
+    #endif
+}
+
+
+#if ULONG_MAX != 18446744073709551615LU
+
+    template <class S, class T>
+    void
+    pread (T &in, Int64 &v, Imf::Int64 pos)
+    {
+        unsigned char b[8];
+
+        preadUnsignedChars<S> (in, b, 8, pos);
+
+        v =  ((Int64) b[0]        & 0x00000000000000ffLL) |
+        (((Int64) b[1] << 8)  & 0x000000000000ff00LL) |
+        (((Int64) b[2] << 16) & 0x0000000000ff0000LL) |
+        (((Int64) b[3] << 24) & 0x00000000ff000000LL) |
+        (((Int64) b[4] << 32) & 0x000000ff00000000LL) |
+        (((Int64) b[5] << 40) & 0x0000ff0000000000LL) |
+        (((Int64) b[6] << 48) & 0x00ff000000000000LL) |
+        ((Int64) b[7] << 56);
+    }
+
+#endif
 
 template <class S, class T>
 void

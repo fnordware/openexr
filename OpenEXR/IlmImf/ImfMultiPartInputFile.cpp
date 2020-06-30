@@ -51,6 +51,11 @@
 #include "ImfDeepScanLineInputFile.h"
 #include "ImfDeepTiledInputFile.h"
 #include "ImfVersion.h"
+#include <ImfThreading.h>
+#include <ImfPartType.h>
+#include "IlmThreadPool.h"
+#include "IlmThreadSemaphore.h"
+#include "IlmThreadMutex.h"
 
 #include <OpenEXRConfig.h>
 #include <IlmThread.h>
@@ -726,22 +731,87 @@ MultiPartInputFile::Data::getPart(int partNumber)
     return parts[partNumber];
 }
 
+class readChunkOffsetTableTask : public IlmThread::Task
+{
+  public:
+
+    readChunkOffsetTableTask (IlmThread::TaskGroup *group, OPENEXR_IMF_INTERNAL_NAMESPACE::IStream* is, std::vector<Int64>* chunkOffsets, int chunkOffsetTableSize, Imf::Int64 position);
+
+    virtual ~readChunkOffsetTableTask ();
+
+    virtual void        execute ();
+  private:
+    OPENEXR_IMF_INTERNAL_NAMESPACE::IStream*   _is;
+    //Int64*          _chunkOffsets;
+    Imf::Int64             _position;
+    std::vector<Int64>*    _chunkOffsets;
+    int                    _chunkOffsetTableSize;
+};
 
 
+readChunkOffsetTableTask::readChunkOffsetTableTask
+    (IlmThread::TaskGroup *group,
+     OPENEXR_IMF_INTERNAL_NAMESPACE::IStream*  is,
+     std::vector<Int64>* chunkOffsets,
+     int chunkOffsetTableSize,
+     Imf::Int64 position)
+:
+    IlmThread::Task (group),
+    _is(is),
+    _position(position),
+    _chunkOffsets(chunkOffsets),
+    _chunkOffsetTableSize(chunkOffsetTableSize)
+{
+    // empty
+}
+
+
+readChunkOffsetTableTask::~readChunkOffsetTableTask ()
+{
+    
+}
+
+void
+readChunkOffsetTableTask::execute ()
+{
+    for (int j = 0; j < _chunkOffsetTableSize; j++)
+    {
+        OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::pread <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO_V1> (*_is, _chunkOffsets->at(j),(_position+(8*j)));
+    }
+}
+
+IlmThread::Task *
+newReadChunkOffsetTableTask (IlmThread::TaskGroup *group, OPENEXR_IMF_INTERNAL_NAMESPACE::IStream* is, std::vector<Int64>* chunkOffsets, int chunkOffsetTableSize,  Imf::Int64 pos)
+{
+    IlmThread::Task* retTask = 0;
+    retTask = new readChunkOffsetTableTask (group, is, chunkOffsets, chunkOffsetTableSize, pos);
+    return retTask;
+}
+    
 void
 MultiPartInputFile::Data::readChunkOffsetTables(bool reconstructChunkOffsetTable)
 {
     bool brokenPartsExist = false;
-
+    Int64 position = is->tellg();
+    IlmThread::TaskGroup taskGroup;
     for (size_t i = 0; i < parts.size(); i++)
     {
         int chunkOffsetTableSize = getChunkOffsetTableSize(parts[i]->header,false);
         parts[i]->chunkOffsets.resize(chunkOffsetTableSize);
-
+        
+        /*
         for (int j = 0; j < chunkOffsetTableSize; j++)
+        {
             OPENEXR_IMF_INTERNAL_NAMESPACE::Xdr::read <OPENEXR_IMF_INTERNAL_NAMESPACE::StreamIO> (*is, parts[i]->chunkOffsets[j]);
-
-        //
+        }*/
+        
+        
+        
+        IlmThread::ThreadPool::addGlobalTask (newReadChunkOffsetTableTask(&taskGroup, is, &(parts[i]->chunkOffsets), chunkOffsetTableSize, position));
+        
+        
+        position = position + (chunkOffsetTableSize*8);
+        
         // Check chunk offsets, reconstruct if broken.
         // At first we assume the table is complete.
         //
